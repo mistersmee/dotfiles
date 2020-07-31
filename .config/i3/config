@@ -13,8 +13,6 @@
 set $mod Mod4
 set $inner_gaps 15
 set $outer_gaps 15
-set $shutdown sudo -A shutdown -h now
-set $reboot sudo -A reboot
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -138,7 +136,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -m 'Shutdown computer?' -B '$shutdown'"
+bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -m 'Shutdown computer?' -B 'sudo shutdown -h now'"
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
