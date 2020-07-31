@@ -183,6 +183,7 @@ assign [class="Uget-gtk"] $ws7
 bindsym $mod+c exec firefox
 bindsym $mod+u exec sudo umount_dmenu
 bindsym $mod+shift+u exec dmenuunicode
+bindsym $mod+shift+x exec slock
 bindsym $mod+shift+a exec dmtpfs
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
