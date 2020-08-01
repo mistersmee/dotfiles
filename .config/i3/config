@@ -183,12 +183,13 @@ bindsym $mod+u exec sudo umount_dmenu
 bindsym $mod+shift+u exec dmenuunicode
 bindsym $mod+shift+x exec slock
 bindsym $mod+shift+a exec dmtpfs
+exec_always --no-startup-id redpaper -d
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id volumeicon
 exec_always --no-startup-id mocicon
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id feh --no-fehbg --bg-scale -z ~/Pictures/Wallpapers/*
+exec_always --no-startup-id feh --no-fehbg --bg-scale -z ~/Pictures/Redpaper/
 focus_follows_mouse no
 
 # You can also use any non-zero value if you'd like to have a border
