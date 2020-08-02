@@ -47,11 +47,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin  'tpope/vim-eunuch'
-Plugin	'airblade/vim-gitgutter'
 Plugin 'vim-scripts/AutoComplPop'
-Plugin 'justinmk/vim-sneak'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'preservim/nerdtree'
 Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-commentary'
@@ -73,6 +70,5 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 nnoremap ,g :Goyo <CR>
-nnoremap ,n :NERDTreeToggle <CR>
 nnoremap ,G :Goyo! <CR>
 nnoremap ,ZZ :SudoWrite <CR>

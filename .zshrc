@@ -125,6 +125,7 @@ alias wt="curl wttr.in/kolhapur"
 alias nv="nvim"
 alias ra="ranger"
 alias rv="ttrv"
+alias nvconf="nv ~/.config/nvim/init.vim"
 alias dotfiles='/usr/bin/git --git-dir=/home/smee/.dotfiles/ --work-tree=/home/smee'
 
 SPACESHIP_PROMPT_ORDER=(
