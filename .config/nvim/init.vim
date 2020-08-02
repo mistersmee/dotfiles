@@ -75,3 +75,4 @@ endif
 nnoremap ,g :Goyo <CR>
 nnoremap ,n :NERDTreeToggle <CR>
 nnoremap ,G :Goyo! <CR>
+nnoremap ,ZZ :SudoWrite <CR>
