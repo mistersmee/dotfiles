@@ -113,21 +113,20 @@ else
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ls='ls --color=auto'
-alias i3conf="nv .config/i3/config"
-alias polyconf="nv .config/polybar/config"
+alias i3conf="nv ~/.config/i3/config"
+alias polyconf="nv ~/.config/polybar/config"
 alias nb="newsboat"
 alias n="nnn"
 alias ..="cd .."
-alias fr="feh --bg-scale -z ~/Pictures/Wallpapers/*"
+alias fr="feh --bg-scale -z ~/Pictures/Redpaper/"
 alias nm="neomutt"
 alias pb="podboat"
 alias wt="curl wttr.in/kolhapur"
 alias nv="nvim"
 alias ra="ranger"
 alias rv="ttrv"
-alias mo="sudo mount /dev/sda1 /media/smee"
-alias um="sudo umount /dev/sda1"
 alias dotfiles='/usr/bin/git --git-dir=/home/smee/.dotfiles/ --work-tree=/home/smee'
+
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stamps section
   user          # Username section

@@ -46,19 +46,19 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'junegunn/goyo.vim'
-Plugin 'davidhalter/jedi-vim'
+Plugin  'tpope/vim-eunuch'
+Plugin	'airblade/vim-gitgutter'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'justinmk/vim-sneak'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'tpope/vim-surround'
 Plugin 'preservim/nerdtree'
-Plugin 'mboughaba/i3config.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-commentary'
 Plugin 'ap/vim-css-color'
 call vundle#end()
 
+let g:sneak#label = 1
 
 aug i3config_ft_detection
   au!
@@ -73,4 +73,5 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 nnoremap ,g :Goyo <CR>
+nnoremap ,n :NERDTreeToggle <CR>
 nnoremap ,G :Goyo! <CR>
