@@ -9,8 +9,8 @@ alert = ${xrdb:color1}
 accent = #fba922
 [settings]
 format-foreground =
-format-underline = ${colors.primary}
-format-background = ${colors.background-alt}
+format-background = ${colors.background}
+format-underline = ${colors.background}
 format-padding = 1
 format-overline =
 format-margin = 0
@@ -99,19 +99,18 @@ label-dimmed-underline = ${root.background}
 label-focused = %icon%  %name%
 label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.background}
-label-focused-underline = ${colors.primary}
 label-focused-font = 4
+label-focused-underline = ${colors.foreground}
 label-focused-padding = 4
 
 label-unfocused = %icon%  %name%
-label-unfocused-underline = #555555
 label-unfocused-font = 4
+label-unfocused-underline = #333
 label-unfocused-padding = 4
 
 label-urgent = %icon%  %name%
 label-urgent-foreground = ${colors.background}
 label-urgent-background = #bd2c40
-label-urgent-underline = #9b0a20
 label-urgent-font = 4
 label-urgent-padding = 4
 
