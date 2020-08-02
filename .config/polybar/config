@@ -99,8 +99,7 @@ label-dimmed-underline = ${root.background}
 label-focused = %icon%  %name%
 label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.background}
-;label-focused-underline = #${colors.accent}
-label-focused-underline = #9f78e1
+label-focused-underline = ${colors.primary}
 label-focused-font = 4
 label-focused-padding = 4
 
@@ -131,8 +130,7 @@ format = <label>
 label = %{A1:st -e htop:} 💻 CPU %percentage%%%{A}
 label-font = 10
 label-foreground = ${colors.foreground}
-format-underline = #60eaa5
-format-padding = 2
+format-padding = 2	
 
 [module/memory]
 type = internal/memory
@@ -142,7 +140,6 @@ format = <label>
 label =%{A1:st -e htop:} 🧠 RAM %percentage_used%%%{A}
 label-font = 10
 label-foreground = ${colors.foreground}
-format-underline = #e58de6
 format-padding = 2
 
 [module/wireless-network]
@@ -183,7 +180,6 @@ interval = 1
 format-padding = 5
 format-background = ${colors.background}
 format-foreground = ${colors.foreground}
-format-underline = #ff63a5
 date =   %a
 date-alt =   %a %d-%B-%Y
 
@@ -201,7 +197,6 @@ master-mixer = Headphone
 mapped = true
 interval = 5
 format-volume = <ramp-volume> <label-volume>
-format-volume-underline = #fffb8f
 format-volume-padding = 2
 label-volume = %percentage%%
 label-volume-foreground = #ff
@@ -229,7 +224,6 @@ ramp-0 = 
 ramp-1 = 
 ramp-2 =  
 ramp-foreground = #55
-format-underline = #60eaa5
 format-padding = 2
 
 ; vim:ft=dosini
