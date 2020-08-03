@@ -111,10 +111,10 @@ else
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nvim ~/.zshrc"
+alias zconf="nvim ~/.zshrc"
 alias ls='ls --color=auto'
 alias i3conf="nv ~/.config/i3/config"
-alias polyconf="nv ~/.config/polybar/config"
+alias pconf="nv ~/.config/polybar/config"
 alias nb="newsboat"
 alias n="nnn"
 alias ..="cd .."
@@ -126,8 +126,8 @@ alias nv="nvim"
 alias ra="ranger"
 alias rv="ttrv"
 alias nvconf="nv ~/.config/nvim/init.vim"
-alias dotfiles='/usr/bin/git --git-dir=/home/smee/.dotfiles/ --work-tree=/home/smee'
-
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias cal="calcurse -a |xargs -0 notify-send "Appointments.";calcurse -t | xargs -0 notify-send "Todo";calcurse"
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stamps section
   user          # Username section
@@ -172,4 +172,3 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
