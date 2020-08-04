@@ -72,7 +72,7 @@ fixed-value = true
 interval = 30
 mount-0 = /
 format-mounted = <label-mounted> 
-label-mounted = %mountpoint% : %used% out of %total% : %percentage_used%%
+label-mounted =%{A1:st -e ncdu /:} %mountpoint% : %used% out of %total% : %percentage_used%%%{A}
 
 [module/i3]
 type = internal/i3
