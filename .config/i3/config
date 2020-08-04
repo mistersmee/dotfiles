@@ -169,9 +169,9 @@ bindsym $mod+r mode "resize"
 # from the generated scheme.
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
 # it fails to get colors from Xresources.
-# set_from_resource $base00 color0	#101218
-# set_from_resource $base01 color1 	#1f222d
-# set_from_resource $base02 color2 	#252936
+# set_from_resource $base00 background	#101218
+# set_from_resource $base01 foreground	#1f222d
+# set_from_resource $base02 color2	#252936
 # set_from_resource $base03 color3	#7780a1
 # set_from_resource $base04 color4 	#C0C5CE
 # set_from_resource $base05 color5	#d1d4e0
@@ -187,7 +187,7 @@ bindsym $mod+r mode "resize"
 # set_from_resource $base0F color15	#fcc09e
 
 # # class                 border  backgr.text indicator child_border
-# client.focused 		$base02 $base0D     $base00   $base01
+# client.focused 		$base00 $base0D     $base00   $base01
 # client.focused_inactive $base0D $base02     $base03   $base01
 # client.unfocused 	$base0B $base01     $base03   $base01
 # client.urgent 		$base02 $base08     $base07   $base08
@@ -205,7 +205,7 @@ exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id volumeicon
 exec_always --no-startup-id mocicon
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id feh --no-fehbg --bg-scale ~/Pictures/colorsch/gruvbox.png
+exec_always --no-startup-id feh --no-fehbg --bg-scale ~/Pictures/colorsch/nord.png
 focus_follows_mouse no
 
 # You can also use any non-zero value if you'd like to have a border

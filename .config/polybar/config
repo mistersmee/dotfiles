@@ -7,6 +7,7 @@ foreground-alt = ${xrdb:color7}
 primary = ${xrdb:color4}
 alert = ${xrdb:color1}
 accent = #fba922
+
 [settings]
 format-foreground =
 format-background = ${colors.background}
@@ -23,7 +24,7 @@ margin-bottom = 0
 
 [bar/top]
 enable-ipc = true
-monitor = 
+monitor = default
 width = 100%
 height = 27
 scroll-up = i3wm-wsnext
@@ -34,7 +35,7 @@ scroll-down = i3wm-wsprev
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-border-bottom = 1
+border-bottom-size = 1
 border-bottom-color = #333
 overline-size = 10
 overline-color = ${self.background}
@@ -88,7 +89,7 @@ wrapping-scroll = false
 ws-icon-0 = 1;  
 ws-icon-1 = 7;
 ws-icon-2 = 3;
-ws-icon-3 = 4;🎵🎥
+ws-icon-3 = 4; 
 ws-icon-4 = 6; 
 ws-icon-5 = 2; 
 ws-icon-6 = 5;
