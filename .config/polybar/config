@@ -170,8 +170,8 @@ type = internal/network
 interface = eth0
 interval = 2.0
 
-label-connected =   %local_ip%
-label-disconnected = Ethernet disconnected
+label-connected = %{A1:st -e nmtui:}   %local_ip%%{A}
+label-disconnected = %{A1:st -e nmtui:} Ethernet disconnected%{A}
 label-disconnected-foreground = #66
 
 [module/clock]
