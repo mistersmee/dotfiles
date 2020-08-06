@@ -1,17 +1,26 @@
+#podboat config
 download-path "/home/smee/Downloads/Podcasts"
 player "mocp"
-auto-reload yes
+
+# general config
+auto-reload no
 cleanup-on-quit yes
+
+# notifications config
+
 notify-always yes
 notify-format "newsbeuter: %n unread articles within %f unread feeds"
 notify-program notify-send
 notify-xterm yes
 notify-screen yes
 
+# macros config
+
 browser "links -g %u"
-macro y set browser "ytmpv %u"; open-in-browser ; set browser elinks
-macro p set browser "tmpv %u"; open-in-browser ; set browser elinks
-# solarized
+macro y set browser "ytmpv %u"; open-in-browser ; set browser "links -g %u"
+macro p set browser "tmpv %u"; open-in-browser ; set browser "links -g %u"
+
+# colours config
 
 color listnormal cyan default
 color listfocus black yellow standout bold
@@ -20,7 +29,13 @@ color listfocus_unread yellow default bold
 color info red black bold
 color article white default bold
 
-# highlights
+#Killfile config
+define-filter "IGN" "title =~ \"Daily\ Fix\" or title =~ \"Trailer\""
+# ignore-article "https://www.youtube.com/feeds/videos.xml?channel_id=UCKy1dAqELo0zrOtPkf0eTMw" "title !~\"Daily\ Fix\"" 
+# ignore-article "https://www.youtube.com/feeds/videos.xml?channel_id=UCKy1dAqELo0zrOtPkf0eTMw" "title !~\"Trailer\""
+# ignore-mode display
+
+# highlights config
 
 highlight all "---.*---" yellow
 highlight feedlist ".*(0/0))" black
@@ -34,3 +49,5 @@ highlight article "\\[embedded flash: [0-9][0-9]*\\]" green default bold
 highlight article ":.*\\(link\\)$" cyan default
 highlight article ":.*\\(image\\)$" blue default
 highlight article ":.*\\(embedded flash\\)$" magenta default
+
+#; vim:ft=sh

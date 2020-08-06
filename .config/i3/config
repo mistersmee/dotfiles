@@ -215,4 +215,4 @@ for_window [class=".*"] border pixel 2
 gaps inner $inner_gaps
 gaps outer $outer_gaps
 
-; vim:ft=i3config
+#; vim:ft=i3config
