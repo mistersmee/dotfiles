@@ -203,7 +203,6 @@ bindsym $mod+shift+a exec dmtpfs
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id pasystray
 exec_always --no-startup-id blueman-applet
-exec_always --no-startup-id volumeicon
 exec_always --no-startup-id mocicon
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --no-fehbg --bg-scale ~/Pictures/colorsch/nord.png
