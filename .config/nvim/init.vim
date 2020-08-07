@@ -32,14 +32,15 @@ Plugin 'tpope/vim-commentary'
 Plugin 'ap/vim-css-color'
 call vundle#end()
 
+
 if &diff
 	 highlight! link DiffText MatchParen
 endif
-
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+                             
+ if filereadable(expand("~/.vimrc_background"))
+   let base16colorspace=256
+   source ~/.vimrc_background
+ endif
 
 nnoremap ,g :Goyo <CR>
 nnoremap ,G :Goyo! <CR>
