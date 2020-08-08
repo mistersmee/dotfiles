@@ -45,3 +45,6 @@
 *color14:      base0F
 *color15:      base07
 
+dmenu.foreground:	base05
+dmenu.background:	base00
+dmenu.selbackground:	base0B

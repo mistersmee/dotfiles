@@ -1,23 +1,23 @@
 *font:	Fira Code:size=15
-! Base16 Nord
-! Scheme: arcticicestudio
+! Base16 Solarized Dark
+! Scheme: Ethan Schoonover (http://ethanschoonover.com/solarized)
 
-#define base00 #2e3440
-#define base01 #3b4252
-#define base02 #434c5e
-#define base03 #4c566a
-#define base04 #d8dee9
-#define base05 #e5e9f0
-#define base06 #eceff4
-#define base07 #8fbcbb
-#define base08 #88c0d0
-#define base09 #81a1c1
-#define base0A #5e81ac
-#define base0B #bf616a
-#define base0C #d08770
-#define base0D #ebcb8b
-#define base0E #a3be8c
-#define base0F #b48ead
+#define base00 #002b36
+#define base01 #073642
+#define base02 #586e75
+#define base03 #657b83
+#define base04 #839496
+#define base05 #93a1a1
+#define base06 #eee8d5
+#define base07 #fdf6e3
+#define base08 #dc322f
+#define base09 #cb4b16
+#define base0A #b58900
+#define base0B #859900
+#define base0C #2aa198
+#define base0D #268bd2
+#define base0E #6c71c4
+#define base0F #d33682
 
 *foreground:   base05
 #ifdef background_opacity
@@ -45,3 +45,6 @@
 *color14:      base0F
 *color15:      base07
 
+dmenu.foreground:	base05
+dmenu.background:	base00
+dmenu.selbackground:	base0B
