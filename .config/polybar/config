@@ -51,13 +51,21 @@ font-0 =  Fira Sans:pixelsize=15;
 font-1 =  FontAwesome:style=Regular:pixelsize=15;
 font-2 =  Noto Color Emoji:scale=10;
 
-modules-left =	i3 weather
+modules-left =	i3 weather player-moc
 modules-center = filesystem1 cpu temperature memory
 modules-right = alsa wired-network clock
 
 tray-position = right
 tray-scale = 1.0
 tray-maxsize = 48
+
+[module/player-moc]
+type = custom/script
+exec = ~/.config/polybar/player-moc.sh 
+interval = 3
+click-left = mocp -f &
+click-right = mocp -r &
+click-middle = mocp -G &
 
 [module/weather]
 type = custom/script

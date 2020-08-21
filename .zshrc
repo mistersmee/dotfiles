@@ -112,13 +112,12 @@ else
 #
 # Example aliases
 alias zconf="nvim ~/.zshrc"
-alias ls='ls --color=auto'
+alias ls='ls-icons -lh --color=auto'
 alias i3conf="nv ~/.config/i3/config"
 alias pconf="nv ~/.config/polybar/config"
 alias nb="newsboat"
-alias n="nnn"
-alias ..="cd .."
-alias fr="feh --bg-scale -z ~/Pictures/Redpaper/"
+alias cp="/usr/local/bin/advcp -gv"
+alias mv="/usr/local/bin/advmv -gv"
 alias nm="neomutt"
 alias pb="podboat"
 alias wt="curl wttr.in/kolhapur"
@@ -172,3 +171,31 @@ SPACESHIP_PROMPT_SEPARATE_LINE=false
  [ -n "$PS1" ] && \
      [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
          eval "$("$BASE16_SHELL/profile_helper.sh")"
+n ()
+{
+    # Block nesting of nnn in subshells
+    if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+        echo "nnn is already running"
+        return
+    fi
+
+    # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
+    # To cd on quit only on ^G, remove the "export" as in:
+    #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+    # NOTE: NNN_TMPFILE is fixed, should not be modified
+    export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+
+    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
+    # stty start undef
+    # stty stop undef
+    # stty lwrap undef
+    # stty lnext undef
+
+    nnn -d "$@"
+
+    if [ -f "$NNN_TMPFILE" ]; then
+            . "$NNN_TMPFILE"
+            rm -f "$NNN_TMPFILE" > /dev/null
+    fi
+}
+

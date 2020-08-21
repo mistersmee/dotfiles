@@ -1,5 +1,5 @@
 #podboat config
-download-path "/home/smee/Downloads/Podcasts"
+download-path "~/Music/"
 player "mocp"
 
 # general config

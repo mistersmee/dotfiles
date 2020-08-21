@@ -69,12 +69,12 @@ ReadTags = yes
 #
 # Example:    MusicDir = "/home/joe/music"
 #
-#MusicDir =
+MusicDir = "~/Music/"
 
 # Start in the music directory by default?  If set to 'no', start
 # in the current directory by default.  A single directory on
 # the command line takes precedence.
-#StartInMusicDir = no
+StartInMusicDir = yes
 
 # How to sort?  FileName is the option's only value for now.
 Sort = FileName
@@ -89,7 +89,7 @@ ShowStreamErrors = yes
 # Set playback toggles.
 #Repeat = no
 #Shuffle = no
-#AutoNext = yes
+AutoNext = yes
 
 # Default FormatString:
 #

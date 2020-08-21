@@ -194,6 +194,13 @@ bindsym $mod+r mode "resize"
 
 
 # Custom key-bindings
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
+# Show the sup-mail scratchpad window, if any.
 
 bindsym $mod+c exec firefox
 bindsym $mod+u exec sudo umount_dmenu
@@ -203,7 +210,6 @@ bindsym $mod+shift+a exec dmtpfs
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id pasystray
 exec_always --no-startup-id blueman-applet
-exec_always --no-startup-id mocicon
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --no-fehbg --bg-scale ~/Pictures/colorsch/nord.png
 focus_follows_mouse no
