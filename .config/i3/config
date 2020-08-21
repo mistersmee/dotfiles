@@ -208,6 +208,7 @@ bindsym $mod+shift+u exec dmenuunicode
 bindsym $mod+shift+x exec slock
 bindsym $mod+shift+a exec dmtpfs
 exec_always --no-startup-id nm-applet
+exec_always --no-startup-id st -e mocp
 exec_always --no-startup-id pasystray
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -216,7 +217,7 @@ focus_follows_mouse no
 
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 2
-
+for_window [title="mocp"] move scratchpad
 gaps inner $inner_gaps
 gaps outer $outer_gaps
 
