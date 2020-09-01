@@ -202,7 +202,8 @@ bindsym $mod+minus scratchpad show
 
 # Show the sup-mail scratchpad window, if any.
 
-bindsym $mod+c exec firefox
+bindsym $mod+w exec firefox
+bindsym $mod+F1 exec groff -mom ~/.local/share/larbs/readme.mom -Tpdf | zathura -
 bindsym $mod+u exec sudo umount_dmenu
 bindsym $mod+shift+u exec dmenuunicode
 bindsym $mod+shift+x exec slock
