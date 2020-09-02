@@ -10,20 +10,14 @@ super + Return
 super + d
 	dmenu_run -i -l 30
 
-# make sxhkd reload its configuration files:
-super + shift + c
-	pkill -USR1 -x sxhkd
-
 #
 # bspwm hotkeys
 #
 
 # quit/restart bspwm
-super + shift + r
-	bspc wm -r
 
 super + shift + e
-	bspc quit
+	shutdmenu
 
 
 # close and kill
@@ -46,9 +40,6 @@ super + w
 	firefox
 super + minus
 	scratch dropdown
-
-super + alt + e
-	i3exit
 
 # alternate between the tiled and monocle layout
 super + m

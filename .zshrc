@@ -10,8 +10,11 @@ SAVEHIST=1000
 HISTFILE=~/.cache/zsh/history
 
 # Basic auto/tab complete:
-autoload -U compinit
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+autoload -Uz compinit
 zstyle ':completion:*' menu select
+zstyle ':completion:*:options' list-colors '=^(-- *)=34'
+zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
 
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
@@ -85,6 +88,9 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # plugins 
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/doc/pkgfile/command-not-found.zsh
 source ~/.config/zsh/zsh-history-substring-search.zsh 
 
  export LANG=en_US.UTF-8
@@ -112,6 +118,8 @@ alias cal="calcurse -a |xargs -0 notify-send "Appointments.";calcurse -t | xargs
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 n ()
 {
@@ -166,13 +174,28 @@ SPACESHIP_EMBER_SHOW=false
 SPACESHIP_KUBECONTEXT_SHOW=false
 SPACESHIP_TERRAFORM_SHOW=false
 SPACESHIP_TERRAFORM_SHOW=false
-SPACESHIP_VI_MODE_SHOW=false
+SPACESHIP_VI_MODE_SHOW=true 
 SPACESHIP_JOBS_SHOW=true
 
 # Spaceship Prompt
+function zle-keymap-select() {
+   zle reset-prompt zle -R
+}
+zle -N zle-keymap-select
+
+
+autoload -U colors && colors
+function vi_mode_prompt_info() {echo "%{$fg[red]%}${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%/(visual|viopp)/[% VISUAL]%}" }
+
+RPS1='%t $(vi_mode_prompt_info)'
+RPS2=$RPS1
 autoload -U promptinit; promptinit
 prompt spaceship
 
+# autosuggestions config
+
+ZSH_AUTOSUGGEST_STRATEGY=(history completion match_prev_cmd)
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 # Base16 Shell
  #BASE16_SHELL="$HOME/.config/base16-shell/"
  #[ -n "$PS1" ] && \
