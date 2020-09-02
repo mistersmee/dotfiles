@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run
+	dmenu_run -i -l 30
 
 # make sxhkd reload its configuration files:
 super + shift + c
@@ -21,8 +21,9 @@ super + shift + c
 # quit/restart bspwm
 super + shift + r
 	bspc wm -r
+
 super + shift + e
-	prompt "Are you sure you would like to quit this Xsession" "bspc quit"
+	bspc quit
 
 
 # close and kill
@@ -46,8 +47,9 @@ super + w
 super + minus
 	scratch dropdown
 
-super + {alt, shift} + Backspace
-  prompt {"Are you sure you would like to reboot?" "sudo reboot", "Are you sure you would like to shutdown" "sudo shutdown"}
+super + alt + e
+	i3exit
+
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next

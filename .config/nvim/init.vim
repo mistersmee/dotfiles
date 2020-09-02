@@ -26,6 +26,10 @@ Plugin 'junegunn/goyo.vim'
 Plugin  'tpope/vim-eunuch'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'dracula/vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-commentary'
@@ -36,11 +40,13 @@ call vundle#end()
 if &diff
 	 highlight! link DiffText MatchParen
 endif
-                             
- if filereadable(expand("~/.vimrc_background"))
-   let base16colorspace=256
-   source ~/.vimrc_background
- endif
+
+colorscheme nord
+
+ " if filereadable(expand("~/.vimrc_background"))
+ "   let base16colorspace=256
+ "   source ~/.vimrc_background
+ " endif
 
 nnoremap ,g :Goyo <CR>
 nnoremap ,G :Goyo! <CR>
