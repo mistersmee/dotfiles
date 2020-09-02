@@ -83,9 +83,14 @@ _comp_options+=(globdots)		# Include hidden files.
 # }
 # zle -N zle-line-init
 
+# plugins 
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-# aliases
+source ~/.config/zsh/zsh-history-substring-search.zsh 
 
+ export LANG=en_US.UTF-8
+
+# aliases
+alias grep="grep --color=always"
 alias zconf="nvim ~/.zshrc"
 alias ls='ls-icons -lh --color=auto'
 alias i3conf="nv ~/.config/i3/config"
@@ -102,6 +107,9 @@ alias rv="ttrv"
 alias nvconf="nv ~/.config/nvim/init.vim"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias cal="calcurse -a |xargs -0 notify-send "Appointments.";calcurse -t | xargs -0 notify-send "Todo";calcurse"
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 n ()
 {
@@ -130,6 +138,7 @@ n ()
             rm -f "$NNN_TMPFILE" > /dev/null
     fi
 }
+
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_HG_SHOW=false
