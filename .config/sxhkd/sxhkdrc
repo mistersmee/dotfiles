@@ -40,7 +40,8 @@ super + w
 	firefox
 super + minus
 	scratch dropdown
-
+super +z
+	bspwmlayout
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next

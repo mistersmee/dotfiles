@@ -88,9 +88,7 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # plugins 
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/doc/pkgfile/command-not-found.zsh
 source ~/.config/zsh/zsh-history-substring-search.zsh 
 
  export LANG=en_US.UTF-8
