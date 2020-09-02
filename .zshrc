@@ -90,6 +90,8 @@ source ~/.config/zsh/zsh-history-substring-search.zsh
  export LANG=en_US.UTF-8
 
 # aliases
+alias bconf="nv ~/.config/bspwm/bspwmrc"
+alias sconf="nv ~/.config/sxhkd/sxhkdrc"
 alias grep="grep --color=always"
 alias zconf="nvim ~/.zshrc"
 alias ls='ls-icons -lh --color=auto'
