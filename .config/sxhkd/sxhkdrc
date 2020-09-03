@@ -29,7 +29,8 @@ super + F1
 
 super + u
 	sudo umount_dmenu
-
+super + c
+	clipmenu
 super + shift + x 
 	slock
 super + shift + a
