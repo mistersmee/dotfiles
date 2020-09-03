@@ -1,3 +1,4 @@
+""Bsing vim settings
 set nocompatible
 set shell=zsh
 set tw=0
@@ -14,11 +15,8 @@ set encoding=utf-8
 set cursorline
 set cursorcolumn
 
-syntax on
 
-filetype plugin indent on
-filetype on
-
+"' Vundle vim plugins
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
@@ -30,25 +28,32 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'dracula/vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-commentary'
 Plugin 'ap/vim-css-color'
 call vundle#end()
 
-
-if &diff
-	 highlight! link DiffText MatchParen
-endif
-
+""colorscheme nord
+syntax on
+filetype plugin indent on
+filetype on
 colorscheme nord
 
- " if filereadable(expand("~/.vimrc_background"))
- "   let base16colorspace=256
- "   source ~/.vimrc_background
- " endif
+"" Netrw settings
 
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+
+"" Keybindings
 nnoremap ,g :Goyo <CR>
 nnoremap ,G :Goyo! <CR>
 nnoremap ,ZZ :SudoWrite <CR>
+nnoremap ,l <c-w>w
 nnoremap c "_c

@@ -29,7 +29,7 @@ width = 100%
 height = 27
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
-
+wm-restack = bspwm
 
 ;background = #222
 background = ${colors.background}
@@ -51,9 +51,9 @@ font-0 =  Fira Sans:pixelsize=15;
 font-1 =  FontAwesome:style=Regular:pixelsize=15;
 font-2 =  Noto Color Emoji:scale=10;
 
-modules-left =	bspwm weather player-moc
-modules-center = filesystem1 cpu temperature memory
-modules-right = alsa wired-network clock
+modules-left =	bspwm player-moc xwindow 
+;modules-center = filesystem1 cpu temperature memory
+modules-right = filesystem1 cpu temperature memory weather clock
 
 tray-position = right
 tray-scale = 1.0
@@ -117,7 +117,7 @@ fixed-value = true
 interval = 30
 mount-0 = /
 format-mounted = <label-mounted> 
-label-mounted =%{A1:st -e ncdu /:} %mountpoint% : %used% out of %total% : %percentage_used%%%{A}
+label-mounted =%{A1:st -e ncdu /:} %mountpoint% : %used% : %percentage_used%%%{A}
 
 [module/i3]
 type = internal/i3
@@ -186,38 +186,6 @@ label-font = 10
 label-foreground = ${colors.foreground}
 format-padding = 2
 
-[module/wireless-network]
-type = internal/network
-interface = wlan0
-interval = 2.0
-ping-interval = 0
-
-format-connected = <ramp-signal> <label-connected>
-label-connected =   %essid% %local_ip%
-label-disconnected =   not connected
-label-disconnected-foreground = #66
-
-ramp-signal-0 = 😱
-ramp-signal-1 = 😒
-ramp-signal-2 = 😊
-ramp-signal-3 = 😃
-ramp-signal-4 = 😈
-
-animation-packetloss-0 = ⚠
-animation-packetloss-0-foreground = #ffa64c
-animation-packetloss-1 = 📶
-animation-packetloss-1-foreground = ${bar/top.foreground}
-animation-packetloss-framerate = 500
-
-[module/wired-network]
-type = internal/network
-interface = eth0
-interval = 2.0
-
-label-connected = %{A1:st -e nmtui:}   %local_ip%%{A}
-label-disconnected = %{A1:st -e nmtui:} Ethernet disconnected%{A}
-label-disconnected-foreground = #66
-
 [module/clock]
 type = internal/date
 interval = 1
@@ -232,25 +200,6 @@ time-alt = %I:%M:%S %p
 
 label = %date% %time%
 
-[module/alsa]
-type = internal/alsa
-master-soundcard = default
-speaker-soundcard = default
-headphone-soundcard = default
-master-mixer = Headphone
-mapped = true
-interval = 5
-format-volume = <ramp-volume> <label-volume>
-format-volume-padding = 2
-label-volume = %percentage%%
-label-volume-foreground = #ff
-
-label-muted =   muted
-label-muted-foreground = #99ffffff
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
 
 [module/temperature]
 type = internal/temperature
