@@ -25,12 +25,14 @@ super + shift + q
 	bspc node -c
 # custom binds
 super + F1
-	groff -mom ~/.local/share/larbs/readme.mom -Tpdf | zathura -
+	groff -mom ~/.local/share/larbs/bspwm-readme.mom -Tpdf | zathura -
 
 super + u
 	sudo umount_dmenu
 super + c
 	clipmenu
+super + shift + c
+	colch
 super + shift + x 
 	slock
 super + shift + a
@@ -80,10 +82,6 @@ super + {_,shift + }{h,j,k,l}
 # focus the node for the given path jump
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
-
-# focus the next/previous window in the current desktop
-super + {_,shift + }c
-	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
