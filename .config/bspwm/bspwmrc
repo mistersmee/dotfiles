@@ -19,8 +19,6 @@ pasystray &
 blueman-applet &
 $HOME/.config/polybar/launch.sh &
 feh --no-fehbg --bg-scale ~/Pictures/colorsch/nord.png &
-calcurse -a | xargs -0 notify-send "Appointments." &
-calcurse -t | xargs -0 notify-send "Todo" &
 ###---Global Settings---###
 bspc config automatic_scheme alternate
 bspc config initial_polarity second_child
