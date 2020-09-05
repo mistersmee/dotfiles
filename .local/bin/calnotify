@@ -1,0 +1,4 @@
+#! /bin/bash 
+
+calcurse -a | xargs -0 notify-send "Appointments."
+calcurse -t | xargs -0 notify-send "Todo."

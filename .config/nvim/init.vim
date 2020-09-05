@@ -33,11 +33,11 @@ Plugin 'tpope/vim-commentary'
 Plugin 'ap/vim-css-color'
 call vundle#end()
 
-""colorscheme nord
+""colorscheme gruvbox
 syntax on
 filetype plugin indent on
 filetype on
-colorscheme nord
+colorscheme gruvbox
 
 "" Netrw settings
 let g:netrw_banner = 0
