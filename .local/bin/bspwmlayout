@@ -1,0 +1,13 @@
+
+#!/bin/bash
+
+DMENU='dmenu -i -l 30'
+choice=$(echo -e "longest_side\nalternate\nspiral" | $DMENU)
+
+case "$choice" in
+	longest_side) bspc config automatic_scheme longest_side & ;;
+	alternate) bspc config automatic_scheme alternate & ;;
+	spiral) bspc config automatic_scheme spiral & ;;
+esac
+
+notify-send "BSPWM modes" "BSPWM now in $choice window automatic spawning scheme!"

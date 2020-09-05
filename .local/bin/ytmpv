@@ -1,0 +1,2 @@
+#! /bin/bash
+st -e mpv --ytdl-format worst $1

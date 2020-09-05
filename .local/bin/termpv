@@ -1,0 +1,2 @@
+#! /bin/bash
+st -e mpv $1 --autofit=640x480

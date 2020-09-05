@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# a simple dmenu session script 
+#
+###
+
+DMENU='dmenu -i -l 30'
+choice=$(echo -e "logout\nrestart_X\nreload_sxhkd\nshutdown\nreboot\nlock_X" | $DMENU)
+
+case "$choice" in
+  logout) bspc quit & ;;
+  restart_X) bspc wm -r & ;;
+  reload_sxhkd) pkill -USR1 -x sxhkd & ;;
+  shutdown) sudo shutdown -h now & ;;
+  reboot) sudo shutdown -r now & ;;
+  lock_X) slock ;;
+esac

@@ -1,0 +1,2 @@
+#! /bin/bash
+st -e mpv --loop=inf $1

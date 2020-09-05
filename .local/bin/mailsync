@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mbsync -q smee
+notmuch new
+num_unread=$(notmuch count tag:unread)
+# Count all the new files in the 'new' directory
+
+notify-send " 📧 Mailbox synced. You have Mail!" "📬 $num_unread new messages."

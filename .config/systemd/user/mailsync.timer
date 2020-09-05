@@ -1,6 +1,6 @@
 [Unit]
 
-Description=Synchronize mail with mbsync
+Description=Synchronize mail with mailsync
 
 [Timer]
 

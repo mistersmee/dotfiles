@@ -1,0 +1,2 @@
+#! /bin/bash
+notify-send "Shutdown computer." "Shutting down computer now." && sleep 5;sudo shutdown -h now

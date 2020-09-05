@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V
+bspc monitor -d 1 2 3 4
 
 ##---i3-scratchpad---##
 bspc rule -a dropdown sticky=on state=floating hidden=on
@@ -15,10 +15,12 @@ bspc rule -a Zathura state=tiled follow=on
 
 nm-applet &
 pasystray &
+/usr/lib/notification-daemon-1.0/notification-daemon &
 blueman-applet &
 $HOME/.config/polybar/launch.sh &
 feh --no-fehbg --bg-scale ~/Pictures/colorsch/nord.png &
-
+calcurse -a | xargs -0 notify-send "Appointments." &
+calcurse -t | xargs -0 notify-send "Todo" &
 ###---Global Settings---###
 bspc config automatic_scheme alternate
 bspc config initial_polarity second_child

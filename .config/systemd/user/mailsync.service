@@ -1,11 +1,11 @@
 [Unit]
 
-Description=Synchronize neomutt email with mbsync
+Description=Synchronize neomutt email with mailsync
 
 Documentation=https://github.com/LukeSmithxyz/mutt-wizard
 
 [Service]
 
-ExecStart=/usr/bin/mbsync smee
+ExecStart=/home/smee/.local/bin/mailsync 
 
 Type=oneshot

@@ -102,8 +102,8 @@ alias ls='ls-icons -lh --color=auto'
 alias i3conf="nv ~/.config/i3/config"
 alias pconf="nv ~/.config/polybar/config"
 alias nb="newsboat"
-alias cp="/usr/local/bin/advcp -gv"
-alias mv="/usr/local/bin/advmv -gv"
+alias cp="~/.local/bin/advcp -gv"
+alias mv="~/.local/bin/advmv -gv"
 alias nm="neomutt"
 alias pb="podboat"
 alias wt="curl wttr.in/kolhapur"
@@ -192,7 +192,7 @@ prompt spaceship
 
 # autosuggestions config
 
-ZSH_AUTOSUGGEST_STRATEGY=(history completion match_prev_cmd)
+ZSH_AUTOSUGGEST_STRATEGY=(completion history match_prev_cmd)
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 # Base16 Shell
  #BASE16_SHELL="$HOME/.config/base16-shell/"

@@ -1,0 +1,53 @@
+#! /bin/bash
+echo After running this script please run lxappearance to set the GTK theme, it cannot be set through the CLI just yet ";)".
+PS3='Please enter your choice of colourscheme: '
+options=("gruvbox" "solarized" "nord" "dracula" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "gruvbox")
+            echo "you chose $opt"
+	    xrdb -remove
+	    cp ~/.$opt.Xresources ~/.Xresources
+	    xrdb load ~/.Xresources
+	    ~/.config/polybar/launch.sh
+	    feh --bg-scale ~/Pictures/colorsch/gruvbox.png 
+	    sed -i 's/[a-z]*.png/gruvbox.png/g' ~/.config/i3/config
+	    sed -i 's/colorscheme [a-z]*/colorscheme gruvbox/g' ~/.config/nvim/init.vim
+            ;;
+        "solarized")
+            echo "you chose $opt"
+	    xrdb -remove
+	    cp ~/.$opt.Xresources ~/.Xresources 
+	    xrdb load ~/.Xresources
+	    ~/.config/polybar/launch.sh
+	    sed -i 's/colorscheme [a-z]*/colorscheme solarized/g' ~/.config/nvim/init.vim
+	    feh --bg-scale ~/Pictures/colorsch/solarized.png
+	    sed -i 's/[a-z]*.png/solarized.png/g' ~/.config/i3/config
+            ;;
+        "nord")
+            echo "you chose $opt"
+	    xrdb -remove
+	    cp ~/.$opt.Xresources ~/.Xresources 
+	    xrdb load ~/.Xresources 
+	    ~/.config/polybar/launch.sh
+	    feh --bg-scale ~/Pictures/colorsch/nord.png 
+	    sed -i 's/colorscheme [a-z]*/colorscheme nord/g' ~/.config/nvim/init.vim
+	    sed -i 's/[a-z]*.png/nord.png/g'  ~/.config/i3/config
+            ;;
+	"dracula")
+	    echo "You chose $opt"
+	    xrdb -remove
+	    cp ~/.$opt.Xresources ~/.Xresources 
+	    xrdb load ~/.Xresources 
+	    ~/.config/polybar/launch.sh
+	    feh --bg-scale ~/Pictures/colorsch/dracula.png
+	    sed -i 's/colorscheme [a-z]*/colorscheme dracula/g' ~/.config/nvim/init.vim
+	    sed -i 's/[a-z]*.png/gruvbox.png/g' ~/.config/i3/config
+            ;;
+    "Quit")
+	    break
+	    ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
