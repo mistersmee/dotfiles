@@ -18,7 +18,7 @@ Note to self: requires files in specific places and specific programs. Ought to 
 
 # crystal 
 
-(crystal)[https://github.com/salman-abedin/crystal] is a script that allows for smooth fullscreening of transparent windows. It minimises other windows and the status bar, so they don't appear behind the transparent window. Needed, AFAIK, only in  bspwm.
+[crystal](https://github.com/salman-abedin/crystal) is a script that allows for smooth fullscreening of transparent windows. It minimises other windows and the status bar, so they don't appear behind the transparent window. Needed, AFAIK, only in  bspwm.
 
 # dmenuunicode
 
