@@ -33,13 +33,13 @@ Plugin 'tpope/vim-commentary'
 Plugin 'ap/vim-css-color'
 call vundle#end()
 
-""colorscheme nord
-syntax on
+""colorscheme solarized
+syntax on 
 filetype plugin indent on
 filetype on
 set background=dark
-colorscheme nord
-
+colorscheme solarized
+call togglebg#map("<F6>")
 "" Netrw settings
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3

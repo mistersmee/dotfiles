@@ -1,8 +1,8 @@
 ----------------ArchLinuxNews---------------------------
 
 
-https://www.archlinux.org/feeds/news/ News "~Arch Linux News"
-
+https://www.archlinux.org/feeds/news/ News 
+https://www.archlinux.org/feeds/planet/ News 
 
 -------------News------------------------------------------------
 
@@ -12,12 +12,11 @@ https://www.theverge.com/rss/front-page/index.xml News
 https://www.gamingonlinux.com/article_rss.php News
 https://www.tecmint.com/feed/ News
 https://feeds.feedburner.com/linuxtoday/linux News
-https://www.xda-developers.com/feed/ News "~XDA"
-https://www.bavarianfootballworks.com/rss/current.xml News "~BFW"
-https://fitgirl-repacks.site/feed/ News "~Fitgirl Repack"
+https://www.xda-developers.com/feed/ News 
+https://www.bavarianfootballworks.com/rss/current.xml News 
+https://fitgirl-repacks.site/feed/ News 
 
-
-
+https://github.com/darklord111.private.atom?token=AI3BYMYLJ6HJ4UODPW3M3WF5MBQ42
 
 ----------------------------Blogs--------------------------------------------
 
@@ -58,4 +57,5 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q You
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg Youtube
 https://videos.lukesmith.xyz/feeds/videos.xml
 https://lukesmith.xyz/youtube.xml
-https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA Youtube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A Youtube

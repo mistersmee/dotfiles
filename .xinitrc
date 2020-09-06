@@ -4,8 +4,8 @@ eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh) &
 export SSH_AUTH_SOCK
 xset r rate 300 50
 xmodmap -e "clear Lock"
-dunst &
 xmodmap -e "keysym Caps_Lock = Escape"
+dunst
 xmodmap -e "keysym Menu = Super_R"
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 if [ -d /etc/X11/xinit/xinitrc.d ];
