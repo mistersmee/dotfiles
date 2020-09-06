@@ -1,6 +1,6 @@
 #!/bin/sh
 numlockx on &
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh) &
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 xset r rate 300 50
 xmodmap -e "clear Lock"
