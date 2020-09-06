@@ -7,7 +7,7 @@
 ###
 
 DMENU='dmenu -i -l 30'
-choice=$(echo -e "gruvbox\nsolarized\nnord\ndracula" | $DMENU)
+choice=$(echo -e "gruvbox\nsolarized\nnord" | $DMENU)
 
 case $choice in
         "gruvbox")
@@ -38,16 +38,6 @@ case $choice in
 	    feh --bg-scale ~/Pictures/colorsch/nord.png 
 	    sed -i 's/colorscheme [a-z]*/colorscheme nord/g' ~/.config/nvim/init.vim
 	    sed -i 's/[a-z]*.png/nord.png/g'  ~/.config/bspwm/bspwmrc 
-	    lxappearance &
-            ;;
-	"dracula")
-	    xrdb -remove
-	    cp ~/.dracula.Xresources ~/.Xresources 
-	    xrdb load ~/.Xresources 
-	    ~/.config/polybar/launch.sh
-	    feh --bg-scale ~/Pictures/colorsch/dracula.png
-	    sed -i 's/colorscheme [a-z]*/colorscheme dracula/g' ~/.config/nvim/init.vim
-	    sed -i 's/[a-z]*.png/gruvbox.png/g' ~/.config/bspwm/bspwmrc 
 	    lxappearance &
             ;;
 esac
