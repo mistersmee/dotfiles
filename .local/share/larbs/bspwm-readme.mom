@@ -88,10 +88,19 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 \f(CWMod+j/k/h/l\fP \(en Move to different windows
 .ITEM
 \f(CWMod+shift+j/k/h/l\fP \(en Move a window around 
-
+.ITEM
+\f(CWmod+alt+j/k/h/l\fP \(en Expand a floating window outward
+.ITEM
+\f(CWmod+alt+shift+j/k/h/l\fP \(en Shrink a floating window inward
+.ITEM
+\f(CWmod+t/s/f\fP \(en Make the window tiled/floating/fullscreen
+.ITEM
+\f(CWMod+shift+f\fP \(en Make the window fullscreen (specific to transparent terminal window, due to quirks of bspwm)
+.ITEM
+\f(CWMod+Up/Down/Left/Right\fP \(en Move a floating window around
 .LIST OFF
 .PP
-The rest of the keybindings can be found in \f(CW~/.config/bspwm/bspwmrc\fP. Have a poke around in there to learn the rest of them. These are the main ones, that provide basic usability and the ones I use most frequently.
+The rest of the keybindings can be found in \f(CW~/.config/sxhkd/sxhkdrc\fP. Have a poke around in there to learn the rest of them. These are the main ones, that provide basic usability and the ones I use most frequently.
 .HEADING 2 "Basic Programs"
 .LI
 .ITEM
@@ -109,7 +118,6 @@ The rest of the keybindings can be found in \f(CW~/.config/bspwm/bspwmrc\fP. Hav
 \f(CWMod+minus\fP \(en Toggles the window in the scratchpad. 
 .ITEM
 \f(CWMod+shift+a\fP \(en (Un)Mounts Android devices specifically
-
 .ITEM
 \f(CWMod+u\fP \(en Unmount a non-essential drive
 .ITEM

@@ -16,7 +16,6 @@ bspc rule -a Zathura state=tiled follow=on
 nm-applet &
 pasystray &
 dunst & 
-calnotify &
 blueman-applet &
 $HOME/.config/polybar/launch.sh &
 feh --no-fehbg --bg-scale ~/Pictures/colorsch/solarized.png &
