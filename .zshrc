@@ -14,6 +14,10 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*:options' list-colors '=^(-- *)=34'
 zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
 
+# cd without cd
+setopt correct
+setopt  auto_cd
+
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
@@ -99,6 +103,7 @@ alias zconf="nvim ~/.zshrc"
 alias ls='ls-icons -lh --color=auto'
 alias i3conf="nv ~/.config/i3/config"
 alias pconf="nv ~/.config/polybar/config"
+alias nconf="nv ~/.config/nvim/init.vim"
 alias nb="newsboat"
 alias cp="/usr/local/bin/advcp -gv"
 alias mv="/usr/local/bin/advmv -gv"

@@ -1,4 +1,4 @@
-""Bsing vim settings
+""Basic vim settings
 set nocompatible
 set shell=zsh
 set tw=0
@@ -15,6 +15,11 @@ set encoding=utf-8
 set cursorline
 set cursorcolumn
 
+"" Spell check
+set spelllang=en_gb
+set spellfile=$HOME/.vim/spell/en.utf-8.add
+set spell
+
 
 "' Vundle vim plugins
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -30,6 +35,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-commentary'
 Plugin 'ap/vim-css-color'
+Bundle 'ron89/thesaurus_query.vim'
 call vundle#end()
 
 ""colorscheme solarized
@@ -55,4 +61,6 @@ nnoremap ,g :Goyo <CR>
 nnoremap ,G :Goyo! <CR>
 nnoremap ,ZZ :SudoWrite <CR>
 nnoremap ,l <c-w>w
+nnoremap ,cs :ThesaurusQueryReplaceCurrentWord<CR>
+vnoremap ,cs y:ThesaurusQueryReplace <C-r>"<CR>
 nnoremap c "_c
