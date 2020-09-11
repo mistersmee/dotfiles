@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run -i -l 30
+	dmenu_run
 
 #
 # bspwm hotkeys

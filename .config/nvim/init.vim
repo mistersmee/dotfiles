@@ -1,4 +1,4 @@
-""Basic vim settings
+""Basic Vim settings
 set nocompatible
 set shell=zsh
 set tw=0
@@ -63,4 +63,5 @@ nnoremap ,ZZ :SudoWrite <CR>
 nnoremap ,l <c-w>w
 nnoremap ,cs :ThesaurusQueryReplaceCurrentWord<CR>
 vnoremap ,cs y:ThesaurusQueryReplace <C-r>"<CR>
+nnoremap ,s z=
 nnoremap c "_c
