@@ -1,4 +1,5 @@
 ""Basic Vim settings
+let mapleader = ","
 set nocompatible
 set shell=zsh
 set tw=0
@@ -33,6 +34,7 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
+Plugin 'vimwiki/vimwiki'
 Plugin 'tpope/vim-commentary'
 Plugin 'ap/vim-css-color'
 Bundle 'ron89/thesaurus_query.vim'
@@ -57,11 +59,9 @@ augroup ProjectDrawer
 augroup END
 
 "" Keybindings
-nnoremap ,g :Goyo <CR>
-nnoremap ,G :Goyo! <CR>
-nnoremap ,ZZ :SudoWrite <CR>
-nnoremap ,l <c-w>w
-nnoremap ,cs :ThesaurusQueryReplaceCurrentWord<CR>
-vnoremap ,cs y:ThesaurusQueryReplace <C-r>"<CR>
-nnoremap ,s z=
+nnoremap <leader>g :Goyo <CR>
+nnoremap <leader>G :Goyo! <CR>
+nnoremap <leader>ZZ :SudoWrite <CR>
+nnoremap <leader>l <c-w>w
+nnoremap <leader>s z=
 nnoremap c "_c

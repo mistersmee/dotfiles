@@ -11,7 +11,7 @@ accent = #fba922
 [settings]
 format-foreground =
 format-background = ${colors.background}
-format-underline = ${colors.background}
+format-underline = ${colors.primary}
 format-padding = 1
 format-overline =
 format-margin = 0
@@ -71,9 +71,6 @@ click-middle = mocp -G &
 type = internal/xwindow
 label = %title:0:30:...%
 
-format-underline =
-format-background =
-format-padding =
 [module/bspwm]
 type = internal/bspwm
 
@@ -172,7 +169,7 @@ interval = 1.5
 
 format = <label>
 
-label = %{A1:st -e htop:} 💻 CPU %percentage%%%{A}
+label = %{A1:st -e htop:} 💻  %percentage%%%{A}
 label-font = 10
 label-foreground = ${colors.foreground}
 format-padding = 2	
@@ -182,7 +179,7 @@ type = internal/memory
 interval = 0.2
 format = <label> 
 
-label =%{A1:st -e htop:} 🧠 RAM %percentage_used%%%{A}
+label =%{A1:st -e htop:} 🧠 %percentage_used%%%{A}
 label-font = 10
 label-foreground = ${colors.foreground}
 format-padding = 2
@@ -211,8 +208,8 @@ base-temperature = 20
 warn-temperature = 70
 units = true
 format-warn = <ramp> <label-warn>
-label = %{A1:st -e htop:} 🔥 CPU %temperature-c%%{A}
-label-warn = %{A1:st -e htop:} 🔥 CPU %temperature-c%%{A}
+label = %{A1:st -e htop:} 🔥  %temperature-c%%{A}
+label-warn = %{A1:st -e htop:} 🔥  %temperature-c%%{A}
 label-warn-foreground = #f00
 ramp-0 = 
 ramp-1 = 

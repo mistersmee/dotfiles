@@ -35,7 +35,7 @@ super + shift + c
 	colch
 super + shift + x 
 	slock
-super + shift + a
+super + a
 	dmtpfs
 super + shift + u
 	dmenuunicode
