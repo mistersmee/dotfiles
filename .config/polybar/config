@@ -11,7 +11,7 @@ accent = #fba922
 [settings]
 format-foreground =
 format-background = ${colors.background}
-format-underline = ${colors.primary}
+format-underline = 
 format-padding = 1
 format-overline =
 format-margin = 0
@@ -35,15 +35,15 @@ wm-restack = bspwm
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-border-bottom-size = 1
-border-bottom-color = #333
-overline-size = 10
-overline-color = ${self.background}
-underline-size = 4
-underline-color = ${self.background}
+border-bottom-size = 0
+border-bottom-color =
+overline-size = 0
+overline-color = 
+underline-size = 1
+underline-color = 
 
-padding-left = 0
-padding-right = 0
+padding-left = 2
+padding-right = 2
 module-margin-left = 3
 module-margin-right = 3
 
