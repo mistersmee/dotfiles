@@ -24,7 +24,7 @@ margin-bottom = 0
 
 [bar/top]
 enable-ipc = true
-monitor = default
+monitor =
 width = 100%
 height = 27
 scroll-up = i3wm-wsnext

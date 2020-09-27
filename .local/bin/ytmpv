@@ -1,2 +1,2 @@
 #! /bin/bash
-st -e mpv --ytdl-format best $1
+st -e mpv --ytdl-format=best $1
