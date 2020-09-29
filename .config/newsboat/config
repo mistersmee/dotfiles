@@ -16,9 +16,8 @@ notify-screen yes
 
 # macros config
 
-browser "links -g %u"
-macro y set browser "ytmpv %u" ; open-in-browser ; set browser "lynx"
-macro p set browser "tmpv %u" ; open-in-browser ; set browser "lynx"
+browser firefox
+macro y set browser "mpv --ytdl %u" ; open-in-browser ; set browser firefox
 
 # keybindings
 
