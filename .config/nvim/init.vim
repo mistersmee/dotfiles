@@ -35,6 +35,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'vimwiki/vimwiki'
+Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'ap/vim-css-color'
 Bundle 'ron89/thesaurus_query.vim'
@@ -55,7 +56,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 augroup ProjectDrawer
   autocmd!
-  autocmd VimEnter * :Vexplore
+  autocmd VimEnter * :NERDTreeToggle
 augroup END
 
 "" Keybindings
