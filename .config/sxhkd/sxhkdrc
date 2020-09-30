@@ -33,10 +33,10 @@ super + c
 	clipmenu
 super + shift + c
 	colch
-super + shift + x 
-	slock
+super + shift + a 
+	dmenuumount
 super + a
-	dmtpfs
+	dmenumount
 super + shift + u
 	dmenuunicode
 super + w
