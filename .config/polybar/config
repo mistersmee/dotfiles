@@ -51,7 +51,7 @@ font-0 =  Fira Sans:pixelsize=15;
 font-1 =  FontAwesome:style=Regular:pixelsize=15;
 font-2 =  Noto Color Emoji:scale=10;
 
-modules-left =	bspwm player-moc xwindow 
+modules-left =	bspwm player-moc
 ;modules-center = filesystem1 cpu temperature memory
 modules-right = filesystem1 cpu temperature memory weather clock
 
@@ -66,10 +66,6 @@ interval = 3
 click-left = mocp -f &
 click-right = mocp -r &
 click-middle = mocp -G &
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
 
 [module/bspwm]
 type = internal/bspwm
