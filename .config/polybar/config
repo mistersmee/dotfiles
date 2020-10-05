@@ -22,6 +22,38 @@ screenchange-reload = true
 margin-top = 0
 margin-bottom = 0
 
+[bar/bottom]
+enable-ipc = true
+monitor =
+bottom = true
+width = 100%
+height = 27
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+wm-restack = bspwm
+
+;background = #222
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+border-bottom-size = 0
+border-bottom-color =
+overline-size = 0
+overline-color = 
+underline-size = 1
+underline-color = 
+
+padding-left = 2
+padding-right = 2
+module-margin-left = 3
+module-margin-right = 3
+
+font-0 =  Fira Sans:pixelsize=15;
+font-1 =  FontAwesome:style=Regular:pixelsize=15;
+font-2 =  Noto Color Emoji:scale=10;
+
+modules-left =	player-moc mpd
+
 [bar/top]
 enable-ipc = true
 monitor =
@@ -51,7 +83,7 @@ font-0 =  Fira Sans:pixelsize=15;
 font-1 =  FontAwesome:style=Regular:pixelsize=15;
 font-2 =  Noto Color Emoji:scale=10;
 
-modules-left =	bspwm player-moc
+modules-left =	bspwm
 ;modules-center = filesystem1 cpu temperature memory
 modules-right = filesystem1 cpu temperature memory weather clock
 
@@ -66,6 +98,32 @@ interval = 3
 click-left = mocp -f &
 click-right = mocp -r &
 click-middle = mocp -G &
+
+[module/mpd]
+type = internal/mpd
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next> <icon-random>  <bar-progress> <label-time>  <label-song>
+
+icon-play = ▶️
+icon-pause = ⏸️
+icon-stop = ⏹️
+icon-prev = ⏮️
+icon-next = ⏭️
+icon-random = 🔀
+
+toggle-on-foreground =
+toggle-off-foreground = #55
+
+bar-progress-width = 45
+bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
+bar-progress-indicator = |
+bar-progress-indicator-foreground = #ff
+bar-progress-indicator-font = 3
+bar-progress-fill = -
+bar-progress-fill-foreground = #bb
+bar-progress-fill-font = 3
+bar-progress-empty = -
+bar-progress-empty-font = 3
+bar-progress-empty-foreground = #44
 
 [module/bspwm]
 type = internal/bspwm

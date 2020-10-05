@@ -117,9 +117,9 @@ The rest of the keybindings can be found in \f(CW~/.config/sxhkd/sxhkdrc\fP. Hav
 .ITEM
 \f(CWMod+minus\fP \(en Toggles the window in the scratchpad. 
 .ITEM
-\f(CWMod+shift+a\fP \(en (Un)Mounts Android devices specifically
+\f(CWMod+shift+a\fP \(en Unmounts Android devices or USB drives connected by the command below
 .ITEM
-\f(CWMod+u\fP \(en Unmount a non-essential drive
+\f(CWMod+a\fP \(en Mounts a USB drive or Android device connected 
 .ITEM
 \f(CWMod+shift+u\fP \(en Select an emoji to copy to clipboard
 .LIST OFF

@@ -7,7 +7,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 ##---i3-scratchpad---##
 bspc rule -a dropdown sticky=on state=floating hidden=on
 
-st -c dropdown -e mocp &
+st -c dropdown -e ncmpcpp &
 
 ##--bspwm-rules---##
 bspc rule -a Zathura state=tiled follow=on
@@ -15,6 +15,7 @@ bspc rule -a Zathura state=tiled follow=on
 
 nm-applet &
 pasystray &
+mpd &
 dunst & 
 blueman-applet &
 $HOME/.config/polybar/launch.sh &
