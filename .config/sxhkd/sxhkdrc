@@ -18,10 +18,13 @@ XF86AudioNext
 XF86AudioPlay 
 	playerctl play-pause
 XF86AudioPrev
-	playerctl prev
+	playerctl previous
 XF86AudioStop
 	playerctl stop
-
+super + XF86Forward
+	playerctl position 5+
+super + XF86Back
+	playerctl position 5-
 # quit/restart bspwm
 
 super + shift + e
