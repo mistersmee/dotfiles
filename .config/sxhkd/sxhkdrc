@@ -11,8 +11,16 @@ super + d
 	dmenu_run
 
 #
-# bspwm hotkeys
+# media keys
 #
+XF86AudioNext
+	playerctl next
+XF86AudioPlay 
+	playerctl play-pause
+XF86AudioPrev
+	playerctl prev
+XF86AudioStop
+	playerctl stop
 
 # quit/restart bspwm
 

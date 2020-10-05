@@ -16,6 +16,7 @@ bspc rule -a Zathura state=tiled follow=on
 nm-applet &
 pasystray &
 mpd &
+mpDris2 &
 dunst & 
 blueman-applet &
 $HOME/.config/polybar/launch.sh &
