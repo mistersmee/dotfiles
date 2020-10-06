@@ -19,8 +19,8 @@ mpd &
 mpDris2 &
 dunst & 
 blueman-applet &
-$HOME/.config/polybar/launch.sh &
 feh --no-fehbg --bg-scale ~/Pictures/colorsch/solarized.png &
+launchpolybar &
 ###---Global Settings---###
 bspc config automatic_scheme alternate
 bspc config initial_polarity second_child

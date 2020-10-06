@@ -1,3 +1,28 @@
+;  ___     _      _
+; | _ \___| |_  _| |__  __ _ _ _
+; |  _/ _ \ | || | '_ \/ _` | '_|
+; |_| \___/_|\_, |_.__/\__,_|_|
+;            |__/
+;
+; Author: Benedikt Vollmerhaus <benedikt@vollmerhaus.org>
+; License: MIT
+
+;
+; \  /_  _ _
+;  \/(_|| _)
+;
+
+[xcolor]
+bg     = ${xrdb:color0:#0a0a0a}
+fg     = ${xrdb:color7:#c8c8c8}
+color1 = ${xrdb:color1:#a54242}
+color2 = ${xrdb:color2:#8c9440}
+color3 = ${xrdb:color3:#de935f}
+color4 = ${xrdb:color4:#5f819d}
+color5 = ${xrdb:color5:#85678f}
+color6 = ${xrdb:color6:#5e8d87}
+color8 = ${xrdb:color8:#373b41}
+
 [colors]
 background = ${xrdb:background}
 background-wm = ${xrdb:color8}
@@ -8,107 +33,207 @@ primary = ${xrdb:color4}
 alert = ${xrdb:color1}
 accent = #fba922
 
-[settings]
-format-foreground =
-format-background = ${colors.background}
-format-underline = 
-format-padding = 1
-format-overline =
-format-margin = 0
-format-offset =
-screenchange-reload = true
 
-[global/wm]
-margin-top = 0
-margin-bottom = 0
+[color]
+base-bg     = #8c0a0a0a
+glyph-bg    = #de0a0a0a
+module-bg   = #f00a0a0a
+selected-bg = #dc1a1a1a
 
-[bar/bottom]
-enable-ipc = true
+text-fg = #c8c8c8
+icon-fg = ${xcolor.color1}
+bar-fg  = ${xcolor.color3}
+warn-fg = #821717
+
+
+[layout]
+icon-font = 2
+icon-padding = 1
+module-padding = 2
+
+bar-format = %{T4}%fill%%indicator%%{F#dc404040}%empty%%{F-}%{T-}
+bar-fill-icon = ﭳ
+
+
+;  __
+; |__) _  _ _
+; |__)(_|| _)
+;
+
+[bar/base]
+width = 100%
+height = 28
+
+background = ${color.base-bg}
+foreground = ${color.text-fg}
+
+; Size of under-/overlines
+line-size = 1
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+font-0 = M+ 1m:style=Medium:size=10;3
+
+; Material Design Icons
+font-1 = M+ 1m:style=Medium:size=11;3
+; Powerline Glyphs
+font-2 = M+ 1m:style=Medium:size=16;3
+
+; Larger font size for bar fill icons
+font-3 = M+ 1m:style=Medium:size=12;3
+; Smaller font size for shorter spaces
+font-4 = M+ 1m:style=Medium:size=7;3
+
+
+[bar/top-primary]
+inherit = bar/base
+monitor =
+
+modules-left = right-end-top left-end-bottom mpd right-end-top
+modules-right =  left-end-top clock right-end-bottom left-end-top
+
+tray-background = ${color.module-bg}
+tray-padding = ${layout.module-padding}
+tray-position = right
+
+
+[bar/bottom-primary]
+inherit = bar/base
 monitor =
 bottom = true
-width = 100%
-height = 27
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-wm-restack = bspwm
 
-;background = #222
-background = ${colors.background}
-foreground = ${colors.foreground}
+modules-left = bspwm right-end-bottom left-end-top xwindow right-end-bottom
+modules-right = left-end-bottom cpu memory right-end-top left-end-bottom temp battery
 
-border-bottom-size = 0
-border-bottom-color =
-overline-size = 0
-overline-color = 
-underline-size = 1
-underline-color = 
+[settings]
+screenchange-reload = true
 
-padding-left = 2
-padding-right = 2
-module-margin-left = 3
-module-margin-right = 3
+; Global format definitions
+format-background = ${color.module-bg}
+format-padding = ${layout.module-padding}
 
-font-0 =  Fira Sans:pixelsize=15;
-font-1 =  FontAwesome:style=Regular:pixelsize=15;
-font-2 =  Noto Color Emoji:scale=10;
 
-modules-left =	player-moc mpd
+; A shared prefix format for all modules that support it.
+;
+; Some modules use specific names for their format definitions,
+; such as format-NAME-prefix-<property>, which unfortunately do
+; not fall back to these unnamed ones and require duplication.
+[common-prefix-format]
+format-prefix-font = ${layout.icon-font}
+format-prefix-foreground = ${color.icon-fg}
+format-prefix-padding-right = ${layout.icon-padding}
 
-[bar/top]
-enable-ipc = true
-monitor =
-width = 100%
-height = 27
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-wm-restack = bspwm
 
-;background = #222
-background = ${colors.background}
-foreground = ${colors.foreground}
+;  __
+; / _ |    _ |_  _
+; \__)|_\/|_)| |_)
+;       / |
+;
+; used as decorative dividers between modules.
 
-border-bottom-size = 0
-border-bottom-color =
-overline-size = 0
-overline-color = 
-underline-size = 1
-underline-color = 
+[module/glyph]
+type = custom/text
+content-font = 3
+content-padding = 0
+content-background = ${color.base-bg}
+content-foreground = ${color.glyph-bg}
 
-padding-left = 2
-padding-right = 2
-module-margin-left = 3
-module-margin-right = 3
+[module/left-end-top]
+inherit = module/glyph
+content = 
 
-font-0 =  Fira Sans:pixelsize=15;
-font-1 =  FontAwesome:style=Regular:pixelsize=15;
-font-2 =  Noto Color Emoji:scale=10;
+[module/right-end-top]
+inherit = module/glyph
+content = 
 
-modules-left =	bspwm
-;modules-center = filesystem1 cpu temperature memory
-modules-right = filesystem1 cpu temperature memory weather clock
+[module/left-end-bottom]
+inherit = module/glyph
+content = 
 
-tray-position = right
-tray-scale = 1.0
-tray-maxsize = 48
+[module/right-end-bottom]
+inherit = module/glyph
+content = 
 
-[module/player-moc]
-type = custom/script
-exec = ~/.config/polybar/player-moc.sh 
-interval = 3
-click-left = mocp -f &
-click-right = mocp -r &
-click-middle = mocp -G &
+
+;   __
+; .  _)
+; | __)
+;
+
+
+[module/bspwm]
+type = internal/bspwm
+
+enable-scroll = true
+label-focused = %name%
+label-focused-background = ${color.module-bg}
+label-focused-foreground= ${color.bar-fg}
+label-focused-underline = ${colors.primary}
+label-focused-padding = 1
+
+label-occupied = %name%
+label-occupied-padding = 1
+
+label-urgent = %name%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-foreground = ${color.text-fg}
+label-empty-padding = 1
+
+format-underline =
+format-background =
+format-padding =
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+
+; Separator in between workspaces
+label-separator = |
+
+[module/xwindow]
+type = internal/xwindow
+inherit = common-prefix-format
+
+label = %title:0:35:...%
+
+
+; ___
+;  | . _ _  _
+;  | || | |(/_
+;
+
+[module/clock]
+type = internal/date
+interval = 1
+format-padding = 5
+format-background = ${color.module-bg}
+format-foreground = ${color.text-fg}
+date =   %a
+date-alt =   %a %d-%B-%Y
+
+time = %I:%M %p
+time-alt = %I:%M:%S %p
+
+label = %date% %time%
+
+
+;
+; |\/| _  _|. _
+; |  |(/_(_||(_|
+;
 
 [module/mpd]
 type = internal/mpd
 format-online = <icon-prev> <icon-stop> <toggle> <icon-next> <icon-random>  <bar-progress> <label-time>  <label-song>
 
 icon-play = ▶️
-icon-pause = ⏸️
-icon-stop = ⏹️
-icon-prev = ⏮️
-icon-next = ⏭️
-icon-random = 🔀
+icon-pause =   
+icon-stop = 栗 
+icon-prev = 玲
+icon-next = 怜
+icon-random =  
 
 toggle-on-foreground =
 toggle-off-foreground = #55
@@ -125,97 +250,10 @@ bar-progress-empty = -
 bar-progress-empty-font = 3
 bar-progress-empty-foreground = #44
 
-[module/bspwm]
-type = internal/bspwm
-
-enable-scroll = true
-label-focused = %name%
-label-focused-background = ${colors.background-wm}
-label-focused-foreground= ${colors.foreground-alt}
-label-focused-underline = ${colors.primary}
-label-focused-padding = 1
-
-label-occupied = %name%
-label-occupied-padding = 1
-
-label-urgent = %name%!
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 1
-
-label-empty = %name%
-label-empty-foreground = ${colors.foreground}
-label-empty-padding = 1
-
-format-underline =
-format-background =
-format-padding =
-scroll-up = bspwm-desknext
-scroll-down = bspwm-deskprev
-
-; Separator in between workspaces
-label-separator = |
-
-[module/weather]
-type = custom/script
-exec = i3weather
-label = "%output%"
-click-left = $TERMINAL -e w3m wttr.in/Kolhapur &
-interval = 1800
-
-[module/filesystem1]
-type = internal/fs
-spacing = 2
-fixed-value = true
-interval = 30
-mount-0 = /
-format-mounted = <label-mounted> 
-label-mounted =%{A1:st -e ncdu /:} 🗄️%mountpoint% : %used% : %percentage_used%%%{A}
-
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-pin-workspaces = true
-enable-click = true
-enable-scroll = true
-fuzzy-match = false
-strip-wsnumbers = true
-index-sort = true
-wrapping-scroll = false
-
-ws-icon-0 = 1;  
-ws-icon-1 = 7; 
-ws-icon-2 = 3;
-ws-icon-3 = 4; 
-ws-icon-4 = 6; 
-ws-icon-5 = 2; 
-ws-icon-6 = 5;
-ws-icon-default = 
-
-label-dimmed-underline = ${root.background}
-
-label-focused = %icon%  %name%
-label-focused-foreground = ${colors.foreground}
-label-focused-background = ${colors.background}
-label-focused-font = 4
-label-focused-underline = ${colors.foreground}
-label-focused-padding = 4
-
-label-unfocused = %icon%  %name%
-label-unfocused-font = 4
-label-unfocused-underline = #333
-label-unfocused-padding = 4
-
-label-urgent = %icon%  %name%
-label-urgent-foreground = ${colors.background}
-label-urgent-background = #bd2c40
-label-urgent-font = 4
-label-urgent-padding = 4
-
-label-visible = %icon%  %name%
-label-visible-foreground = ${colors.foreground}
-label-visible-font = 4
-label-visible-padding = 4
-
+;
+; |__| _  _ _|    _  _ _
+; |  |(_|| (_|\|/(_|| (/_
+;
 
 [module/cpu]
 type = internal/cpu
@@ -223,52 +261,95 @@ interval = 1.5
 
 format = <label>
 
-label = %{A1:st -e htop:} 💻  %percentage%%%{A}
-label-font = 10
-label-foreground = ${colors.foreground}
+format-prefix =        
+label =    %percentage%% 
+label-font = ${layout.icon-font}
+format-prefix-foreground = ${color.icon-fg}
 format-padding = 2	
 
 [module/memory]
 type = internal/memory
-interval = 0.2
-format = <label> 
+inherit = common-prefix-format
 
-label =%{A1:st -e htop:} 🧠 %percentage_used%%%{A}
-label-font = 10
-label-foreground = ${colors.foreground}
-format-padding = 2
-
-[module/clock]
-type = internal/date
-interval = 1
-format-padding = 5
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
-date =   %a
-date-alt =   %a %d-%B-%Y
-
-time = %I:%M %p
-time-alt = %I:%M:%S %p
-
-label = %date% %time%
+format-prefix = ﬘
+label = %percentage_used%%
 
 
-[module/temperature]
+[module/temp]
 type = internal/temperature
-interval = 0.5
-thermal-zone = 0
-hwmon-path = /sys/class/thermal/thermal_zone0/temp
-base-temperature = 20
-warn-temperature = 70
-units = true
-format-warn = <ramp> <label-warn>
-label = %{A1:st -e htop:} 🔥  %temperature-c%%{A}
-label-warn = %{A1:st -e htop:} 🔥  %temperature-c%%{A}
-label-warn-foreground = #f00
-ramp-0 = 
-ramp-1 = 
-ramp-2 =  
-ramp-foreground = #55
-format-padding = 2
+inherit = common-prefix-format
+interval = 2
 
-; vim:ft=dosini
+units = false
+warn-temperature = 80
+
+; Normal
+format-prefix = 﨎
+label = %temperature-c% °C
+
+; Warning
+format-warn-underline = ${color.warn-fg}
+
+format-warn-prefix = 﨏
+format-warn-prefix-font = ${layout.icon-font}
+format-warn-prefix-foreground = ${color.icon-fg}
+format-warn-prefix-padding-right = ${layout.icon-padding}
+
+label-warn = ${self.label}
+label-warn-foreground = ${color.warn-fg}
+
+
+[module/battery]
+type = internal/battery
+
+battery = BAT0
+adapter = AC
+
+; Discharging
+format-discharging = <ramp-capacity><label-discharging>
+
+ramp-capacity-font = ${layout.icon-font}
+ramp-capacity-foreground = ${color.icon-fg}
+ramp-capacity-padding-right = ${layout.icon-padding}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+ramp-capacity-10 = 
+
+label-discharging = %percentage% ％
+
+; Charging
+format-charging = <animation-charging><label-charging>
+
+animation-charging-font = ${layout.icon-font}
+animation-charging-foreground = ${color.icon-fg}
+animation-charging-padding-right = ${layout.icon-padding}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+
+label-charging = ${self.label-discharging}
+
+; Full
+format-full-prefix = 
+format-full-prefix-font = ${layout.icon-font}
+format-full-prefix-foreground = ${color.icon-fg}
+format-full-prefix-padding-right = ${layout.icon-padding}
+
+label-full = ${self.label-discharging}
+
+
+; vim:filetype=dosini
+; kak:filetype=ini
