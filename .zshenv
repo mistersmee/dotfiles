@@ -22,7 +22,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 #other programs
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
-
+export QT_STYLE_OVERRIDE="kvantum"
 #less variables
 export LESSHISTFILE="-"
 

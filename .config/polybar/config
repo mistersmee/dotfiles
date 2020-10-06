@@ -13,15 +13,15 @@
 ;
 
 [xcolor]
-bg     = ${xrdb:color0:#0a0a0a}
-fg     = ${xrdb:color7:#c8c8c8}
-color1 = ${xrdb:color1:#a54242}
-color2 = ${xrdb:color2:#8c9440}
-color3 = ${xrdb:color3:#de935f}
-color4 = ${xrdb:color4:#5f819d}
-color5 = ${xrdb:color5:#85678f}
-color6 = ${xrdb:color6:#5e8d87}
-color8 = ${xrdb:color8:#373b41}
+bg     = #0a0a0a
+fg     = #c8c8c8
+color1 = #a54242
+color2 = #8c9440
+color3 = #de935f
+color4 = #5f819d
+color5 = #85678f
+color6 = #5e8d87
+color8 = #373b41
 
 [colors]
 background = ${xrdb:background}
@@ -62,6 +62,7 @@ bar-fill-icon = ﭳ
 
 [bar/base]
 width = 100%
+enable-ipc = true
 height = 28
 
 background = ${color.base-bg}
@@ -88,10 +89,11 @@ font-4 = M+ 1m:style=Medium:size=7;3
 
 [bar/top-primary]
 inherit = bar/base
+enable-ipc = true
 monitor =
 
 modules-left = right-end-top left-end-bottom mpd right-end-top
-modules-right =  left-end-top clock right-end-bottom left-end-top
+modules-right =  left-end-top clock fs right-end-bottom left-end-top
 
 tray-background = ${color.module-bg}
 tray-padding = ${layout.module-padding}
@@ -99,6 +101,7 @@ tray-position = right
 
 
 [bar/bottom-primary]
+enable-ipc = true
 inherit = bar/base
 monitor =
 bottom = true
@@ -167,8 +170,7 @@ type = internal/bspwm
 
 enable-scroll = true
 label-focused = %name%
-label-focused-background = ${color.module-bg}
-label-focused-foreground= ${color.bar-fg}
+label-focused-background = ${color.base-bg}
 label-focused-underline = ${colors.primary}
 label-focused-padding = 1
 
@@ -176,11 +178,12 @@ label-occupied = %name%
 label-occupied-padding = 1
 
 label-urgent = %name%!
-label-urgent-background = ${colors.alert}
+label-urgent-background = ${color.warn-fg}
 label-urgent-padding = 1
 
+
 label-empty = %name%
-label-empty-foreground = ${color.text-fg}
+label-empty-foreground = ${color.selected-bg}
 label-empty-padding = 1
 
 format-underline =
@@ -206,6 +209,9 @@ label = %title:0:35:...%
 
 [module/clock]
 type = internal/date
+
+label = %date%  %time%
+
 interval = 1
 format-padding = 5
 format-background = ${color.module-bg}
@@ -216,7 +222,6 @@ date-alt =   %a %d-%B-%Y
 time = %I:%M %p
 time-alt = %I:%M:%S %p
 
-label = %date% %time%
 
 
 ;
@@ -266,6 +271,15 @@ label =    %percentage%%
 label-font = ${layout.icon-font}
 format-prefix-foreground = ${color.icon-fg}
 format-padding = 2	
+
+[module/fs]
+type = internal/fs
+spacing = 2
+fixed-value = true
+interval = 30
+mount-0 = /
+label-mounted =   %mountpoint% %percentage_free%%
+format-prefix-foreground = ${color.icon-fg}
 
 [module/memory]
 type = internal/memory
