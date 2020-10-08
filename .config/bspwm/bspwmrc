@@ -15,11 +15,12 @@ bspc rule -a Zathura state=tiled follow=on
 
 nm-applet &
 pasystray &
+python .local/bin/brightness_notify.py &
 mpd &
 mpDris2 &
 dunst & 
 blueman-applet &
-feh --no-fehbg --bg-scale ~/Pictures/colorsch/solarized.png &
+feh --no-fehbg --bg-scale -z ~/Pictures/wallpapers/ &
 launchpolybar &
 ###---Global Settings---###
 bspc config automatic_scheme alternate

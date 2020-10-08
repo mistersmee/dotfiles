@@ -15,8 +15,6 @@ case $choice in
 	    cp ~/.gruvbox.Xresources ~/.Xresources
 	    xrdb load ~/.Xresources
 	    ~/.config/polybar/launch.sh
-	    feh --bg-scale ~/Pictures/colorsch/gruvbox.png 
-	    sed -i 's/[a-z]*.png/gruvbox.png/g' ~/.config/bspwm/bspwmrc 
 	    sed -i 's/colorscheme [a-z]*/colorscheme gruvbox/g' ~/.config/nvim/init.vim
 	    lxappearance &
             ;;
@@ -26,8 +24,6 @@ case $choice in
 	    xrdb load ~/.Xresources
 	    ~/.config/polybar/launch.sh
 	    sed -i 's/colorscheme [a-z]*/colorscheme solarized/g' ~/.config/nvim/init.vim
-	    feh --bg-scale ~/Pictures/colorsch/solarized.png
-	    sed -i 's/[a-z]*.png/solarized.png/g' ~/.config/bspwm/bspwmrc 
 	    lxappearance &
             ;;
         "nord")
@@ -35,9 +31,7 @@ case $choice in
 	    cp ~/.nord.Xresources ~/.Xresources 
 	    xrdb load ~/.Xresources 
 	    ~/.config/polybar/launch.sh
-	    feh --bg-scale ~/Pictures/colorsch/nord.png 
 	    sed -i 's/colorscheme [a-z]*/colorscheme nord/g' ~/.config/nvim/init.vim
-	    sed -i 's/[a-z]*.png/nord.png/g'  ~/.config/bspwm/bspwmrc 
 	    lxappearance &
             ;;
 esac

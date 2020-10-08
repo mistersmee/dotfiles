@@ -92,7 +92,7 @@ inherit = bar/base
 enable-ipc = true
 monitor =
 
-modules-left = right-end-top left-end-bottom mpd right-end-top
+modules-left = left-end-bottom mpd right-end-top
 modules-right =  left-end-top clock fs right-end-bottom left-end-top
 
 tray-background = ${color.module-bg}
@@ -106,7 +106,7 @@ inherit = bar/base
 monitor =
 bottom = true
 
-modules-left = bspwm right-end-bottom left-end-top xwindow right-end-bottom
+modules-left = bspwm left-end-top xwindow right-end-bottom
 modules-right = left-end-bottom cpu memory right-end-top left-end-bottom temp battery
 
 [settings]
