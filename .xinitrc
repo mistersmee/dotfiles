@@ -1,5 +1,4 @@
 #!/bin/sh
-numlockx on &
 xset r rate 300 50
 sudo thinkpoint &
 xmodmap -e "clear Lock"

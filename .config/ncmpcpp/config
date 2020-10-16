@@ -1,4 +1,4 @@
-# vim: filetype=conf
+# vim: ft=dosini
 
 ncmpcpp_directory = "~/.config/ncmpcpp"
 lyrics_directory = "~/.local/share/lyrics"
@@ -26,3 +26,6 @@ progressbar_color = black:b
 progressbar_elapsed_color = blue:b
 statusbar_color = red
 statusbar_time_color = cyan:b
+titles_visibility = no
+header_visibility = no
+user_interface = classic

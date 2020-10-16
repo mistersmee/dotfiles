@@ -36,7 +36,7 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[01;32m' 
 #nnn
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_OPENER=xdg-open
+export NNN_OPENER="nuke"
 export NNN_PLUG="p:preview-tui"
 export NNN_BMS="g:~/Downloads/Git/;d:~/Downloads;m:~/Music/"
 export NNN_ARCHIVE="\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|rar|rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)$"

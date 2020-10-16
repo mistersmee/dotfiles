@@ -1,7 +1,7 @@
 ! Solarized color scheme for the X Window System
 !
 ! http://ethanschoonover.com/solarized
-*font:	Fira Code:size=19
+*font:	Fira Code:size=15
 ! Common
 
 #define S_yellow        #b58900

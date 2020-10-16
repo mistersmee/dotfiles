@@ -4,7 +4,7 @@ mbsync -V smee
 notmuch new
 num_unread=$(notmuch count tag:unread)
 
-new=$(find "$HOME/.local/share/mail/smee/INBOX/new/" "$HOME/.local/share/mail/smee/Inbox/new/" "$HOME/.local/share/mail/smee/inbox/new/" -type f 2> /dev/null)
+new=$(find "$HOME/.local/share/mail/smee/INBOX/new/" "$HOME/.local/share/mail/smee/\[Gmail\].Important/new/" "$HOME/.local/share/mail/smee/Inbox/new/" "$HOME/.local/share/mail/smee/inbox/new/" -type f 2> /dev/null)
 
 # Count all the new files in the 'new' directory
 	notify-send " 📧 Mailbox synced. You have Mail!" "📬 $num_unread new messages."

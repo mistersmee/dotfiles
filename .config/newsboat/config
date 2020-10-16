@@ -1,5 +1,5 @@
 #podboat config
-download-path "~/Music/"
+download-path "~/Music/podcasts/"
 player "mocp"
 
 # general config
