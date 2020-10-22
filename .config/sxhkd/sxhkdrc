@@ -13,17 +13,17 @@ super + d
 #
 # media keys
 #
-XF86AudioNext
+super + F7
 	playerctl next
-XF86AudioPlay 
+super + F6 
 	playerctl play-pause
-XF86AudioPrev
+super + F5
 	playerctl previous
-XF86AudioStop
+super + F8
 	playerctl stop
-super + XF86Forward
+super + F9
 	playerctl position 5+
-super + XF86Back
+super + F10
 	playerctl position 5-
 # quit/restart bspwm
 
