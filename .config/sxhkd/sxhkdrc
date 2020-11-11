@@ -22,9 +22,9 @@ super + F5
 super + F8
 	playerctl stop
 super + F9
-	playerctl position 5+
-super + F10
 	playerctl position 5-
+super + F10
+	playerctl position 5+
 # quit/restart bspwm
 
 super + shift + e

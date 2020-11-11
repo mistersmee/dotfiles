@@ -1,6 +1,8 @@
 #!/bin/sh
 xset r rate 300 50
-sudo thinkpoint &
+sudo thinkpoint & 
+clipmenud &
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 xmodmap -e "clear Lock"
 xcompmgr &
 xmodmap -e "keysym Caps_Lock = Escape"

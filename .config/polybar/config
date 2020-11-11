@@ -93,7 +93,7 @@ enable-ipc = true
 monitor =
 
 modules-left = left-end-bottom mpd right-end-top
-modules-right =  left-end-top clock fs right-end-bottom left-end-top
+modules-right =  left-end-top fs right-end-bottom left-end-top
 
 tray-background = ${color.module-bg}
 tray-padding = ${layout.module-padding}
@@ -106,12 +106,13 @@ inherit = bar/base
 monitor =
 bottom = true
 
-modules-left = bspwm left-end-top xwindow right-end-bottom
-modules-right = left-end-bottom cpu memory right-end-top left-end-bottom temp battery
+modules-left = right-end-bottom bspwm left-end-top xwindow right-end-bottom
+modules-right = left-end-bottom clock cpu memory right-end-top left-end-bottom temp battery
 
 [settings]
 screenchange-reload = true
 
+wm-restack = bspwm
 ; Global format definitions
 format-background = ${color.module-bg}
 format-padding = ${layout.module-padding}
