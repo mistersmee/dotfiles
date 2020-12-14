@@ -187,7 +187,7 @@ label-empty = %name%
 label-empty-foreground = ${color.selected-bg}
 label-empty-padding = 1
 
-format-underline =
+format-underline = 
 format-background =
 format-padding =
 scroll-up = bspwm-desknext

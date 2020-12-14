@@ -41,12 +41,12 @@ Plugin 'ap/vim-css-color'
 Bundle 'ron89/thesaurus_query.vim'
 call vundle#end()
 
-""colorscheme solarized
+""colorscheme nord
 syntax on 
 filetype plugin indent on
 filetype on
 set background=dark
-colorscheme solarized
+colorscheme nord
 call togglebg#map("<F6>")
 "" Netrw settings
 let g:netrw_banner = 0

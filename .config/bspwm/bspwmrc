@@ -5,23 +5,25 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 ##---i3-scratchpad---##
-bspc rule -a dropdown sticky=on state=floating hidden=on
 
-st -c dropdown -e ncmpcpp &
+bspc rule -a mp desktop=^10
 
 ##--bspwm-rules---##
 bspc rule -a Zathura state=tiled follow=on
 ##---Auto-start---##
 
+sudo thinkpoint & 
+clipmenud &
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 nm-applet &
 pasystray &
 python .local/bin/brightness_notify.py &
 mpd &
 mpDris2 &
 dunst & 
-blueman-applet &
 feh --no-fehbg --bg-scale -z ~/Pictures/wallpapers/ &
 launchpolybar &
+
 ###---Global Settings---###
 bspc config automatic_scheme alternate
 bspc config initial_polarity second_child
