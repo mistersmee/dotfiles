@@ -35,6 +35,7 @@ source ~/.config/zsh/zsh-history-substring-search.zsh
 
 # aliases
 alias w="nv ~/vimwiki/index.wiki"
+alias vc="sudo cryptsetup --type tcrypt --veracrypt --tcrypt-hidden open "
 alias bconf="nv ~/.config/bspwm/bspwmrc"
 alias sconf="nv ~/.config/sxhkd/sxhkdrc"
 alias grep="grep --color=always"

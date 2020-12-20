@@ -41,9 +41,8 @@ export NNN_PLUG="p:preview-tui"
 export NNN_BMS="g:~/Downloads/Git/;d:~/Downloads;m:~/Music/"
 export NNN_ARCHIVE="\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|rar|rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)$"
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
-export NNN_COLORS='12345678'
 
 #autostart X on tty1
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx
+  exec startx 2> /tmp/X.log
 fi
