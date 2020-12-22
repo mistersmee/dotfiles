@@ -1,4 +1,4 @@
-# alarm-dots
+# Dotfiles 
 
 My dotfiles, intended as personal backup.
 

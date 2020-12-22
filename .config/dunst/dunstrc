@@ -64,7 +64,7 @@
     frame_width = 3
 
     # Defines color of the frame around the notification window.
-    frame_color = "#2aa198"
+    frame_color = "#aaaaaa" 
     # Define a color for the separator.
     # possible values are:
     #  * auto: dunst tries to find a color fitting to the background;
@@ -273,16 +273,16 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#073642"
-    foreground = "#eee8d5"
+    background = "#2b2b2b"
+    foreground = "#ffffff"
 
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/smee/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#073642"
-    foreground = "#eee8d5"
+    background = "#2b2b2b"
+    foreground = "#ffffff"
 
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable

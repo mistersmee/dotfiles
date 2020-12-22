@@ -35,7 +35,7 @@ source ~/.config/zsh/zsh-history-substring-search.zsh
 
 # aliases
 alias w="nv ~/vimwiki/index.wiki"
-alias vc="sudo cryptsetup --type tcrypt --veracrypt --tcrypt-hidden open "
+alias vc="sudo cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
 alias bconf="nv ~/.config/bspwm/bspwmrc"
 alias sconf="nv ~/.config/sxhkd/sxhkdrc"
 alias grep="grep --color=always"
@@ -56,9 +56,11 @@ alias rv="ttrv"
 alias nvconf="nv ~/.config/nvim/init.vim"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias cal="calcurse -a |xargs -0 notify-send "Appointments.";calcurse -t | xargs -0 notify-send "Todo";calcurse"
-
+alias nc="ncmpcpp"
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+bindkey '^A' vi-beginning-of-line
+bindkey '^E' vi-end-of-line
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
