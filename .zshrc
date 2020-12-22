@@ -45,8 +45,8 @@ alias i3conf="nv ~/.config/i3/config"
 alias pconf="nv ~/.config/polybar/config"
 alias nconf="nv ~/.config/nvim/init.vim"
 alias nb="newsboat"
-alias cp="/usr/local/bin/advcp -gv"
-alias mv="/usr/local/bin/advmv -gv"
+alias cp="/usr/bin/advcp -gv"
+alias mv="/usr/bin/advmv -gv"
 alias nm="neomutt"
 alias pb="podboat"
 alias wt="curl wttr.in/kolhapur"
@@ -82,7 +82,7 @@ n ()
     # stty lwrap undef
     # stty lnext undef
 
-    nnn -dr "$@"
+    nnn -drF "$@"
 
     if [ -f "$NNN_TMPFILE" ]; then
             . "$NNN_TMPFILE"
