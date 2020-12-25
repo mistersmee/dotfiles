@@ -5,7 +5,7 @@ Description=Synchronize neomutt email with mailsync
 Documentation=https://github.com/LukeSmithxyz/mutt-wizard
 
 [Service]
-
+Environment="NOTMUCH_CONFIG=/home/smee/.config/notmuch/notmuchrc"
 ExecStart=/home/smee/.local/bin/mailsync 
 
 Type=oneshot

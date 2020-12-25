@@ -29,6 +29,7 @@ export GOPATH=""$XDG_DATA_HOME"/go"
 export PASSWORD_STORE_DIR=""$XDG_DATA_HOME"/pass"
 export TERMINFO=""$XDG_DATA_HOME"/terminfo"
 export TERMINFO_DIRS=""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
+export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
 #other programs
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export QT_STYLE_OVERRIDE="kvantum"
@@ -53,5 +54,5 @@ export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 
 #autostart X on tty1
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx 2> /tmp/X.log
+  exec startx $XINITRC 2> /tmp/X.log
 fi

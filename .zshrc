@@ -36,7 +36,7 @@ source ~/.config/zsh/zsh-history-substring-search.zsh
 # aliases
 alias vim="vim -i NONE"
 alias w="nv ~/vimwiki/index.wiki"
-alias wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts""
+alias wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts" "
 alias vc="sudo cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
 alias bconf="nv ~/.config/bspwm/bspwmrc"
 alias sconf="nv ~/.config/sxhkd/sxhkdrc"

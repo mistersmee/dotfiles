@@ -85,7 +85,7 @@ font-2 = M+ 1m:style=Medium:size=16;3
 font-3 = M+ 1m:style=Medium:size=12;3
 ; Smaller font size for shorter spaces
 font-4 = M+ 1m:style=Medium:size=7;3
-
+font-5 = Noto Color Emoji:style=Regular:scale=10
 
 [bar/top-primary]
 inherit = bar/base

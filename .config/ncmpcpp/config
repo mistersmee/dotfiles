@@ -73,5 +73,4 @@ display_bitrate = "yes"
 enable_window_title = "yes"
 empty_tag_marker = ""
 allow_for_physical_item_deletion = "yes"
-ncmpcpp_directory="$XDG_CONFIG_HOME"/ncmpcpp
-lyrice_directory="$XDG_CONFIG_HOME"/ncmpcpp/lyrics
+lyrics_directory=~/.config/ncmpcpp/lyrics
