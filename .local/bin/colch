@@ -12,24 +12,21 @@ choice=$(echo -e "gruvbox\nsolarized\nnord" | $DMENU)
 case $choice in
         "gruvbox")
 	    xrdb -remove
-	    cp ~/.gruvbox.Xresources ~/.Xresources
-	    xrdb load ~/.Xresources
+	    xrdb load ~/.config/X11/gruvbox.Xresources
 	    ~/.config/polybar/launch.sh
 	    sed -i 's/colorscheme [a-z]*/colorscheme gruvbox/g' ~/.config/nvim/init.vim
 	    lxappearance &
             ;;
         "solarized")
 	    xrdb -remove
-	    cp ~/.solarized.Xresources ~/.Xresources 
-	    xrdb load ~/.Xresources
+	    xrdb load ~/.config/X11/solarized.Xresources
 	    ~/.config/polybar/launch.sh
 	    sed -i 's/colorscheme [a-z]*/colorscheme solarized/g' ~/.config/nvim/init.vim
 	    lxappearance &
             ;;
         "nord")
 	    xrdb -remove
-	    cp ~/.nord.Xresources ~/.Xresources 
-	    xrdb load ~/.Xresources 
+	    xrdb load ~/.config/X11/nord.Xresources
 	    ~/.config/polybar/launch.sh
 	    sed -i 's/colorscheme [a-z]*/colorscheme nord/g' ~/.config/nvim/init.vim
 	    lxappearance &
