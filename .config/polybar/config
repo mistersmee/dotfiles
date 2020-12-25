@@ -93,7 +93,7 @@ enable-ipc = true
 monitor =
 
 modules-left = left-end-bottom mpd right-end-top
-modules-right =  left-end-top fs right-end-bottom left-end-top
+modules-right =  left-end-top weather fs right-end-bottom left-end-top
 
 tray-background = ${color.module-bg}
 tray-padding = ${layout.module-padding}
@@ -223,7 +223,12 @@ date-alt =   %a %d-%B-%Y
 time = %I:%M %p
 time-alt = %I:%M:%S %p
 
-
+[module/weather]
+type = custom/script
+exec = i3weather
+label = "%output%"
+click-left = $TERMINAL -e w3m wttr.in/Kolhapur &
+interval = 1800
 
 ;
 ; |\/| _  _|. _
