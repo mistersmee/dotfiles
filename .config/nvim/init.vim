@@ -42,7 +42,7 @@ Bundle 'ron89/thesaurus_query.vim'
 call vundle#end()
 
 ""colorscheme nord
-syntax on 
+syntax on
 filetype plugin indent on
 filetype on
 set background=dark
@@ -66,3 +66,5 @@ nnoremap <leader>ZZ :SudoWrite <CR>
 nnoremap <leader>l <c-w>w
 nnoremap <leader>s z=
 nnoremap c "_c
+nnoremap <leader>p :%s/i686/pentium4/gc <CR>
+nnoremap <leader>P :%s/x86_64/pentium4/gc <CR>

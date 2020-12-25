@@ -4,5 +4,5 @@ xmodmap -e "clear Lock" &
 xcompmgr &
 xmodmap -e "keysym Caps_Lock = Escape" &
 xmodmap -e "keysym Menu = Super_R" &
-xrdb -merge ~/.Xresources &
+xrdb -merge ~/.config/X11/Xresources &
 exec bspwm
