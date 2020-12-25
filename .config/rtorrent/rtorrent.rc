@@ -1,0 +1,154 @@
+#############################################################################
+# A minimal rTorrent configuration that provides the basic features
+# you want to have in addition to the built-in defaults.
+#
+# See https://github.com/rakshasa/rtorrent/wiki/CONFIG-Template
+# for an up-to-date version.
+#############################################################################
+
+
+## Instance layout (base paths)
+method.insert = cfg.basedir,  private|const|string, (cat,"/home/smee/.local/share/rtorrent/")
+method.insert = cfg.download, private|const|string, (cat,(cfg.basedir),"download/")
+method.insert = cfg.logs,     private|const|string, (cat,(cfg.basedir),"log/")
+method.insert = cfg.logfile,  private|const|string, (cat,(cfg.logs),"rtorrent-",(system.time),".log")
+method.insert = cfg.session,  private|const|string, (cat,(cfg.basedir),".session/")
+method.insert = cfg.watch,    private|const|string, (cat,(cfg.basedir),"watch/")
+
+
+## Create instance directories
+execute.throw = sh, -c, (cat,\
+    "mkdir -p \"",(cfg.download),"\" ",\
+    "\"",(cfg.logs),"\" ",\
+    "\"",(cfg.session),"\" ",\
+    "\"",(cfg.watch),"/load\" ",\
+    "\"",(cfg.watch),"/start\" ")
+
+
+## Listening port for incoming peer traffic (fixed; you can also randomize it)
+network.port_range.set = 31600-31610
+network.port_random.set = no
+
+
+## Tracker-less torrent and UDP tracker support
+## (conservative settings for 'private' trackers, change for 'public')
+dht.mode.set = on
+dht_port = 6881
+protocol.pex.set = yes
+
+trackers.use_udp.set = yes
+
+
+# Global upload and download rate in KiB, `0` for unlimited (`download_rate`, `upload_rate`)
+throttle.global_down.max_rate.set_kb = 0
+throttle.global_up.max_rate.set_kb   = 0
+ #Maximum number of simultaneous downloads and uploads slots (global slots!) (`max_downloads_global`, `max_uploads_global`)
+throttle.max_downloads.global.set = 300
+throttle.max_uploads.global.set   = 300
+
+
+## Peer settings
+throttle.max_uploads.set = 100
+throttle.max_uploads.global.set = 250
+
+throttle.min_peers.normal.set = 20
+throttle.max_peers.normal.set = 150
+throttle.min_peers.seed.set = -1
+throttle.max_peers.seed.set = -1
+
+trackers.numwant.set = 200
+# Maximum number of connections rtorrent can accept/make (`sockets`)
+network.max_open_sockets.set = 999
+protocol.encryption.set = allow_incoming,try_outgoing,enable_retry
+
+#
+## Limits for file handle resources, this is optimized for
+## an `ulimit` of 1024 (a common default). You MUST leave
+## a ceiling of handles reserved for rTorrent's internal needs!
+network.http.max_open.set = 90
+network.max_open_files.set = 600
+#network.max_open_sockets.set = 300
+# Set scrape intervals for active (~10 mins) and idle items (~12 hours)
+method.insert = cfg.scrape_interval.active, value,   580
+method.insert = cfg.scrape_interval.idle,   value, 43180
+
+# Regularly update scrape information for all torrents (even stopped ones), it won't affect the operation of rtorrent, but nice to have these values updated.
+# This info is only updated when rtorrent starts or a torrent is added by default.
+# Try to balance calls to not fire them up at the same time (since multiscraping isn't implemented in libtorrent). Check for update every 5 minutes and distinguish between 2 groups:
+#   - transferring (uploading and/or downloading) torrents: update in every 10 minutes
+#   - non-transferring torrents: update in every 12 hours
+# helper method: sets current time in a custom field (tm_last_scrape) and saves session
+method.insert = d.last_scrape.set, simple|private, "d.custom.set=tm_last_scrape,$cat=$system.time=; d.save_resume="
+# helper method: sends the scrape request and sets the tm_last_scrape timestamp and saves session
+method.insert = d.last_scrape.send_set, simple, "d.tracker.send_scrape=0;d.last_scrape.set="
+# helper method: decides whether the required time interval (with the help of an argument) has passed and if so calls the above method
+method.insert = d.last_scrape.check_elapsed, simple|private, "branch={(elapsed.greater,$d.custom=tm_last_scrape,$argument.0=),d.last_scrape.send_set=}"
+# helper method: checks for non-existing/empty custom field to be able to test its validity later
+method.insert = d.last_scrape.check, simple|private, "branch={d.custom=tm_last_scrape,d.last_scrape.check_elapsed=$argument.0=,d.last_scrape.send_set=}"
+# sets custom field (tm_last_scrape) to current time only for torrents just has been added (skips setting time on purpose when rtorrent started)
+method.set_key = event.download.inserted_new, ~last_scrape_i, "d.last_scrape.set="
+# check for update every 5 minutes (300 sec) and update scrape info for transferring torrents in every 10 minutes (600-20=580 sec) and for non-transferring ones in every 12 hours (43200-20=43180 sec)
+schedule2 = last_scrape_t, 300, 300, "d.multicall2=default,\"branch=\\\"or={d.up.rate=,d.down.rate=}\\\",d.last_scrape.check=$cfg.scrape_interval.active=,d.last_scrape.check=$cfg.scrape_interval.idle=\""
+
+## Memory resource usage (increase if you have a large number of items loaded,
+## and/or the available resources to spend)
+pieces.memory.max.set = 1800M
+network.xmlrpc.size_limit.set = 4M
+
+
+## Basic operational settings (no need to change these)
+session.path.set = (cat, (cfg.session))
+directory.default.set = (cat, (cfg.download))
+log.execute = (cat, (cfg.logs), "execute.log")
+#log.xmlrpc = (cat, (cfg.logs), "xmlrpc.log")
+execute.nothrow = sh, -c, (cat, "echo >",\
+    (session.path), "rtorrent.pid", " ",(system.pid))
+
+
+## Other operational settings (check & adapt)
+encoding.add = utf8
+system.umask.set = 0027
+system.cwd.set = (directory.default)
+network.http.dns_cache_timeout.set = 25
+schedule2 = low_diskspace, 5, 60, ((close_low_diskspace, 100M))
+pieces.hash.on_completion.set = yes
+#view.sort_current = seeding, greater=d.ratio=
+keys.layout.set = qwerty
+#network.http.capath.set = "/etc/ssl/certs"
+#network.http.ssl_verify_peer.set = 0
+#network.http.ssl_verify_host.set = 0
+system.file.allocate = 1
+
+## Some additional values and commands
+method.insert = system.startup_time, value|const, (system.time)
+method.insert = d.data_path, simple,\
+    "if=(d.is_multi_file),\
+        (cat, (d.directory), /),\
+        (cat, (d.directory), /, (d.name))"
+method.insert = d.session_file, simple, "cat=(session.path), (d.hash), .torrent"
+
+
+## Watch directories (add more as you like, but use unique schedule names)
+## Add torrent
+schedule2 = watch_load, 11, 10, ((load.verbose, (cat, (cfg.watch), "load/*.torrent")))
+## Add & download straight away
+schedule2 = watch_start, 10, 10, ((load.start_verbose, (cat, (cfg.watch), "start/*.torrent")))
+
+
+## Run the rTorrent process as a daemon in the background
+## (and control via XMLRPC sockets)
+#system.daemon.set = true
+#network.scgi.open_local = (cat,(session.path),rpc.socket)
+#execute.nothrow = chmod,770,(cat,(session.path),rpc.socket)
+
+method.set_key = event.download.finished,notify_me,"execute=~/.local/bin/tnot,(d.name)"
+
+## Logging:
+##   Levels = critical error warn notice info debug
+##   Groups = connection_* dht_* peer_* rpc_* storage_* thread_* tracker_* torrent_*
+print = (cat, "Logging to ", (cfg.logfile))
+log.open_file = "log", (cfg.logfile)
+log.add_output = "info", "log"
+#log.add_output = "tracker_debug", "log"
+
+### END of rtorrent.rc ###

@@ -20,11 +20,15 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
+export NOTMUCH_CONFIG=""$XDG_CONFIG_HOME"/notmuch/notmuchrc"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
-export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
-export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
-export GOPATH="$XDG_DATA_HOME"/go
+export XINITRC=""$XDG_CONFIG_HOME"/X11/xinitrc"
+export GTK2_RC_FILES=""$XDG_CONFIG_HOME"/gtk-2.0/gtkrc"
+export GOPATH=""$XDG_DATA_HOME"/go"
+export PASSWORD_STORE_DIR=""$XDG_DATA_HOME"/pass"
+export TERMINFO=""$XDG_DATA_HOME"/terminfo"
+export TERMINFO_DIRS=""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
 #other programs
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export QT_STYLE_OVERRIDE="kvantum"

@@ -23,8 +23,8 @@ set spell
 
 
 "' Vundle vim plugins
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.config/vim/bundle/Vundle.vim
+call vundle#begin('~/.config/vim/bundle/')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin  'tpope/vim-eunuch'
@@ -59,6 +59,9 @@ augroup ProjectDrawer
   autocmd VimEnter * :NERDTreeToggle
 augroup END
 
+" vimwiki settings
+let g:vimwiki_list = [{'path': '~/.local/share/vimwiki'}]
+"
 "" Keybindings
 nnoremap <leader>g :Goyo <CR>
 nnoremap <leader>G :Goyo! <CR>

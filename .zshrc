@@ -22,7 +22,7 @@ setopt  auto_cd
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 zmodload zsh/complist
-compinit
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots)		# Include hidden files.
 
 
@@ -34,6 +34,7 @@ source ~/.config/zsh/zsh-history-substring-search.zsh
  export LANG=en_US.UTF-8
 
 # aliases
+alias vim="vim -i NONE"
 alias w="nv ~/vimwiki/index.wiki"
 alias wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts""
 alias vc="sudo cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
@@ -47,6 +48,7 @@ alias pconf="nv ~/.config/polybar/config"
 alias nconf="nv ~/.config/nvim/init.vim"
 alias nb="newsboat"
 alias cp="/usr/bin/advcp -gv"
+alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
 alias mv="/usr/bin/advmv -gv"
 alias nm="neomutt"
 alias pb="podboat"
