@@ -1,4 +1,3 @@
-
 # Enable colors and change prompt:
 autoload -U colors && colors
 
@@ -7,65 +6,66 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.cache/zsh/history
 
-# Basic auto/tab complete:
+# Auto tab completion stuff:
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*:options' list-colors '=^(-- *)=34'
 zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zmodload zsh/complist
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
+_comp_options+=(globdots)		# Include hidden files.
 
 # cd without cd
 setopt correct
 setopt  auto_cd
 
-# Auto complete with case insenstivity
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-zmodload zsh/complist
-compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
-_comp_options+=(globdots)		# Include hidden files.
-
-
 # plugins 
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-#source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-history-substring-search.zsh 
 
- export LANG=en_US.UTF-8
-
 # aliases
-alias vim="vim -i NONE"
-alias w="nv ~/vimwiki/index.wiki"
-alias wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts" "
+## config aliases
+alias bc="nv ~/.config/bspwm/bspwmrc"
+alias sc="nv ~/.config/sxhkd/sxhkdrc"
+alias pc="nv ~/.config/polybar/config"
+alias nc="nv ~/.config/nvim/init.vim"
+alias zc="nvim ~/.zshrc"
+
+## misc niceties
+
+alias np="ncmpcpp"
+alias rt="rtorrent"
 alias vc="sudo cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
-alias bconf="nv ~/.config/bspwm/bspwmrc"
-alias sconf="nv ~/.config/sxhkd/sxhkdrc"
-alias grep="grep --color=always"
-alias zconf="nvim ~/.zshrc"
-alias ls='ls-icons -lh --color=auto'
-alias i3conf="nv ~/.config/i3/config"
-alias pconf="nv ~/.config/polybar/config"
-alias nconf="nv ~/.config/nvim/init.vim"
+alias w="nv ~/vimwiki/index.wiki"
+alias ls='lsd '
 alias nb="newsboat"
+alias d="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias c="calcurse -a |xargs -0 notify-send "Appointments.";calcurse -t | xargs -0 notify-send "Todo";calcurse"
+alias nm="neomutt"
+alias pb="podboat"
+alias nv="nvim"
+
+## program aliases due to xdg, etc
+
+alias vim="vim -i NONE"
+alias wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts" "
+alias grep="grep --color=always"
 alias cp="/usr/bin/advcp -gv"
 alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
 alias mv="/usr/bin/advmv -gv"
-alias nm="neomutt"
-alias pb="podboat"
-alias wt="curl wttr.in/kolhapur"
-alias nv="nvim"
-alias ra="ranger"
-alias rv="ttrv"
-alias nvconf="nv ~/.config/nvim/init.vim"
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-alias cal="calcurse -a |xargs -0 notify-send "Appointments.";calcurse -t | xargs -0 notify-send "Todo";calcurse"
-alias nc="ncmpcpp"
+
+# history plugin bindkeys and other keybindings
+
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey '^A' vi-beginning-of-line
 bindkey '^E' vi-end-of-line
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+
+# NNN
 
 n ()
 {
@@ -87,7 +87,7 @@ n ()
     # stty lwrap undef
     # stty lnext undef
 
-    nnn -drF "$@"
+    nnn -cdrF "$@"
 
     if [ -f "$NNN_TMPFILE" ]; then
             . "$NNN_TMPFILE"
@@ -95,51 +95,6 @@ n ()
     fi
 }
 
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_HG_SHOW=false
-SPACESHIP_PACKAGE_SHOW=false
-SPACESHIP_NODE_SHOW=false
-SPACESHIP_RUBY_SHOW=false
-SPACESHIP_EXIT_CODE_SHOW=true
-SPACESHIP_ELM_SHOW=false
-SPACESHIP_ELIXIR_SHOW=false
-SPACESHIP_XCODE_SHOW_LOCAL=false
-SPACESHIP_SWIFT_SHOW_LOCAL=false
-SPACESHIP_GOLANG_SHOW=false
-SPACESHIP_PHP_SHOW=false
-SPACESHIP_RUST_SHOW=false
-SPACESHIP_JULIA_SHOW=false
-SPACESHIP_DOCKER_SHOW=false
-SPACESHIP_DOCKER_CONTEXT_SHOW=false
-SPACESHIP_AWS_SHOW=false
-SPACESHIP_CONDA_SHOW=false
-SPACESHIP_VENV_SHOW=false
-SPACESHIP_PYENV_SHOW=false
-SPACESHIP_DOTNET_SHOW=false
-SPACESHIP_EMBER_SHOW=false
-SPACESHIP_KUBECONTEXT_SHOW=false
-SPACESHIP_TERRAFORM_SHOW=false
-SPACESHIP_TERRAFORM_SHOW=false
-SPACESHIP_VI_MODE_SHOW=true
-SPACESHIP_JOBS_SHOW=true
+# prompt
 
-# Spaceship Prompt
-function zle-keymap-select() {
-   zle reset-prompt zle -R
-}
-zle -N zle-keymap-select
-
-
-autoload -U colors && colors
-function vi_mode_prompt_info() {echo "%{$fg[red]%}${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%/(visual|viopp)/[% VISUAL]%}" }
-
-RPS1='%t $(vi_mode_prompt_info)'
-RPS2=$RPS1
-autoload -U promptinit; promptinit
-prompt spaceship
-
-# autosuggestions config
-
-ZSH_AUTOSUGGEST_STRATEGY=(completion history match_prev_cmd)
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+eval "$(starship init zsh)"

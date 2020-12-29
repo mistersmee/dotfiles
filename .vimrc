@@ -14,8 +14,8 @@ filetype plugin on
 set cpoptions+=n
 set numberwidth=4
 set wildmode=longest,list,full
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.config/vim/bundle/Vundle.vim
+call vundle#begin('~/.config/vim/bundle/')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'junegunn/goyo.vim'
