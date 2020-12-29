@@ -25,6 +25,10 @@ setopt  auto_cd
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source ~/.config/zsh/zsh-history-substring-search.zsh 
 
+# for nnn icons
+
+ export LANG=en_US.UTF-8
+
 # aliases
 ## config aliases
 alias bc="nv ~/.config/bspwm/bspwmrc"
