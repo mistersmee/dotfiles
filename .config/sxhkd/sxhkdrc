@@ -57,7 +57,7 @@ super + a
 super + shift + u
 	dmenuunicode
 super + w
-	firefox
+	curfox
 super + minus
 	scratch dropdown
 super +z
