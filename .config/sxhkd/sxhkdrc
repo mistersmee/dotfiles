@@ -14,23 +14,17 @@ super + d
 # media keys
 #
 super + F7
-#	mpc next
-	playerctl next
+	mpc next
 super + F6 
-# mpc toggle
-	playerctl play-pause
+	mpc toggle
 super + F5
-#	mpc prev
-	playerctl previous
+	mpc prev
 super + F8
-#	mpc stop
-	playerctl stop
+	mpc stop
 super + F9
-#	mpc seekthrough -5
-	playerctl position 5-
+	mpc seekthrough -5
 super + F10
-#	mpc seekthrough +5
-	playerctl position 5+
+	mpc seekthrough +5
 # quit/restart bspwm
 
 super + shift + e

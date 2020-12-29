@@ -227,6 +227,7 @@ time-alt = %I:%M:%S %p
 type = custom/script
 exec = i3weather
 label = "%output%"
+click-left = $TERMINAL -e w3m wttr.in/Kolhapur &
 interval = 1800
 
 ;
