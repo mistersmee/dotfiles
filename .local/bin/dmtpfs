@@ -1,5 +1,5 @@
 #!/bin/sh
-Dir=$HOME/cell
+Dir=/mnt
 
 # Make the cell directory if it doesn't exist
 if [ ! -d "$Dir" ]; then
@@ -19,5 +19,5 @@ fi
 if [ ! -n "$(find "$Dir" -maxdepth 0 -empty)" ]; then
   fusermount -u "$Dir" && notify-send "Android Mount" "Device Unmounted"
 else
-  simple-mtpfs --device "$Id" "$Dir" && notify-send "Android Mount" "Device Mounted in $HOME/cell"
+  simple-mtpfs --device "$Id" "$Dir" && notify-send "Android Mount" "Device Mounted in $Dir"
 fi

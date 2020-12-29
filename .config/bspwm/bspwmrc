@@ -14,13 +14,13 @@ bspc rule -a Zathura state=tiled follow=on
 
 sudo thinkpoint & 
 clipmenud &
-# blueman-applet &
+blueman-applet &
 /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 nm-applet &
 pasystray &
 python .local/bin/brightness_notify.py &
 mpd &
-# mpDris2 &
+mpDris2 &
 dunst & 
 feh --no-fehbg --bg-scale -z ~/Pictures/wallpapers/ &
 launchpolybar &
