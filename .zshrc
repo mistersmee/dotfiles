@@ -23,7 +23,16 @@ setopt  auto_cd
 
 # plugins 
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh  
 source ~/.config/zsh/zsh-history-substring-search.zsh 
+# source ~/.config/zsh/zsh-abbr.zsh
+
+# autosuggest
+zmodload zsh/zpty
+ZSH_AUTOSUGGEST_STRATEGY=(completion history match_prev_cmd)
+ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
+ZSH_AUTOSUGGEST_HISTORY_IGNORE=("pacman * *")
+ZSH_AUTOSUGGEST_COMPLETION_IGNORE=("pacman * *")
 
 # for nnn icons
 
@@ -42,11 +51,9 @@ alias zc="nvim ~/.zshrc"
 alias np="ncmpcpp"
 alias rt="rtorrent"
 alias vc="sudo cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
-alias w="nv ~/vimwiki/index.wiki"
 alias ls='lsd '
 alias nb="newsboat"
-alias d="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-alias c="calcurse -a |xargs -0 notify-send "Appointments.";calcurse -t | xargs -0 notify-send "Todo";calcurse"
+alias d="git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME "
 alias nm="neomutt"
 alias pb="podboat"
 alias nv="nvim"

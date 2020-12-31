@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 DMENU='dmenu -i -l 30'

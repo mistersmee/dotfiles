@@ -1,0 +1,2 @@
+#! /bin/bash 
+xargs -0 notify-send "Download finished."
