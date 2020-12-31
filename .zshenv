@@ -60,7 +60,4 @@ export NNN_COLORS='1234'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 
 #autostart X on tty1
-
-if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx $XINITRC 2> /tmp/X.log
-fi
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx $XINITRC 2>/tmp/X.log; fi

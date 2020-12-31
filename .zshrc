@@ -1,5 +1,5 @@
 # Enable colors and change prompt:
-autoload -U colors && colors
+#autoload -U colors && colors
 
 # History in cache directory:
 HISTSIZE=1000
@@ -25,14 +25,12 @@ setopt  auto_cd
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh  
 source ~/.config/zsh/zsh-history-substring-search.zsh 
-# source ~/.config/zsh/zsh-abbr.zsh
 
 # autosuggest
 zmodload zsh/zpty
 ZSH_AUTOSUGGEST_STRATEGY=(completion history match_prev_cmd)
- ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
-ZSH_AUTOSUGGEST_HISTORY_IGNORE=("pacman * *")
-ZSH_AUTOSUGGEST_COMPLETION_IGNORE=("pacman * *")
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
+ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 # for nnn icons
 
