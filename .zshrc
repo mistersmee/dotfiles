@@ -48,7 +48,7 @@ alias zc="nvim ~/.zshrc"
 
 alias np="ncmpcpp"
 alias rt="rtorrent"
-alias vc="sudo cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
+alias vc="doas cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
 alias ls='lsd '
 alias nb="newsboat"
 alias d="git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME "
