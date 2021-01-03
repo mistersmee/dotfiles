@@ -1,9 +1,9 @@
 ""Basic Vim settings
 let mapleader = ","
 set nocompatible
+set termguicolors
 set shell=zsh
 set tw=0
-set clipboard=unnamedplus
 set backspace=indent,eol,start
 set guicursor=
 set clipboard+=unnamedplus
@@ -21,7 +21,6 @@ set spelllang=en_gb
 set spellfile=$HOME/.vim/spell/en.utf-8.add
 set spell
 
-
 "' Vundle vim plugins
 set rtp+=~/.config/vim/bundle/Vundle.vim
 call vundle#begin('~/.config/vim/bundle/')
@@ -32,7 +31,7 @@ Plugin 'vim-scripts/AutoComplPop'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'morhetz/gruvbox'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'lifepillar/vim-solarized8'
 Plugin 'bling/vim-airline'
 Plugin 'vimwiki/vimwiki'
 Plugin 'preservim/nerdtree'
@@ -41,13 +40,13 @@ Plugin 'ap/vim-css-color'
 Bundle 'ron89/thesaurus_query.vim'
 call vundle#end()
 
-""colorscheme solarized
 syntax on
 filetype plugin indent on
 filetype on
 set background=dark
-colorscheme solarized
-call togglebg#map("<F6>")
+colorscheme solarized8 
+let g:solarized_extra_hi_groups = 1
+let g:solarized_termtrans = 1
 "" Netrw settings
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
