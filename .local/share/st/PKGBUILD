@@ -2,7 +2,7 @@
 
 pkgname=st-aseem
 _pkgname=st
-pkgver=0.8.2.r1171.eb46268
+pkgver=0.8.4.r1146.2c7de7a
 pkgrel=1
 epoch=1
 pkgdesc="My build of st."
