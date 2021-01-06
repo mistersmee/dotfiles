@@ -2,7 +2,7 @@
 
 pkgname=st-aseem
 _pkgname=st
-pkgver=0.8.4.r1146.2c7de7a
+pkgver=0.8.4.r1152.8b2ab59
 pkgrel=1
 epoch=1
 pkgdesc="My build of st."
@@ -11,7 +11,6 @@ arch=(any)
 license=('GPL')
 depends=('make')
 makedepends=('git')
-optdepends=('')
 source=('git://github.com/mistersmee/st')
 sha1sums=('SKIP')
 

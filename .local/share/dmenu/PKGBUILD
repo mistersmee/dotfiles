@@ -11,7 +11,6 @@ arch=(any)
 license=('GPL')
 depends=('make')
 makedepends=('git')
-optdepends=('')
 source=('git://github.com/mistersmee/dmenu')
 sha1sums=('SKIP')
 
