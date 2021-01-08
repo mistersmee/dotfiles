@@ -2,7 +2,7 @@
 !
 ! http://ethanschoonover.com/solarized
 *font:	Fira Code:size=15
-
+dmenu.font: Fira Code:size=14
 ! Common
 
 #define S_yellow        #b58900
