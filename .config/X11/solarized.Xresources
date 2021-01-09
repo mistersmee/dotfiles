@@ -2,6 +2,7 @@
 !
 ! http://ethanschoonover.com/solarized
 *font:	Fira Code:size=15
+dmenu.font: Fira Code:size=13
 
 ! Common
 
