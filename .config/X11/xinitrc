@@ -4,7 +4,7 @@ xmodmap -e "clear Lock" &
 /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 sudo thinkpoint &
 python .local/bin/brightness_notify.py &
-xcompmgr &
+picom --experimental-backends &
 xmodmap -e "keysym Caps_Lock = Escape" &
 xmodmap -e "keysym Menu = Super_R" &
 xrdb -merge ~/.config/X11/Xresources &

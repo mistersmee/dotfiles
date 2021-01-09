@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Deps:
+# 	curl
+
+
+get_weather()
+{
+		curl -s "v2.wttr.in/Kolhapur?format=3" | sed s/Kolhapur://g
+}
+
+
+if [ $(( 10#$(date '+%S') % 30 )) -eq 0 ]; then
+	get_weather
+fi
