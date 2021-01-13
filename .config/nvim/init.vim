@@ -6,6 +6,7 @@ set shell=zsh
 set tw=0
 set backspace=indent,eol,start
 set guicursor=
+set clipboard=unnamedplus
 set clipboard+=unnamedplus
 set number relativenumber
 set hlsearch
