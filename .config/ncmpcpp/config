@@ -74,3 +74,4 @@ enable_window_title = "yes"
 empty_tag_marker = ""
 allow_for_physical_item_deletion = "yes"
 lyrics_directory=~/.config/ncmpcpp/lyrics
+mpd_music_dir="~/Music"

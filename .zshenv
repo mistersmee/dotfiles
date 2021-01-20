@@ -32,7 +32,7 @@ export PASSWORD_STORE_DIR=""$XDG_DATA_HOME"/pass"
 export TERMINFO=""$XDG_DATA_HOME"/terminfo"
 export TERMINFO_DIRS=""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
 export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
-
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 #other miscellaneous programs
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export QT_STYLE_OVERRIDE="kvantum"

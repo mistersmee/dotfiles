@@ -64,7 +64,7 @@ alias grep="grep --color=always"
 alias cp="/usr/bin/advcp -gv"
 alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
 alias mv="/usr/bin/advmv -gv"
-
+alias abook="abook -C "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/adressbook"
 # history plugin bindkeys and other keybindings
 
 bindkey '^[[A' history-substring-search-up
