@@ -33,4 +33,4 @@ super + a
 super + shift + u
 	dmenuunicode
 super + w
-	curfox
+	chromium
