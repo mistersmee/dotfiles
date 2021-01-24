@@ -20,6 +20,7 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
+export MBSYCNRC=""$XDG_CONFIG_HOME"/isync/mbsyncrc"
 export NOTMUCH_CONFIG=""$XDG_CONFIG_HOME"/notmuch/notmuchrc"
 export NPM_CONFIG_USERCONFIG=""$XDG_CONFIG_HOME"/npm/npmrc"
 export XDG_DATA_HOME="$HOME/.local/share"

@@ -1,6 +1,5 @@
 #!/bin/sh
-
-mw -Y
+mbsync -c /home/smee/.config/isync/mbsyncrc -a
 notmuch new
 num_unread=$(notmuch count tag:unread)
 

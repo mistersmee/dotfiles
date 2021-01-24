@@ -2,7 +2,7 @@
 
 pkgname=dwm-aseem
 _pkgname=dwm
-pkgver=6.2.r1701.1de5458
+pkgver=6.2.r1706.af0a736
 pkgrel=1
 epoch=1
 pkgdesc="My build of dwm."
