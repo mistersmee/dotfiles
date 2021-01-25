@@ -15,9 +15,6 @@ export BROWSER="firefox"
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:$HOME/.local/bin"
 
-# ssh agent
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
 export MBSYCNRC=""$XDG_CONFIG_HOME"/isync/mbsyncrc"

@@ -65,6 +65,7 @@ alias cp="advcp -gv"
 alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
 alias mv="advmv -gv"
 alias abook="abook -C "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/adressbook"
+alias paru="paru --fm nnn "
 alias weechat="weechat -d "$XDG_CONFIG_HOME"/weechat"
 # history plugin bindkeys and other keybindings
 
