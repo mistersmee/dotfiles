@@ -105,6 +105,8 @@ n ()
             rm -f "$NNN_TMPFILE" > /dev/null
     fi
 }
+# ssh agent
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 # prompt
 
