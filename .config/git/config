@@ -1,6 +1,7 @@
 [user]
 	email = athaleaseem@gmail.com
 	name = Aseem Athale
+	signingkey = 9298C296
 [credential]
 	helper = store
 [merge]

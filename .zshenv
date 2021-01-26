@@ -17,7 +17,6 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
-export MBSYCNRC=""$XDG_CONFIG_HOME"/isync/mbsyncrc"
 export NOTMUCH_CONFIG=""$XDG_CONFIG_HOME"/notmuch/notmuchrc"
 export NPM_CONFIG_USERCONFIG=""$XDG_CONFIG_HOME"/npm/npmrc"
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -53,7 +52,7 @@ export LESS_TERMCAP_us=$'\e[01;32m'
 export NNN_FIFO="/tmp/nnn.fifo"
 export NNN_PLUG="p:preview-tabbed;x:_chmod +x $nnn"
 export NNN_OPENER="xdg-open"
-export NNN_BMS="g:~/Downloads/Git/;d:~/Downloads;m:~/Music/"
+export NNN_BMS="g:~/dl/git/;d:~/dl/;m:~/mus/"
 export NNN_ARCHIVE="\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|rar|rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)$"
 export NNN_COLORS='1234'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
