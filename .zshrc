@@ -95,7 +95,6 @@ n ()
     # stty stop undef
     # stty lwrap undef
     # stty lnext undef
-
     nnn -cdrF "$@"
 
     if [ -f "$NNN_TMPFILE" ]; then
