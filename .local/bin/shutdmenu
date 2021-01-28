@@ -4,14 +4,14 @@
 #
 ###
 
-DMENU='dmenu -i -l 30'
-choice=$(echo -e "logout\nrestart_X\nreload_sxhkd\nshutdown\nreboot\nlock_X" | $DMENU)
+DMENU='dmenu -i'
+choice=$(echo -e "lock_X\nshutdown\nreboot\nhibernate\nsuspend\nreload_sxhkd" | $DMENU)
 
 case "$choice" in
-  logout) bspc quit & ;;
-  restart_X) bspc wm -r & ;;
-  reload_sxhkd) pkill -USR1 -x sxhkd & ;;
+  lock_X) slock ;;
   shutdown) sudo shutdown -h now & ;;
   reboot) sudo shutdown -r now & ;;
-  lock_X) slock ;;
+  hibernate) sudo systemctl hibernate & ;;
+  suspend) sudo systemctl suspend & ;;
+  reload_sxhkd) pkill -USR1 -x sxhkd & ;;
 esac

@@ -1,0 +1,16 @@
+#! /bin/bash 
+clipmenud &
+mpd &
+mpDris2 &
+dunst &
+fehbg &
+nm-applet &
+pasystray &
+blueman-applet &
+sxhkd &
+lxpolkit &
+sudo thinkpoint &
+python .local/bin/brightness_notify.py &
+picom --experimental-backends &
+dwmbar &
+

@@ -1,5 +1,5 @@
 #podboat config
-download-path "~/Music/"
+download-path "~/Music/podcasts/"
 player "mocp"
 
 # general config
@@ -16,9 +16,8 @@ notify-screen yes
 
 # macros config
 
-browser "links -g %u"
-macro y set browser "ytmpv %u" ; open-in-browser ; set browser "lynx"
-macro p set browser "tmpv %u" ; open-in-browser ; set browser "lynx"
+browser "links -g"
+macro y set browser "mpv --ytdl-format=best %u" ; open-in-browser ; set browser "links -g"
 
 # keybindings
 

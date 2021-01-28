@@ -5,14 +5,14 @@
 Script using dmenu to select bspwm's automatic window positioning scheme.
 Choices between: longest side, alternate, spiral.
 
-#calnotify
+# calnotify
 
 Script to notify appointments and todo of calcurse.
 Used as a cronjob to run periodically every 15 minutes.
 
 # colch
 
-Script to change colourscheme and overall aesthetic of my system between Solarized, Nord, Dracula and Gruvbox. 
+Script to change colourscheme and overall aesthetic of my system between Solarized, Nord and Gruvbox. 
 
 Note to self: requires files in specific places and specific programs. Ought to work OotB with dotfiles.
 

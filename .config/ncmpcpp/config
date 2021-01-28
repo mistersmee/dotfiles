@@ -1,0 +1,77 @@
+browser_display_mode = "columns"
+autocenter_mode = "yes"
+follow_now_playing_lyrics = "yes"
+ignore_leading_the = "yes"
+ignore_diacritics = "yes"
+default_place_to_search_in = "database"
+
+colors_enabled = "yes"
+main_window_color = 13 
+current_item_prefix= "$(cyan)$r" 
+current_item_suffix = "$/r$(end)"
+
+song_list_format = "    $(15)%t$(end)$R $(11)%A$(end) ($(cyan)%l$(end))    "
+song_columns_list_format = "(40)[15]{t|f} (25)[13]{a} (25)[11]{b} (5)[cyan]{l}"
+
+## Alternative Interface ##
+user_interface = "alternative"
+
+alternative_header_first_line_format = "$(11)─┤ $b$(13)%a$(end)$/b ├─$(end)"
+alternative_header_second_line_format = "$(4)%t (%y)$(end)"
+## Classic Interface ##
+
+song_status_format = " $(15)%a$(end) $4⟫$7⟫$0 $(13)%t$(end) $4⟫$7⟫$0  $(11)%b$(end)"
+
+## Visualizer ##
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_type = "spectrum"
+visualizer_fps="30"
+visualizer_in_stereo = "yes"
+visualizer_look = "◆▋"
+
+## Playlist Editor ##
+playlist_editor_display_mode = "columns"
+
+## Navigation ##
+cyclic_scrolling = "yes"
+header_text_scrolling = "yes"
+jump_to_now_playing_song_at_start = "yes"
+lines_scrolled = "2"
+
+## Other ##
+mouse_support = "yes"
+system_encoding = "utf-8"
+regular_expressions = "extended"
+color1 = 13
+color2 = 15
+
+## Selected tracks ##
+selected_item_prefix = "* "
+discard_colors_if_item_is_selected = "no"
+
+## Seeking ##
+incremental_seeking = "yes"
+seek_time = "1"
+
+## Visibility ##
+header_visibility = "yes"
+statusbar_visibility = "yes"
+titles_visibility = "yes"
+
+## Progress Bar ##
+progressbar_color = 1
+progressbar_elapsed_color = 11
+progressbar_look = "──━"
+
+## Now Playing ##
+now_playing_prefix = "> "
+centered_cursor = "yes"
+
+# Misc
+display_bitrate = "yes"
+enable_window_title = "yes"
+empty_tag_marker = ""
+allow_for_physical_item_deletion = "yes"
+lyrics_directory=~/.config/ncmpcpp/lyrics
+mpd_music_dir="~/mus/"
