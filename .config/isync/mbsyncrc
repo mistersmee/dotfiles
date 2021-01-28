@@ -1,0 +1,53 @@
+
+IMAPStore athaleaseem@gmail.com-remote
+Host imap.gmail.com
+Port 993
+User athaleaseem@gmail.com
+PassCmd "pass mw-athaleaseem@gmail.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore athaleaseem@gmail.com-local
+Subfolders Verbatim
+Path /home/smee/.local/share/mail/athaleaseem@gmail.com/
+Inbox /home/smee/.local/share/mail/athaleaseem@gmail.com/INBOX
+Flatten .
+
+Channel athaleaseem@gmail.com
+Expunge Both
+Master :athaleaseem@gmail.com-remote:
+Slave :athaleaseem@gmail.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore awesomeaseem7@gmail.com-remote
+Host imap.gmail.com
+Port 993
+User awesomeaseem7@gmail.com
+PassCmd "pass mw-awesomeaseem7@gmail.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore awesomeaseem7@gmail.com-local
+Subfolders Verbatim
+Path /home/smee/.local/share/mail/awesomeaseem7@gmail.com/
+Inbox /home/smee/.local/share/mail/awesomeaseem7@gmail.com/INBOX
+Flatten .
+
+Channel awesomeaseem7@gmail.com
+Expunge Both
+Master :awesomeaseem7@gmail.com-remote:
+Slave :awesomeaseem7@gmail.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+

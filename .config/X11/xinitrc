@@ -1,12 +1,8 @@
 #!/bin/sh
 xset r rate 300 50 &
 xmodmap -e "clear Lock" &
-lxpolkit &
-sudo thinkpoint &
-python .local/bin/brightness_notify.py &
-picom --experimental-backends &
 xmodmap -e "keysym Caps_Lock = Escape" &
 xmodmap -e "keysym Menu = Super_R" &
 xrdb -merge ~/.config/X11/Xresources &
-dwmbar &
+autostart &
 exec dwm
