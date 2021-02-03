@@ -6,7 +6,7 @@ dunst &
 fehbg &
 nm-applet &
 pasystray &
-blueman-applet &
+#blueman-applet &
 sxhkd &
 lxpolkit &
 sudo thinkpoint &
