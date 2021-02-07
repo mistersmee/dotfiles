@@ -3,10 +3,14 @@ mbsync -c /home/smee/.config/isync/mbsyncrc -a
 notmuch new
 num_unread=$(notmuch count tag:unread)
 
-new=$(find "$HOME/.local/share/mail/athaleaseem@gmail.com/INBOX/new/" "$HOME/.local/share/mail/athaleaseem@gmail.com/\[Gmail\].Important/new/" "$HOME/.local/share/mail/athaleaseem@gmail.com/Inbox/new/" "$HOME/.local/share/mail/athaleaseem@gmail.com/inbox/new/" "$HOME/.local/share/mail/awesomeaseem7@gmail.com/INBOX/new" -type f 2> /dev/null)
+new=$(find "$HOME/.local/share/mail/athaleaseem@gmail.com/INBOX/new/" "$HOME/.local/share/mail/awesomeaseem7@gmail.com/INBOX/new/" -type f 2> /dev/null)
 
 # Count all the new files in the 'new' directory
-	notify-send " 📧 Mailbox synced. You have Mail!" "📬 $num_unread new messages."
+if [ $num_unread = "0" ]; then
+	notify-send " 📧 Mailbox synced" " 📭 No new mail." -t 5000
+else
+	notify-send " 📧 Mailbox synced. You Have Mail!" "📬 $num_unread new messages" -t 5000
+fi
 
 for file in $new; do
 	# Extract subject and sender from mail.

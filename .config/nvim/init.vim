@@ -14,8 +14,8 @@ set cpoptions+=n
 set numberwidth=4
 set wildmode=longest,list,full
 set encoding=utf-8
-set cursorline
-set cursorcolumn
+"set cursorline
+"set cursorcolumn
 
 "" Spell check
 set spelllang=en_gb
@@ -26,18 +26,18 @@ set spell
 set rtp+=~/.config/vim/bundle/Vundle.vim
 call vundle#begin('~/.config/vim/bundle/')
 Plugin 'gmarik/Vundle.vim'
-Plugin 'junegunn/goyo.vim'
+"Plugin 'junegunn/goyo.vim'
 Plugin  'tpope/vim-eunuch'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'morhetz/gruvbox'
+"Plugin 'arcticicestudio/nord-vim'
+"Plugin 'morhetz/gruvbox'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'bling/vim-airline'
-Plugin 'vimwiki/vimwiki'
+"Plugin 'vimwiki/vimwiki'
 Plugin 'preservim/nerdtree'
-Plugin 'tpope/vim-commentary'
-Plugin 'ap/vim-css-color'
+"Plugin 'tpope/vim-commentary'
+"Plugin 'ap/vim-css-color'
 Bundle 'ron89/thesaurus_query.vim'
 call vundle#end()
 
