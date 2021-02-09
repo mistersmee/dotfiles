@@ -5,13 +5,12 @@
 ###
 
 DMENU='dmenu -i'
-choice=$(echo -e "lockX\nshutdown\nreboot\nhibernate\nsuspend\nreloadsxhkd" | $DMENU)
+choice=$(echo -e "lockX\nshutdown\nreboot\nreloadsxhkd" | $DMENU)
 
 case "$choice" in
-  lock_X) slock ;;
-  shutdown) sudo shutdown 0 & ;;
-  reboot) sudo reboot & ;;
-  hibernate) sudo systemctl hibernate & ;;
-  suspend) sudo systemctl suspend & ;;
-  reload_sxhkd) pkill -USR1 -x sxhkd & ;;
+  lock_X) slock &;;
+  shutdown) sudo shutdown 0 &;;
+  reboot) sudo reboot &;;
+  suspend) sudo systemctl suspend &;;
+  reload_sxhkd) pkill -USR1 -x sxhkd &;;
 esac

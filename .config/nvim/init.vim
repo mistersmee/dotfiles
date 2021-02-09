@@ -1,5 +1,5 @@
 ""Basic Vim settings
-let mapleader = ","
+let mapleader = "'"
 set nocompatible
 set termguicolors
 set shell=zsh
@@ -34,7 +34,7 @@ Plugin 'sheerun/vim-polyglot'
 "Plugin 'morhetz/gruvbox'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'bling/vim-airline'
-"Plugin 'vimwiki/vimwiki'
+Plugin 'vimwiki/vimwiki'
 Plugin 'preservim/nerdtree'
 "Plugin 'tpope/vim-commentary'
 "Plugin 'ap/vim-css-color'

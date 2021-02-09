@@ -50,7 +50,7 @@ alias rt="rtorrent"
 alias vc="doas cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
 alias ls='lsd '
 alias nb="newsboat"
-alias d="git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME "
+alias d="git --git-dir=$HOME/dl/git/dotfiles/ --work-tree=$HOME "
 alias nm="neomutt"
 alias pb="podboat"
 alias nv="nvim"
