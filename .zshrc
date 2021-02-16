@@ -68,8 +68,6 @@ alias weechat="weechat -d "$XDG_CONFIG_HOME"/weechat"
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-bindkey '^A' vi-beginning-of-line
-bindkey '^E' vi-end-of-line
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
