@@ -37,7 +37,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 # aliases
 ## config aliases
-alias bc="nv ~/.config/bspwm/bspwmrc"
 alias sc="nv ~/.config/sxhkd/sxhkdrc"
 alias pc="nv ~/.config/polybar/config"
 alias nc="nv ~/.config/nvim/init.vim"
