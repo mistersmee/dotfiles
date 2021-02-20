@@ -63,6 +63,7 @@ alias cp="advcp -gv"
 alias mv="advmv -gv"
 alias abook="abook -C "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/adressbook"
 alias weechat="weechat -d "$XDG_CONFIG_HOME"/weechat"
+alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
 # history plugin bindkeys and other keybindings
 
 bindkey '^[[A' history-substring-search-up
