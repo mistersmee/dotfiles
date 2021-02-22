@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-# a simple dmenu session script 
+# a simple dmenu session script
 #
 ###
 
 DMENU='dmenu -i'
-choice=$(echo -e "lockX\nshutdown\nreboot\nreloadsxhkd" | $DMENU)
+choice=$(echo -e "lock_X\nshutdown\nreboot\nreloadsxhkd" | $DMENU)
 
 case "$choice" in
   lock_X) slock &;;

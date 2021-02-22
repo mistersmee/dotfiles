@@ -60,16 +60,16 @@ aug netrw_close
   au!
   au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
 aug END
-
+" Vim-airline settings
+let g:airline_powerline_fonts = 1
 " vimwiki settings
 let g:vimwiki_list = [{'path': '~/.local/share/vimwiki'}]
-
 " Keybindings
 nnoremap <leader>g :Goyo <CR>
 nnoremap <leader>G :Goyo! <CR>
-nnoremap <leader>ZZ :SudoWrite <CR>
 nnoremap <leader>l <c-w>w
 nnoremap <leader>s z=
+nnoremap <leader>t :tabe <CR>
 nnoremap c "_c
 nnoremap <leader>p :%s/i686/pentium4/gc <CR>
 nnoremap <leader>P :%s/x86_64/pentium4/gc <CR>
