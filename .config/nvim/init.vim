@@ -28,6 +28,7 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'junegunn/goyo.vim'
 "Plugin  'tpope/vim-eunuch'
 "Plugin 'vim-scripts/AutoComplPop'
+Plugin 'shougo/deoplete.nvim'
 Plugin 'sheerun/vim-polyglot'
 "Plugin 'arcticicestudio/nord-vim'
 "Plugin 'morhetz/gruvbox'
@@ -64,6 +65,8 @@ aug END
 let g:airline_powerline_fonts = 1
 " vimwiki settings
 let g:vimwiki_list = [{'path': '~/.local/share/vimwiki'}]
+" Deoplete settings
+let g:deoplete#enable_at_startup = 1
 " Keybindings
 nnoremap <leader>g :Goyo <CR>
 nnoremap <leader>G :Goyo! <CR>

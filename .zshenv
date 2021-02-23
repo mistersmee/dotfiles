@@ -1,11 +1,11 @@
 # declaring defaults
 export EDITOR="nvim"
-export STATUSBAR="polybar"
+export STATUSBAR="dwmbar"
 export VIDEO="mpv"
-export IMAGE="feh"
+export IMAGE="sxiv"
 export COLORTERM="truecolor"
 export PAGER="less"
-export WM="bspwm"
+export WM="dwm"
 export OPENER="xdg-open"
 export VISUAL="nvim"
 export READER="zathura"
@@ -32,7 +32,7 @@ export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
 export GRADLE_USER_HOME=""$XDG_DATA_HOME"/gradle"
 export WEECHAT_HOME=""$XDG_CONFIG_HOME"/weechat"
 #other miscellaneous programs
-export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+#export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export QT_STYLE_OVERRIDE="kvantum"
 
 #less config
@@ -42,10 +42,10 @@ export LESSHISTFILE="-"
 
 export LESS_TERMCAP_md=$'\e[01;31m'
 export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m' 
-export LESS_TERMCAP_so=$'\e[01;44;33m' 
-export LESS_TERMCAP_ue=$'\e[0m' 
-export LESS_TERMCAP_us=$'\e[01;32m' 
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;44;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[01;32m'
 
 #nnn
 
