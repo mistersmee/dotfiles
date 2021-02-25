@@ -8,5 +8,5 @@ source ~/.config/nvim/keybinds.vim
 "source ~/.config/nvim/netrw.vim
 source ~/.config/nvim/spell.vim
 source ~/.config/nvim/vimwiki.vim
-
+source ~/.config/nvim/complete.vim
 

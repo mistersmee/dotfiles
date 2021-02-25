@@ -1,6 +1,12 @@
 ""Basic Vim settings
 let mapleader = ";"
 set guicursor=
+set autoindent
+set autoread
+set backspace=indent,eol,start
+set expandtab
+set smarttab
+set hidden
 set termguicolors
 set clipboard+=unnamedplus
 set number relativenumber
