@@ -1,78 +1,12 @@
-""Basic Vim settings
-let mapleader = "'"
-set guicursor=
-set termguicolors
-set clipboard+=unnamedplus
-set number relativenumber
-set wildmode=longest,list,full
-set smartcase
-set encoding=utf-8
-"set cursorline
-"set cursorcolumn
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/airline.vim
+source ~/.config/nvim/basics.vim
+source ~/.config/nvim/color.vim
+"source ~/.config/nvim/deoplete.vim
+source ~/.config/nvim/fern.vim
+source ~/.config/nvim/keybinds.vim
+"source ~/.config/nvim/netrw.vim
+source ~/.config/nvim/spell.vim
+source ~/.config/nvim/vimwiki.vim
 
-" Automatically remove trailing whitespace
-autocmd BufWritePre * %s/\s\+$//e
 
-" Save file as sudo when no sudo permissions
-cmap w!! w !sudo tee > /dev/null %
-
-"" Spell check
-set spelllang=en_gb
-set spellfile=$XDG_CONFIG_HOME/nvim/en.utf-8.add
-set spell
-
-" Vundle vim plugins
-set rtp+=~/.config/vim/bundle/Vundle.vim
-call vundle#begin('~/.config/vim/bundle/')
-Plugin 'gmarik/Vundle.vim'
-"Plugin 'junegunn/goyo.vim'
-"Plugin  'tpope/vim-eunuch'
-Plugin 'vim-scripts/AutoComplPop'
-"Plugin 'shougo/deoplete.nvim'
-Plugin 'sheerun/vim-polyglot'
-"Plugin 'arcticicestudio/nord-vim'
-"Plugin 'morhetz/gruvbox'
-Plugin 'lifepillar/vim-solarized8'
-Plugin 'bling/vim-airline'
-"Plugin 'vimwiki/vimwiki'
-"Plugin 'preservim/nerdtree'
-"Plugin 'tpope/vim-commentary'
-"Plugin 'ap/vim-css-color'
-Bundle 'ron89/thesaurus_query.vim'
-call vundle#end()
-
-" Colour and syntax highlighting
-syntax on
-filetype plugin indent on
-filetype on
-set background=dark
-colorscheme solarized8
-let g:solarized_extra_hi_groups = 1
-let g:solarized_termtrans = 1
-
-" Netrw settings
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-let g:netrw_preview = 1
-aug netrw_close
-  au!
-  au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
-aug END
-" Vim-airline settings
-let g:airline_powerline_fonts = 1
-" vimwiki settings
-let g:vimwiki_list = [{'path': '~/.local/share/vimwiki'}]
-" Deoplete settings
-let g:deoplete#enable_at_startup = 1
-" Keybindings
-nnoremap <leader>g :Goyo <CR>
-nnoremap <leader>G :Goyo! <CR>
-nnoremap <leader>l <c-w>w
-nnoremap <leader>s z=
-nnoremap <leader>t :tabe <CR>
-nnoremap c "_c
-nnoremap <leader>p :%s/i686/pentium4/gc <CR>
-nnoremap <leader>P :%s/x86_64/pentium4/gc <CR>
