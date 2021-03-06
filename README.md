@@ -1,6 +1,6 @@
 # Dotfiles 
 
-My d, intended as personal backup.
+My dotfiles repo, intended as personal backup.
 
 
 # Usage Instructions
