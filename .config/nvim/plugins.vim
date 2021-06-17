@@ -2,20 +2,18 @@
 set rtp+=~/.config/vim/bundle/Vundle.vim
 call vundle#begin('~/.config/vim/bundle/')
 Plugin 'gmarik/Vundle.vim'
-"Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/goyo.vim'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'sheerun/vim-polyglot'
-"Plugin 'arcticicestudio/nord-vim'
-"Plugin 'morhetz/gruvbox'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'bling/vim-airline'
-"Plugin 'vimwiki/vimwiki'
+Plugin 'vimwiki/vimwiki'
 Plugin 'lambdalisue/fern.vim'
 Plugin 'lambdalisue/fern-renderer-nerdfont.vim'
 Plugin 'lambdalisue/fern-hijack.vim'
 Plugin 'lambdalisue/nerdfont.vim'
-"Plugin 'ap/vim-css-color'
+Plugin 'ap/vim-css-color'
 Bundle 'ron89/thesaurus_query.vim'
 call vundle#end()
-
-

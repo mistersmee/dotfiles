@@ -13,8 +13,8 @@ set number relativenumber
 set wildmode=longest,list,full
 set smartcase
 set encoding=utf-8
-"set cursorline
-"set cursorcolumn
+set cursorline
+set cursorcolumn
 
 " Automatically remove trailing whitespace
 autocmd BufWritePre * %s/\s\+$//e
