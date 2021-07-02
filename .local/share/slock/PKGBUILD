@@ -1,4 +1,4 @@
-# Maintainer:
+# Maintainer: Aseem Athale <athaleaseem@gmail.com>
 
 pkgname=slock-aseem
 _pkgname=slock
@@ -13,7 +13,6 @@ depends=('git')
 makedepends=('make')
 source=('git://github.com/mistersmee/slock')
 sha1sums=('SKIP')
-
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
 
