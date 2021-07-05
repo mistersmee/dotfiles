@@ -41,4 +41,4 @@ On the original system
   *
   */
   ```
-Copy of the GNU GPL located at `.local/share/license` in the repository.
+Copy of the GNU GPL located at `docs/license` in the repository.
