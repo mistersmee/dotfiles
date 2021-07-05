@@ -20,10 +20,10 @@ _comp_options+=(globdots)		# Include hidden files.
 setopt correct
 setopt  auto_cd
 
-# plugins 
+# plugins
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh  
-source ~/.config/zsh/zsh-history-substring-search.zsh 
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh/zsh-history-substring-search.zsh
 
 # autosuggest
 zmodload zsh/zpty
@@ -55,7 +55,7 @@ alias pb="podboat"
 alias nv="nvim"
 
 ## program aliases due to xdg, etc
-
+alias zul="zulip-term -c ~/.config/zulip/zuliprc "
 alias vim="vim -i NONE"
 alias wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts" "
 alias grep="grep --color=always"
