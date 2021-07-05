@@ -21,14 +21,14 @@ export NOTMUCH_CONFIG=""$XDG_CONFIG_HOME"/notmuch/notmuchrc"
 export NPM_CONFIG_USERCONFIG=""$XDG_CONFIG_HOME"/npm/npmrc"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
-export XINITRC=""$XDG_CONFIG_HOME"/X11/xinitrc"
+#export XINITRC=""$XDG_CONFIG_HOME"/X11/xinitrc"
 export GTK2_RC_FILES=""$XDG_CONFIG_HOME"/gtk-2.0/gtkrc"
 export GOPATH=""$XDG_DATA_HOME"/go"
 export CARGO_HOME=""$XDG_DATA_HOME"/cargo"
 export PASSWORD_STORE_DIR=""$XDG_DATA_HOME"/pass"
 export TERMINFO=""$XDG_DATA_HOME"/terminfo"
 export TERMINFO_DIRS=""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
-export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
+#export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
 export GRADLE_USER_HOME=""$XDG_DATA_HOME"/gradle"
 export WEECHAT_HOME=""$XDG_CONFIG_HOME"/weechat"
 #other miscellaneous programs
@@ -58,4 +58,4 @@ export NNN_COLORS='1234'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 
 #autostart X on tty1
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx $XINITRC 2>/tmp/X.log; fi
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2>/tmp/X.log; fi
