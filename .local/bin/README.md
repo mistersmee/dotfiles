@@ -1,68 +1,67 @@
 # Various useful scripts written by me or lifted from someone else ;).
 
-# bspwmlayout 
+# autostart
 
-Script using dmenu to select bspwm's automatic window positioning scheme.
-Choices between: longest side, alternate, spiral.
+Script that starts all the programs I need while running X. It is called by dwm while starting up. It is a much more elegant solution than the autostart patches in dwm.
+
+# battery_notify.py && brightness_notify.py
+
+Python scripts lifted from Benedikt Vollmerhaus' repo. Do what they say on the tin.
+
+# bin2hex
+
+Tomasz Ostrowski (tomeko)'s binary to hexadecimal converter program.
+Kept here so I can easily find it and in case it goes down.
 
 # calnotify
 
 Script to notify appointments and todo of calcurse.
 Used as a cronjob to run periodically every 15 minutes.
 
-# colch
-
-Script to change colourscheme and overall aesthetic of my system between Solarized, Nord and Gruvbox. 
-
-Note to self: requires files in specific places and specific programs. Ought to work OotB with dotfiles.
-
-# crystal 
-
-[crystal](https://github.com/salman-abedin/crystal) is a script that allows for smooth fullscreening of transparent windows. It minimises other windows and the status bar, so they don't appear behind the transparent window. Needed, AFAIK, only in  bspwm.
-
 # dmenuunicode
 
 Luke Smith's script for inserting emojis in st.
 
+## dmenumount && dmenuumount
+
+Luke Smith's scripts to mount/unmount both USB and Android devices.
 
 # dmtpfs
 
+[Update]: No longer in use, in favour of dmenumount and dmenuumount
 Brodie Robertson's Android automount script.
 
-# i3exit
+# fehbg
 
-Script to send notification and shutdown i3. (Deprecated in favour of shutdmenu).
+Script that set's the wallpaper using feh.
 
-# i3weather
+# launchpolybar
 
-Brodie Robertson's script for weather output. Used in Polybar.
-
-# img
-
-Luke Smith's deprecated script to display images in the terminal using Ueberzug linbrary. Used only for a video, AFAIK, deprecated in favour of better solutions. I don't use it either, it takes way too long to display it on my system.
-
+Script that does what it says on the tin. Not used anymore, as I don't use polybar.
 # mailsync
 
 Script created my me, and partly inspired by Luke Smith's script of the same name.
 Syncs my email, sends a notification telling how many new emails, as well as who they are from, and the subject.
 
+# mw
+
+My copy of Luke Smith's mutt-wizard script, before the "big redesign". This older version allows me to keep the mbsync file in .config/isync, which is where it should be. The newer mw doesn't allow this and keeps it in ~, which I hate.
+
 # scratch
+
+[Update]: No longer in use, as I use dwm, and it has a inbuilt implementation/better implementation through a patch.
 
 Script to imitate i3's scratchpad feature in bspwm. Used to hold my music player in the scratchpad.
 
 # shutdmenu
 
-Script to create a shutdown menu using dmenu. 
+Script to create a shutdown menu using dmenu.
 Options are: logout, restart X, reload sxhkd, shutdown, reboot and lock X.
 
-# st-copyout
-# st-urlhandler
+# thinkpoint
 
-Luke Smith's scripts for st, modified to work with my build of dmenu, which allow to copy and follow urls as well as output of commands in st. Should work in other terminals as well.
+Script that enables the various settings of my ThinkPad's TrackPoint, like Press to Select, Speed and Sensitivity.
 
-# termpv
-# tmpv
-# ytmpv
+# tnot
 
-Scripts to play files in mpv, (ytmpv for youtube videos) required due to special requirements of mpv for the Raspberry Pi. (this version of mpv's --vo=rpi is the only usable hardware accelerated output, but cannot be controlled except in the terminal.)
-
+Script that hooks into my rtorrent config to notify when a torrent has finished downloading.
