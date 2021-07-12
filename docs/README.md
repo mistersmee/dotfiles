@@ -3,7 +3,7 @@
 My dotfiles repo, intended as a personal backup.
 
 
-# Usage Instructions
+## Usage Instructions
 
 On the system where it is to be installed:
 
@@ -13,7 +13,7 @@ On the system where it is to be installed:
 + `d checkout`
 + `d config --local status.showUntrackedFiles no`
 
-### Copyright
+## Copyright
  ```
   /*
   *  Copyright (C) 2020-21 Aseem Athale
