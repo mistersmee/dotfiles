@@ -4,14 +4,14 @@
 
 Script that starts all the programs I need while running X. It is called by dwm while starting up. It is a much more elegant solution than the autostart patches in dwm.
 
-## battery_notify.py
-## brightness_notify.py
+
+## brightness_notify.py & battery_notify.py
 
 Python scripts lifted from Benedikt Vollmerhaus' repo. Do what they say on the tin.
 
 ## bin2hex
 
-Tomasz Ostrowski (tomeko)'s binary to hexadecimal converter program.
+Tomasz Ostrowski (tomeko)'s binary to hexadecimal converter program and C source file.
 Kept here so I can easily find it and in case it goes down.
 
 ## calnotify
@@ -23,8 +23,7 @@ Used as a cronjob to run periodically every 15 minutes.
 
 Luke Smith's script for inserting emojis in st.
 
-## dmenumount
-## dmenuumount
+## dmenumount & dmenuumount
 
 Luke Smith's scripts to mount/unmount both USB and Android devices.
 
