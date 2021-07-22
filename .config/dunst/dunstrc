@@ -61,10 +61,10 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#aaaaaa" 
+    frame_color = "#859900"
     # Define a color for the separator.
     # possible values are:
     #  * auto: dunst tries to find a color fitting to the background;
@@ -181,7 +181,7 @@
     dmenu = /usr/bin/dmenu -i -l 30 -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/firefox 
+    browser = /usr/bin/firefox
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -273,16 +273,16 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2b2b2b"
-    foreground = "#ffffff"
+    background = "#002b36"
+    foreground = "#93a1a1"
 
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/smee/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#2b2b2b"
-    foreground = "#ffffff"
+    background = "#002b36"
+    foreground = "#93a1a1"
 
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
