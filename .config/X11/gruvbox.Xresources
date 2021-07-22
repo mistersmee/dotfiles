@@ -35,3 +35,11 @@ dmenu.font: Fira Code:size=13
 ! LightGrey + White
 *color7:  #a89984
 *color15: #ebdbb2
+dmenu.background: #282828
+dmenu.foreground: #ebdbb2
+dmenu.selbackground: #928374
+dmenu.selforeground: #fabd2f
+dwm.selbgcolor: #282828
+dwm.normbgcolor: #928374
+dwm.selfgcolor: #ebdbb2
+dwm.normfgcolor: #a89984
