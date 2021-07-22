@@ -49,11 +49,13 @@ dmenu.font: Fira Code:size=13
 *.color14: nord7
 *.color15: nord6
 
-dmenu.background: nord0
+dmenu.background: nord1
 dmenu.foreground: nord4
-dmenu.selbackground: nord1
+dmenu.selbackground: nord0
 dmenu.selforeground: nord7
 dwm.selbgcolor: #2E3440
 dwm.normbgcolor: #3B4252
-dwm.selfgcolor: #ECEFF4
+dwm.selfgcolor: #8FBCBB
 dwm.normfgcolor:#D8DEE9
+
+#; vim:ft=xdefaults
