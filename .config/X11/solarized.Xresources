@@ -71,9 +71,9 @@ dmenu.font:	Fira Code:size=15
 
 dmenu.background:              S_base03
 dmenu.foreground:              S_base0
-dmenu.selbackground:  S_base01
-dmenu.selforeground:  S_base1
+dmenu.selbackground:  S_base03
+dmenu.selforeground:  S_green
 dwm.selbgcolor:       #002b36
-dwm.selfgcolor:       #839496
-dwm.normfgcolor:      #93a1a1
+dwm.selfgcolor:       #93a1a1
+dwm.normfgcolor:      #839496
 dwm.normbgcolor:      #073642
