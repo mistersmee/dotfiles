@@ -1,4 +1,6 @@
---[[This is free and unencumbered software released into the public domain.
+--[[
+
+This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
@@ -21,7 +23,9 @@ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-For more information, please refer to <https://unlicense.org>]]--
+For more information, please refer to <https://unlicense.org>
+
+]]--
 
 local utils = require 'mp.utils'
 local msg = require 'mp.msg'
@@ -73,7 +77,7 @@ function get_files_windows(dir)
           $path = "]]..dir..[["
           $escapedPath = [WildcardPattern]::Escape($path)
           cd $escapedPath
-    
+
           $list = (Get-ChildItem -File | Sort-Object { [regex]::Replace($_.Name, '\d+', { $args[0].Value.PadLeft(20) }) }).Name
           $string = ($list -join "/")
           $u8list = [System.Text.Encoding]::UTF8.GetBytes($string)

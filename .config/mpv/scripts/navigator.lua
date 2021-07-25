@@ -1,4 +1,6 @@
---[[This is free and unencumbered software released into the public domain.
+--[[
+
+This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
@@ -21,7 +23,9 @@ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-For more information, please refer to <https://unlicense.org>]]--
+For more information, please refer to <https://unlicense.org>
+
+]]--
 
 local utils = require("mp.utils")
 local mpopts = require("mp.options")
@@ -232,7 +236,7 @@ function childdir()
       if info and info.is_dir then
         changepath(newdir)
       else
-        
+
         if issubtitle(item) then
           loadsubs(utils.join_path(path, item))
         else
@@ -253,7 +257,7 @@ function childdir()
     else
       if issubtitle(item) then
         loadsubs(utils.join_path(path, item))
-      else 
+      else
         mp.commandv("loadfile", utils.join_path(path, item), "append-play")
         mp.osd_message("Appended file to playlist: "..item)
       end

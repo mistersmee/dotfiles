@@ -1,4 +1,6 @@
---[[ MIT License
+--[[
+
+MIT License
 
 Copyright (c) 2019 David Deprost
 
@@ -94,7 +96,7 @@ function download_subs(language)
         log('No Language found\n')
         return false
     end
-            
+
     log('Searching ' .. language[1] .. ' subtitles ...', 30)
 
     -- Build the `subliminal` command, starting with the executable:
