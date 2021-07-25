@@ -1,9 +1,31 @@
+--[[ MIT License
+
+Copyright (c) 2019 David Deprost
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+]]--
 --=============================================================================
 -->>    SUBLIMINAL PATH:
 --=============================================================================
 --          This script uses Subliminal to download subtitles,
 --          so make sure to specify your system's Subliminal location below:
-local subliminal = '/usr/bin/subliminal'
+local subliminal = '/home/david/.local/bin/subliminal'
 --=============================================================================
 -->>    SUBTITLE LANGUAGE:
 --=============================================================================
@@ -15,7 +37,7 @@ local languages = {
 --          other languages will NOT be downloaded,
 --          so put your preferred language first:
             { 'English', 'en', 'eng' },
---            { 'Dutch', 'nl', 'dut' },
+            { 'Dutch', 'nl', 'dut' },
 --          { 'Spanish', 'es', 'spa' },
 --          { 'French', 'fr', 'fre' },
 --          { 'German', 'de', 'ger' },
@@ -43,7 +65,7 @@ local logins = {
 -->>    ADDITIONAL OPTIONS:
 --=============================================================================
 local bools = {
-    auto = false,   -- Automatically download subtitles, no hotkeys required
+    auto = true,   -- Automatically download subtitles, no hotkeys required
     debug = false, -- Use `--debug` in subliminal command for debug output
     force = true,  -- Force download; will overwrite existing subtitle files
     utf8 = true,   -- Save all subtitle files as UTF-8
@@ -68,6 +90,11 @@ local utils = require 'mp.utils'
 -- Download function: download the best subtitles in most preferred language
 function download_subs(language)
     language = language or languages[1]
+    if #language == 0 then
+        log('No Language found\n')
+        return false
+    end
+            
     log('Searching ' .. language[1] .. ' subtitles ...', 30)
 
     -- Build the `subliminal` command, starting with the executable:
@@ -178,7 +205,7 @@ function autosub_allowed()
         mp.msg.warn('Automatic subtitle downloading is disabled for cue files')
         return false
     else
-        local not_allowed = {'aiff', 'ape', 'flac', 'mp3', 'ogg', 'wav', 'wv'}
+        local not_allowed = {'aiff', 'ape', 'flac', 'mp3', 'ogg', 'wav', 'wv', 'tta'}
 
         for _, file_format in pairs(not_allowed) do
             if file_format == active_format then
