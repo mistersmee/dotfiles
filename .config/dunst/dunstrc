@@ -64,7 +64,12 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
+    # Solarized
     frame_color = "#859900"
+    #Nord
+    #frame_color = "#A3BE8C"
+    #Gruvbox
+    #frame_color = "#98971a"
     # Define a color for the separator.
     # possible values are:
     #  * auto: dunst tries to find a color fitting to the background;
@@ -273,16 +278,30 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
+    #Solarized
     background = "#002b36"
     foreground = "#93a1a1"
+    #Nord
+    #background = "#2E3440"
+    #foreground = "#D8DEE9"
+    #Gruvbox
+    #background = "#282828"
+    #foreground = "#ebdbb2"
 
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/smee/.config/dunst/normal.png
 
 [urgency_normal]
+    #Solarized
     background = "#002b36"
     foreground = "#93a1a1"
+    #Nord
+    #background = "#2E3440"
+    #foreground = "#D8DEE9"
+    #Gruvbox
+    #background = "#282828"
+    #foreground = "#ebdbb2"
 
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
