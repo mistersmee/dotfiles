@@ -78,4 +78,4 @@ dwm.selfgcolor:       #859900
 dwm.normfgcolor:      #839496
 dwm.normbgcolor:      #073642
 
-#; vim:ft=xdefaults
+! vim:ft=xdefaults
