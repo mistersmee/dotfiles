@@ -34,4 +34,4 @@ On the system where it is to be installed:
   */
   ```
 Copy of the GNU GPL located at `docs/license` in the repository.
-All files are under the GPL and the copyright is owned by me, unless stated otherwise in the files themselves, e.g. the scripts written by other people. Obviously, in that case, they hold the copyright, not me. 
+All files in this repository are under the GPL and the copyright is held by me, unless specifically stated otherwise.
