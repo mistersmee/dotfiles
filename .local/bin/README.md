@@ -11,7 +11,7 @@ Python scripts lifted from Benedikt Vollmerhaus' repo. Do what they say on the t
 
 ## bin2hex
 
-Tomasz Ostrowski (tomeko)'s binary to hexadecimal converter program and C source file.
+Tomasz Ostrowski (tomeko)'s binary to hexadecimal converter program's C source file.
 Kept here so I can easily find it and in case it goes down.
 
 ## calnotify
