@@ -43,7 +43,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 # aliases
 ## config aliases
 alias sc="nv ~/.config/sxhkd/sxhkdrc"
-alias pc="nv ~/.config/polybar/config"
 alias nc="nv ~/.config/nvim/init.vim"
 alias zc="nvim ~/.zshrc"
 
@@ -51,7 +50,6 @@ alias zc="nvim ~/.zshrc"
 
 alias np="ncmpcpp"
 alias rt="rtorrent"
-alias vc="doas cryptsetup --type tcrypt --veracrypt --tcrypt-hidden "
 alias ls='lsd '
 alias nb="newsboat"
 alias d="git --git-dir=$HOME/dl/git/dotfiles/ --work-tree=$HOME "
