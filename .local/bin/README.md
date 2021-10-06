@@ -14,11 +14,6 @@ Python scripts lifted from Benedikt Vollmerhaus' repo. Do what they say on the t
 Tomasz Ostrowski (tomeko)'s binary to hexadecimal converter program's C source file.
 Kept here so I can easily find it and in case it goes down.
 
-## calnotify
-
-Script to notify appointments and todo of calcurse.
-Used as a cronjob to run periodically every 15 minutes.
-
 ## dmenuunicode
 
 Luke Smith's script for inserting emojis in st.
@@ -40,20 +35,6 @@ Script that set's the wallpaper using feh.
 ## launchpolybar
 
 Script that does what it says on the tin. Not used anymore, as I don't use polybar.
-
-## mailsync
-
-Script created my me, and partly inspired by Luke Smith's script of the same name.
-
-Syncs my email, sends a notification telling how many new emails, as well as who they are from, and the subject.
-
-## mw
-
-My copy of Luke Smith's mutt-wizard script, before the "big redesign".
-
-This older version allows me to keep the mbsync file in .config/isync, which is where it should be.
-
-The newer mw doesn't allow this and keeps it in ~, which I hate.
 
 ## scratch
 

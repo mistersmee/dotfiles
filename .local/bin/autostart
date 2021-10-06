@@ -8,8 +8,8 @@ nm-applet &
 pasystray &
 blueman-applet &
 sxhkd &
-lxpolkit &
-sudo sh -c thinkpoint &
+#lxpolkit &
+#sudo sh -c thinkpoint &
 python .local/bin/brightness_notify.py &
 picom --experimental-backends &
 dwmbar &
