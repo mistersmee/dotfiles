@@ -6,20 +6,15 @@ SAVEHIST=1000
 HISTFILE=~/.cache/zsh/history
 
 # Auto tab completion stuff:
-zmodload zsh/complist
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+autoload -Uz compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*:options' list-colors '=^(-- *)=34'
 zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
+zmodload zsh/complist
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots)		# Include hidden files.
-autoload -Uz compinit
-if [[ -n $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION(#qN.mh+24) ]]; then
-	compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION;
-else
-	compinit -C;
-fi;
 
 # cd without cd
 setopt correct
