@@ -43,7 +43,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 # aliases
 ## config aliases
 alias sc="nv ~/.config/sxhkd/sxhkdrc"
-alias nc="nv ~/.config/nvim/init.vim"
 alias zc="nvim ~/.zshrc"
 
 ## misc niceties
@@ -58,13 +57,11 @@ alias pb="podboat"
 alias nv="nvim"
 
 ## program aliases due to xdg, etc
-alias zul="zulip-term -c ~/.config/zulip/zuliprc "
 alias vim="vim -i NONE"
 alias wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts" "
 alias grep="grep --color=always"
 alias cp="advcp -gv"
 alias mv="advmv -gv"
-alias abook="abook -C "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/adressbook"
 alias weechat="weechat -d "$XDG_CONFIG_HOME"/weechat"
 alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
 # history plugin bindkeys and other keybindings
