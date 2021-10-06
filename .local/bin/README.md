@@ -22,12 +22,6 @@ Luke Smith's script for inserting emojis in st.
 
 Luke Smith's scripts to mount/unmount both USB and Android devices.
 
-## dmtpfs
-
-[Update]: No longer in use, deprecated in favour of dmenumount and dmenuumount.
-
-Brodie Robertson's Android automount script.
-
 ## fehbg
 
 Script that set's the wallpaper using feh.
@@ -35,12 +29,6 @@ Script that set's the wallpaper using feh.
 ## launchpolybar
 
 Script that does what it says on the tin. Not used anymore, as I don't use polybar.
-
-## scratch
-
-[Update]: No longer in use, as I use dwm, and it has a inbuilt implementation/better implementation through a patch.
-
-Script to imitate i3's scratchpad feature in bspwm. Used to hold my music player in the scratchpad.
 
 ## shutdmenu
 
