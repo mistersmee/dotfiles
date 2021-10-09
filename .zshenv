@@ -51,7 +51,7 @@ export LESS_TERMCAP_us=$'\e[01;32m'
 
 export NNN_FIFO="/tmp/nnn.fifo"
 export NNN_HELP="fortune"
-export NNN_PLUG='p:preview-tabbed;x:!chmod +x $nnn'
+export NNN_PLUG='p:preview-tui;x:!chmod +x $nnn'
 export NNN_OPENER="xdg-open"
 export NNN_BMS="g:~/dl/git/;d:~/dl/;m:~/mus/"
 export NNN_ARCHIVE="\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|rar|rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)$"
