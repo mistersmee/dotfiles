@@ -2,7 +2,7 @@
 clipmenud &
 mpd &
 mpDris2 &
-dunst &
+dunst --startup_notification "true"&
 fehbg &
 nm-applet &
 pasystray &

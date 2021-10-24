@@ -7,7 +7,7 @@
 super + F7
 #	mpc next
 	playerctl next
-super + F6 
+super + F6
 # mpc toggle
 	playerctl play-pause
 super + F5
@@ -26,7 +26,7 @@ super + shift + e
 	shutdmenu
 super + c
 	clipmenu
-super + shift + a 
+super + shift + a
 	dmenuumount
 super + a
 	dmenumount
@@ -34,3 +34,5 @@ super + shift + u
 	dmenuunicode
 super + w
 	firefox
+super + shift + c
+	dunstctl context
