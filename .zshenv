@@ -58,5 +58,5 @@ export NNN_ARCHIVE="\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|l
 export NNN_COLORS='1234'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 
-#autostart X on tty1
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2>/tmp/X.log; fi
+#autostart X on tty2
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty2 ]]; then exec sx ~/.config/sx/sxrc 2>/tmp/X.log; fi
