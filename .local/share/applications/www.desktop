@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Web browser
+Exec=/usr/local/bin/firefox %u

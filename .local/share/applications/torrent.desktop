@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=Torrent
-Exec=/usr/local/bin/st -e rtorrent %U
+Exec=/usr/bin/kitty -e rtorrent %U
