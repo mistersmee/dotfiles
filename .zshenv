@@ -9,7 +9,7 @@ export WM="dwm"
 export OPENER="xdg-open"
 export VISUAL="nvim"
 export READER="zathura"
-export TERMINAL="st"
+export TERMINAL="kitty"
 export BROWSER="firefox"
 
 # Adds `~/.local/bin` to $PATH
