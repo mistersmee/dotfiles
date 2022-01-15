@@ -3,7 +3,8 @@ set rtp+=~/.config/vim/bundle/Vundle.vim
 call vundle#begin('~/.config/vim/bundle/')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'junegunn/goyo.vim'
-Plugin 'vim-scripts/AutoComplPop'
+"Plugin 'vim-scripts/AutoComplPop'
+Plugin 'neoclide/coc.nvim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'morhetz/gruvbox'
