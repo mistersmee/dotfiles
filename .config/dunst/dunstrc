@@ -17,7 +17,7 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = mouse
+    follow = none
 
     ### Geometry ###
 
@@ -129,7 +129,7 @@
     #        <u>underline</u>
     #
     #        For a complete reference see
-    #        <https://developer.gnome.org/pango/stable/pango-Markup.html>.
+    #        <https://docs.gtk.org/Pango/pango_markup.html>.
     #
     # strip: This setting is provided for compatibility with some broken
     #        clients that send markup even though it's not enabled on the
@@ -188,7 +188,7 @@
 
     ### Icons ###
 
-    # Align icons left/right/off
+    # Align icons left/right/top/off
     icon_position = left
 
     # Scale small icons up to this size, set to 0 to disable. Helpful
@@ -358,12 +358,14 @@
 #    set_category
 #    timeout
 #    urgency
+#    icon_position
 #    skip_display
 #    history_ignore
 #    action_name
 #    word_wrap
 #    ellipsize
 #    alignment
+#    hide_text
 #
 # Shell-like globbing will get expanded.
 #
