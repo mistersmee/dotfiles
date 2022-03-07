@@ -86,7 +86,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
     # Solarized
@@ -197,7 +197,7 @@
     min_icon_size = 0
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 32
+    max_icon_size = 64
 
     # Paths to default icons.
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -308,7 +308,7 @@
 
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
-    new_icon = /home/smee/.config/dunst/normal.png
+    #new_icon = /home/smee/.config/dunst/normal.png
 
 [urgency_normal]
     #Solarized
