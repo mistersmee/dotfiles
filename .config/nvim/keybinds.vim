@@ -5,3 +5,4 @@ nnoremap <leader>l <c-w>w
 nnoremap <leader>s z=
 nnoremap <leader>t :tabe <CR>
 nnoremap c "_c
+nnoremap <leader>m :e ~/.local/share/todo/ <CR>
