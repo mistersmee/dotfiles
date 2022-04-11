@@ -8,8 +8,8 @@ super + F7
 #	mpc next
 	playerctl next
 super + F6
-# mpc toggle
-	playerctl play-pause
+	mpc toggle
+#	playerctl play-pause
 super + F5
 #	mpc prev
 	playerctl previous
