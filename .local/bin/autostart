@@ -6,7 +6,8 @@ dunst --startup_notification "true"&
 fehbg &
 nm-applet &
 pasystray &
-#blueman-applet &
+cbatticon &
+blueman-applet &
 sxhkd &
 #sudo sh -c thinkpoint &
 #python .local/bin/brightness_notify.py &
