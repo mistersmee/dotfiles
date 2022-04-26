@@ -5,9 +5,10 @@
 ###
 
 DMENU='dmenu -i'
-choice=$(echo -e "haxxor\nnormie" | $DMENU)
+choice=$(echo -e "haxxor\nnormie\nclg" | $DMENU)
 
 case "$choice" in
   haxxor) firefox -profile ~/.mozilla/firefox/haxxor &;;
   normie) firefox -profile ~/.mozilla/firefox/normie &;;
+  clg) firefox -profile ~/.mozilla/firefox/clg &;;
 esac
