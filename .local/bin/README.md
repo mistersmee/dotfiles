@@ -4,6 +4,10 @@
 
 Script that starts all the programs I need while running X. It is called by dwm while starting up. It is a much more elegant solution than the autostart patches in dwm.
 
+## brightness
+
+Philipp Normann's xrandr-brightness-script. Currently the only way to control brightness for my laptop that I can find.
+
 ## dmenuunicode
 
 Luke Smith's script for inserting emojis in st.
@@ -15,6 +19,10 @@ Luke Smith's scripts to mount/unmount both USB and Android devices.
 ## fehbg
 
 Script that set's the wallpaper using feh.
+
+## ffprof
+
+Script to choose firefox profiles: haxxor: for hardened firefox with arkenfox user.js et al, and normie: for normal firefox
 
 ## shutdmenu
 

@@ -8,8 +8,8 @@ super + F7
 #	mpc next
 	playerctl next
 super + F6
-	mpc toggle
-#	playerctl play-pause
+#	mpc toggle
+	playerctl play-pause
 super + F5
 #	mpc prev
 	playerctl previous
@@ -33,6 +33,24 @@ super + a
 super + shift + u
 	dmenuunicode
 super + w
-	firefox
+	ffprof
 super + shift + c
 	dunstctl context
+
+XF86AudioMute
+	pactl set-sink-mute alsa_output.pci-0000_05_00.6.analog-stereo toggle
+
+XF86AudioLowerVolume
+	pactl set-sink-volume alsa_output.pci-0000_05_00.6.analog-stereo -5%
+
+XF86AudioRaiseVolume
+	pactl set-sink-volume alsa_output.pci-0000_05_00.6.analog-stereo +5%
+
+XF86AudioMicMute
+	pactl set-source-mute alsa_input.pci-0000_05_00.6.analog-stereo toggle
+
+XF86MonBrightnessDown
+	brightness - eDP-1
+
+XF86MonBrightnessUp
+	brightness + eDP-1

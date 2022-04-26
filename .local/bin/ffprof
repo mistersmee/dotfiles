@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# a simple dmenu session script
+#
+###
+
+DMENU='dmenu -i'
+choice=$(echo -e "haxxor\nnormie" | $DMENU)
+
+case "$choice" in
+  haxxor) firefox -profile ~/.mozilla/firefox/haxxor &;;
+  normie) firefox -profile ~/.mozilla/firefox/normie &;;
+esac
