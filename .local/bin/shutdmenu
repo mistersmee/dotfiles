@@ -5,7 +5,7 @@
 ###
 
 DMENU='dmenu -i'
-choice=$(echo -e "lock_X\nshutdown\nreboot\nreloadsxhkd" | $DMENU)
+choice=$(echo -e "lock_X\nshutdown\nreboot\nsuspend\nreloadsxhkd" | $DMENU)
 
 case "$choice" in
   lock_X) slock &;;
