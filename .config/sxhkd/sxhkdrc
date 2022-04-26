@@ -50,7 +50,10 @@ XF86AudioMicMute
 	pactl set-source-mute alsa_input.pci-0000_05_00.6.analog-stereo toggle
 
 XF86MonBrightnessDown
-	brightness - eDP-1
+	sudo bright down
 
 XF86MonBrightnessUp
-	brightness + eDP-1
+	sudo bright up
+
+XF86Display
+	monctrl
