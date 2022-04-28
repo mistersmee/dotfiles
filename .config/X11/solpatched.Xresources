@@ -1,9 +1,11 @@
+*font: Fira Code:size=15
+dmenu.font: Fira Code:size=15
 *background:            #001e26
 *foreground:            #708183
 *cursor:                #708183
 *fading:                  40
 *fadeColor:               #586e75
-*cursorColor:             #93a1a1
+*cursorColor:             #708183
 *pointerColorBackground:  #708183
 *pointerColorForeground:  #708183
 *color0:                #002731
@@ -22,12 +24,12 @@
 *color13:               #5856b9
 *color14:               #81908f
 *color15:               #fcf4dc
-dmenu.background:              #001e26
-dmenu.foreground:              #708183
-dmenu.selbackground:  #93a1a1
-dmenu.selforeground:
-dwm.selbgcolor:       #002b36
-dwm.selfgcolor:       #859900
+dmenu.background:              #002b36
+dmenu.foreground:              #93a1a1
+dmenu.selbackground:  #001e26
+dmenu.selforeground:  #728905
+dwm.selbgcolor:       #001e26
+dwm.selfgcolor:       #728905
 dwm.normfgcolor:      #839496
 dwm.normbgcolor:      #073642
 
