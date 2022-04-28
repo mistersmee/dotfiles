@@ -1,61 +1,37 @@
-! +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-! title      Nord XResources                                    +
-! project    nord-xresources                                    +
-! version    0.1.0                                              +
-! repository https://github.com/arcticicestudio/nord-xresources +
-! author     Arctic Ice Studio                                  +
-! email      development@arcticicestudio.com                    +
-! copyright  Copyright (C) 2016                                 +
-! +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- *font:  Fira Code:size=15
+*font: Fira Code:size=15
 dmenu.font: Fira Code:size=15
-#define nord0 #2E3440
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #8FBCBB
-#define nord8 #88C0D0
-#define nord9 #81A1C1
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
+*background:            #001e26
+*foreground:            #708183
+*cursor:                #708183
+*fading:                  40
+*fadeColor:               #586e75
+*cursorColor:             #708183
+*pointerColorBackground:  #708183
+*pointerColorForeground:  #708183
+*color0:                #002731
+*color1:                #d01b24
+*color2:                #728905
+*color3:                #a57705
+*color4:                #2075c7
+*color5:                #c61b6e
+*color6:                #259185
+*color7:                #e9e2cb
+*color8:                #465a61
+*color9:                #bd3612
+*color10:               #465a61
+*color11:               #52676f
+*color12:               #708183
+*color13:               #5856b9
+*color14:               #81908f
+*color15:               #fcf4dc
+dmenu.background:              #002b36
+dmenu.foreground:              #93a1a1
+dmenu.selbackground:  #001e26
+dmenu.selforeground:  #728905
+dwm.selbgcolor:       #001e26
+dwm.selfgcolor:       #728905
+dwm.normfgcolor:      #839496
+dwm.normbgcolor:      #073642
 
-*.foreground:   nord4
-*.background:   nord0
-*.cursorColor:  nord4
-*fading: 35
-*fadeColor: nord3
 
-*.color0: nord1
-*.color1: nord11
-*.color2: nord14
-*.color3: nord13
-*.color4: nord9
-*.color5: nord15
-*.color6: nord8
-*.color7: nord5
-*.color8: nord3
-*.color9: nord11
-*.color10: nord14
-*.color11: nord13
-*.color12: nord9
-*.color13: nord15
-*.color14: nord7
-*.color15: nord6
-
-dmenu.background: nord1
-dmenu.foreground: nord4
-dmenu.selbackground: nord0
-dmenu.selforeground: nord7
-dwm.selbgcolor: #2E3440
-dwm.normbgcolor: #3B4252
-dwm.selfgcolor: #8FBCBB
-dwm.normfgcolor:#D8DEE9
-
-! vim:ft=xdefaults
+!vim:ft=xdefaults
