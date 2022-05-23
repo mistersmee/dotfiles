@@ -40,7 +40,7 @@ function! FernInit() abort
   nmap <buffer> m <Plug>(fern-action-move)
   nmap <buffer> M <Plug>(fern-action-rename)
   nmap <buffer> r <Plug>(fern-action-reload)
-  nmap <buffer> I <Plug>(fern-action-hidden-toggle)
+  nmap <buffer> I <Plug>(fern-action-hidden:toggle)
   nmap <buffer> b <Plug>(fern-action-open:split)
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
   nmap <buffer><nowait> h <Plug>(fern-action-leave)
