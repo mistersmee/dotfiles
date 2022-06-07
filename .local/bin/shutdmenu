@@ -12,5 +12,5 @@ case "$choice" in
   shutdown) sudo shutdown 0 &;;
   reboot) sudo reboot &;;
   suspend) sudo systemctl suspend &;;
-  reload_sxhkd) killall sxhkd && sxhkd &;;
+  reloadsxhkd) killall sxhkd && sxhkd &;;
 esac
