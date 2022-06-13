@@ -8,9 +8,9 @@ Script that starts all the programs I need while running X. It is called by dwm 
 
 Christopher Peterson's backlight brightness script using /sys/class/backlight. Much better solution than using xrandr. Also, works with Benedikt Vollmerhaus's brightness_notify.py script.
 
-## brightness_notify.py
+## brightness_notify.py & battery_notify.py
 
-Benedikt Vollmerhaus's script to notify if backlight changes.
+Benedikt Vollmerhaus's scripts to notify if backlight changes, and if battery goes beneath a certain level.
 
 ## dmenumount & dmenuumount
 
@@ -28,10 +28,18 @@ Script that set's the wallpaper using feh.
 
 Script to choose firefox profiles: haxxor: for hardened firefox with arkenfox user.js et al, and normie: for normal firefox
 
+## import-gsettings
+
+Script to import GTK settings for sway, see (https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland) for more.
+
 ## monctrl
 
 Script to control monitors of my laptop: the options are to 1) duplicate my laptop's screen and the external (HDMI) screen, 2) output only external screen 3) output only laptop screen.
 This script assumes that I'm plugging in using HDMI not DP-over-USB-C and the external screen is 1920x1080.
+
+## monctrlwlnd
+
+Script to control monitors of my laptop on wayland, specifically, sway. The script is basically same as the X script, monctrl, except for option 1, duplicate screen, which is missing, because sway, or wayland doesn't have a way to mirror or duplicate screens yet.
 
 ## shutdmenu
 

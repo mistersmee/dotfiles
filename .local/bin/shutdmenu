@@ -4,8 +4,13 @@
 #
 ###
 
-DMENU='dmenu -i'
-choice=$(echo -e "lock_X\nshutdown\nreboot\nsuspend\nreloadsxhkd" | $DMENU)
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+  DMENU='bemenu'
+else
+  DMENU='dmenu -i'
+fi
+
+choice=$(echo -e "lock_X\nlockwlnd\nshutdown\nreboot\nsuspend\nreloadsxhkd\nreloadsway" | $DMENU)
 
 case "$choice" in
   lock_X) slock &;;
@@ -13,4 +18,6 @@ case "$choice" in
   reboot) sudo reboot &;;
   suspend) sudo systemctl suspend &;;
   reloadsxhkd) killall sxhkd && sxhkd &;;
+  lockwlnd) swaylock-blur &;;
+  reloadsway) swaymsg reload &;;
 esac

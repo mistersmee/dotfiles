@@ -4,7 +4,12 @@
 #
 ###
 
-DMENU='dmenu -i'
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+  DMENU='bemenu'
+else
+  DMENU='dmenu -i'
+fi
+
 choice=$(echo -e "duplicate\nsecond_screen_only\nfirst_screen_only" | $DMENU)
 
 case "$choice" in
