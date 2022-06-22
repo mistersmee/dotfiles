@@ -6,8 +6,8 @@ ignore_diacritics = "yes"
 default_place_to_search_in = "database"
 
 colors_enabled = "yes"
-main_window_color = 13 
-current_item_prefix= "$(cyan)$r" 
+main_window_color = 13
+current_item_prefix= "$(cyan)$r"
 current_item_suffix = "$/r$(end)"
 
 song_list_format = "    $(15)%t$(end)$R $(11)%A$(end) ($(cyan)%l$(end))    "
@@ -75,3 +75,4 @@ empty_tag_marker = ""
 allow_for_physical_item_deletion = "yes"
 lyrics_directory=~/.config/ncmpcpp/lyrics
 mpd_music_dir="~/mus/"
+lyrics_fetchers = musixmatch, genius, sing365, jahlyrics, plyrics, tekstowo, zeneszoveg, azlyrics, internet
