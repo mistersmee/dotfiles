@@ -10,7 +10,7 @@ else
   DMENU='dmenu -i'
 fi
 
-choice=$(echo -e "lock_X\nlockwlnd\nshutdown\nreboot\nsuspend\nhibernate\nreloadsxhkd\nreloadsway" | $DMENU)
+choice=$(echo -e "lock_X\nlockwlnd\nshutdown\nreboot\nsuspend\nhibernate\nreloadsxhkd\nreloadsway\nsusthib\nhybslp" | $DMENU)
 
 case "$choice" in
   lock_X) slock &;;
@@ -21,4 +21,6 @@ case "$choice" in
   lockwlnd) swaylock-blur &;;
   reloadsway) swaymsg reload &;;
   hibernate) sudo systemctl hibernate &;;
+  susthib) sudo systemctl suspend-then-hibernate &;;
+  hybslp) sudo systemctl hybrid-sleep &;;
 esac
