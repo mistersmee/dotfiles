@@ -24,6 +24,20 @@ application/x-extension-shtml=www.desktop
 application/xhtml+xml=www.desktop
 application/x-extension-xhtml=www.desktop
 application/x-extension-xht=www.desktop
+audio/aac=audio.desktop
+audio/ac3=audio.desktop
+audio/mp4=audio.desktop
+audio/mpeg=audio.desktop
+audio/x-ms-wma=audio.desktop
+video/mpeg=audio.desktop
+audio/flac=audio.desktop
+audio/x-flac=audio.desktop
+audio/mpeg=audio.desktop
+audio/basic=audio.desktop
+audio/x-aiff=audio.desktop
+audio/x-wav=audio.desktop
+application/ogg=audio.desktop
+audio/x-vorbis+ogg=audio.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;www.desktop;
