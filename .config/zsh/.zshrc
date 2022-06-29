@@ -12,6 +12,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*:options' list-colors '=^(-- *)=34'
 zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' cache-path $XDG_CACHE_HOME/zsh/zcompcache
 zmodload zsh/complist
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots)		# Include hidden files.
@@ -59,6 +60,7 @@ alias cp="advcp -gv"
 alias mv="advmv -gv"
 alias weechat="weechat -d "$XDG_CONFIG_HOME"/weechat"
 alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
+alias build="source build/envsetup.sh && lunch twrp_cebu-eng && mka clobber && mka -j8 recoveryimage"
 # history plugin bindkeys and other keybindings
 
 bindkey '^[[A' history-substring-search-up
