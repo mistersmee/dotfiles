@@ -13,3 +13,5 @@
 [http]
 	lowSpeedLimit = 0
 	lowSpeedTime = 999999
+[color]
+	ui = auto
