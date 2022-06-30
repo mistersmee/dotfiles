@@ -34,6 +34,8 @@ export GRADLE_USER_HOME=""$XDG_DATA_HOME"/gradle"
 export WEECHAT_HOME=""$XDG_CONFIG_HOME"/weechat"
 export ANDROID_HOME=""$XDG_DATA_HOME"/android"
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
+#export GNUPGHOME=""$XDG_DATA_HOME"/gnupg"
+
 #other miscellaneous programs
 #export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export QT_STYLE_OVERRIDE="kvantum"
