@@ -11,6 +11,7 @@ export VISUAL="nvim"
 export READER="zathura"
 export TERMINAL="kitty"
 export BROWSER="firefox"
+export DIFFPROG="nvim -d"
 
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:$HOME/.local/bin"
