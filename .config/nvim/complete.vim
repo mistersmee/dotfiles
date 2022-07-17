@@ -172,3 +172,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "coc-pairs
 "coc-pyright
 "coc-clangd
+"coc-texlab

@@ -12,6 +12,9 @@ Christopher Peterson's backlight brightness script using /sys/class/backlight. M
 
 Benedikt Vollmerhaus's scripts to notify if backlight changes, and if battery goes beneath a certain level.
 
+## compiler
+
+Luke Smith's script to compile stuff. Called by a keybind in vim currently, just like his setup, though can be used elsewhere.
 ## dmenumount & dmenuumount
 
 Luke Smith's scripts to mount/unmount both USB and Android devices.
@@ -41,11 +44,20 @@ This script assumes that I'm plugging in using HDMI not DP-over-USB-C and the ex
 
 Script to control monitors of my laptop on wayland, specifically, sway. The script is basically same as the X script, monctrl, except for option 1, duplicate screen, which is missing, because sway, or wayland doesn't have a way to mirror or duplicate screens yet.
 
+## opout
+
+Luke Smith's script to open the output file, typically the pdf output from latex files. Called by a keybind in nvim, just like his setup.
+
 ## shutdmenu
 
 Script to create a shutdown menu using dmenu.
 
 Options are: logout, restart X, reload sxhkd, shutdown, reboot and lock X.
+
+## texclear
+
+Luke Smith's script to clear the Tex build files. Called in the config file in nvim, just like his setup.
+
 
 ## tnot
 

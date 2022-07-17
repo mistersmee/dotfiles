@@ -19,5 +19,5 @@ Plugin 'lambdalisue/fern-hijack.vim'
 Plugin 'lambdalisue/nerdfont.vim'
 Plugin 'ap/vim-css-color'
 Plugin 'Yggdroot/indentLine'
-Bundle 'ron89/thesaurus_query.vim'
+Plugin 'ron89/thesaurus_query.vim'
 call vundle#end()
