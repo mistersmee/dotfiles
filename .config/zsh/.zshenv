@@ -14,7 +14,7 @@ export BROWSER="firefox"
 export DIFFPROG="nvim -d"
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$HOME/.local/bin:/usr/bin/vendor_perl/:$PATH"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
