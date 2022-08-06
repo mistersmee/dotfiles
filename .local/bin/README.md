@@ -54,6 +54,9 @@ Script to create a shutdown menu using dmenu.
 
 Options are: logout, restart X, reload sxhkd, shutdown, reboot and lock X.
 
+## sway
+
+A wrapper script to start sway, so that the proper environment variables are being set and respected.
 ## texclear
 
 Luke Smith's script to clear the Tex build files. Called in the config file in nvim, just like his setup.

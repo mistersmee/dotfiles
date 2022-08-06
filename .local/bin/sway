@@ -1,0 +1,4 @@
+#!/bin/bash
+export SDL_VIDEODRIVER=wayland
+export MOZ_ENABLE_WAYLAND=1
+exec /usr/bin/sway
