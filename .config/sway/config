@@ -279,6 +279,8 @@ exec_always pkill pasystray || pasystray &
 exec_always nm-applet --indicator &
 exec wl-paste -t text --watch clipman store
 exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
+exec_always xrdb -merge ~/.config/X11/Xresources &
+exec_always systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 # Window rules:
 #
 assign [app_id="firefox"] workspace number 9
