@@ -71,4 +71,4 @@ export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 #export QT_IM_MODULE=ibus
 #export XMODIFIERS=@im=ibus
 #autostart X on tty1
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2>/tmp/X.log; fi
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sway > /tmp/X.log 2>&1; fi
