@@ -38,7 +38,7 @@ audio/x-aiff=audio.desktop
 audio/x-wav=audio.desktop
 application/ogg=audio.desktop
 audio/x-vorbis+ogg=audio.desktop
-
+application/vnd.comicbook-rar=pdf.desktop
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;www.desktop;
 x-scheme-handler/https=firefox.desktop;www.desktop;
