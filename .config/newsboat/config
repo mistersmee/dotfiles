@@ -44,7 +44,7 @@ color info red black bold
 color article white default bold
 
 #Killfile config
-define-filter "IGN" "title =~ \"Daily\ Fix\" or title =~ \"Trailer\""
+define-filter "IGN" "title =~ \"Daily\ Fix\" or title =~ \"Trailer\" or title =~ \"Review\" or title =~ \"The Fix\""
 # ignore-article "https://www.youtube.com/feeds/videos.xml?channel_id=UCKy1dAqELo0zrOtPkf0eTMw" "title !~\"Daily\ Fix\""
 # ignore-article "https://www.youtube.com/feeds/videos.xml?channel_id=UCKy1dAqELo0zrOtPkf0eTMw" "title !~\"Trailer\""
 # ignore-mode display
