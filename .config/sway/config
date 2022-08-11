@@ -291,4 +291,7 @@ assign [app_id="firefox"] workspace number 9
 assign [class="firefox"] workspace number 9
 for_window [app_id="scratch"] move window to scratchpad
 
+# Swallow
+bindsym $mod+s split horizontal; layout tabbed
+
 include /etc/sway/config.d/*
