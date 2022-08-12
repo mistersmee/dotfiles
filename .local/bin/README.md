@@ -4,6 +4,11 @@
 
 Script that starts all the programs I need while running X. It is called by dwm while starting up. It is a much more elegant solution than the autostart patches in dwm.
 
+## bemenu & bemenu-run
+
+Scripts to launch bemenu with specific options, it doesn't have a config file or something to set those options, and it seems smart to have those in one place rather than changing them in every script that uses them.
+Since `$PATH` has ``~/.local/bin/`` first, they will always show up first in `which bemenu`.
+
 ## bright
 
 Christopher Peterson's backlight brightness script using /sys/class/backlight. Much better solution than using xrandr. Also, works with Benedikt Vollmerhaus's brightness_notify.py script.
