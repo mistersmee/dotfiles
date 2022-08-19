@@ -20,6 +20,7 @@ Benedikt Vollmerhaus's scripts to notify if backlight changes, and if battery go
 ## compiler
 
 Luke Smith's script to compile stuff. Called by a keybind in vim currently, just like his setup, though can be used elsewhere.
+
 ## dmenumount & dmenuumount
 
 Luke Smith's scripts to mount/unmount both USB and Android devices.
@@ -31,6 +32,10 @@ Luke Smith's script for inserting emojis in st.
 ## fehbg
 
 Script that set's the wallpaper using feh.
+
+## ferdium
+
+Wrapper script to start ferdium with electron flags that enable running ferdium on Wayland natively. (Ferdium doesn't respect electron-flags.conf, so this hacky solution ftw)
 
 ## ffprof
 
@@ -62,6 +67,7 @@ Options are: logout, restart X, reload sxhkd, shutdown, reboot and lock X.
 ## sway
 
 A wrapper script to start sway, so that the proper environment variables are being set and respected.
+
 ## texclear
 
 Luke Smith's script to clear the Tex build files. Called in the config file in nvim, just like his setup.

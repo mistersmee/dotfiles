@@ -1,5 +1,6 @@
 #!/bin/bash
 export SDL_VIDEODRIVER=wayland
 export XDG_CURRENT_DESKTOP=sway
+export QT_QPA_PLATFORM=wayland
 export MOZ_ENABLE_WAYLAND=1
 exec /usr/bin/sway

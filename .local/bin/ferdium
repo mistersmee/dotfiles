@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/bin/ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland
