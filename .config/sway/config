@@ -283,9 +283,10 @@ exec_always nm-applet --indicator &
 exec wl-paste -t text --watch clipman store
 exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman.json"
 exec_always xrdb -merge ~/.config/X11/Xresources &
-exec_always systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+exec_always systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK
+exec_always dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK
 exec_always clipman clear --all
-exec_always swayidle -w timeout 150 'swaylock -f -c 000000' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f -c 000000'
+exec_always swayidle -w timeout 150 'swaylock-blur -- -f' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock-blur -- -f'
 # Window rules:
 #
 assign [app_id="firefox"] workspace number 9
