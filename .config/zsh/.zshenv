@@ -72,7 +72,6 @@ export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 #export XMODIFIERS=@im=ibus
 
 # Wayland
-export BEMENU_OPTS='--fn "Fira Code 15"'
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 export XDG_CURRENT_DESKTOP=sway
