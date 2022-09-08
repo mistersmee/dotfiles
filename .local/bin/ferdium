@@ -1,2 +1,9 @@
 #!/bin/bash
-/usr/bin/ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland
+
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+  OPTS='--enable-features=UseOzonePlatform --ozone-platform=wayland'
+else
+  OPTS=''
+fi
+
+/usr/bin/ferdium $OPTS
