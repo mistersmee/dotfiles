@@ -29,7 +29,7 @@
 
 window#waybar {
     background-color: rgba(0, 43, 54, 0.5);
-    color: #fdf6e3;
+    color: #657b83;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -96,7 +96,6 @@ window#waybar.chromium {
 #idle_inhibitor,
 #mpd {
     padding: 0 10px;
-    margin: 0 2px;
     color: #657b83;
 }
 
