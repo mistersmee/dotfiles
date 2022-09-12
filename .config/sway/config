@@ -182,7 +182,7 @@ input "type:keyboard" {
 
     bindsym $mod+shift+e exec shutdmenu
 
-    bindsym $mod+c exec clipman pick --tool=bemenu
+    bindsym $mod+c exec clipman pick --tool=CUSTOM --tool-args="dmenu -l 10 -p 'pick:'"
 
     bindsym $mod+shift+a exec dmenuumount
 
