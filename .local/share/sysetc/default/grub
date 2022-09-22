@@ -1,0 +1,3 @@
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=0
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet resume=UUID=2df0e7fa-ce17-42e7-ac66-d0cfa938bf57 initcall_blacklist=acpi_cpufreq_init"
