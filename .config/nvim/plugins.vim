@@ -4,7 +4,7 @@ call vundle#begin('~/.config/vim/bundle/')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'junegunn/goyo.vim'
 "Plugin 'vim-scripts/AutoComplPop'
-Plugin 'neoclide/coc.nvim'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'sheerun/vim-polyglot'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'morhetz/gruvbox'

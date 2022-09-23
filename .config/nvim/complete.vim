@@ -173,3 +173,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "coc-pyright
 "coc-clangd
 "coc-texlab
+"coc-java
