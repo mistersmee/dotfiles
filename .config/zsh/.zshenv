@@ -89,4 +89,5 @@ export MOZ_ENABLE_WAYLAND=1
 
 #autostart WM on tty1
 
+#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2> /tmp/X.log; fi
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sway > /tmp/X.log 2>&1; fi
