@@ -37,9 +37,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
  export LANG=en_US.UTF-8
 
 # aliases
-## config aliases
-alias sc="nv ~/.config/sxhkd/sxhkdrc"
-alias zc="nvim ~/.zshrc"
 
 ## misc niceties
 
@@ -63,6 +60,7 @@ alias weechat="weechat -d "$XDG_CONFIG_HOME"/weechat"
 alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
 alias build="source build/envsetup.sh && lunch twrp_cebu-eng && mka clobber && mka -j8 recoveryimage"
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+alias sudo="doas "
 
 # history plugin bindkeys and other keybindings
 
