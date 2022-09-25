@@ -1,4 +1,5 @@
 # declaring defaults
+
 export EDITOR="nvim"
 export STATUSBAR="dwmbar"
 export VIDEO="mpv"
@@ -14,9 +15,11 @@ export BROWSER="firefox"
 export DIFFPROG="nvim -d"
 
 # Adds `~/.local/bin` to $PATH
+
 export PATH="$HOME/.local/bin:/usr/bin/vendor_perl/:$PATH"
 
 # ~/ Clean-up:
+
 export XDG_CONFIG_HOME="$HOME/.config"
 export NOTMUCH_CONFIG=""$XDG_CONFIG_HOME"/notmuch/notmuchrc"
 export NPM_CONFIG_USERCONFIG=""$XDG_CONFIG_HOME"/npm/npmrc"
@@ -39,9 +42,11 @@ export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 
 #other miscellaneous programs
 #export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+
 export QT_STYLE_OVERRIDE="kvantum"
 
 #less config
+
 export LESSHISTFILE="-"
 
 # colored man pages
@@ -66,12 +71,14 @@ export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 
 
 # IBus support
+
 #export GTK_IM_MODULE=ibus
 #export GLFW_IM_MODULE=ibus
 #export QT_IM_MODULE=ibus
 #export XMODIFIERS=@im=ibus
 
 # Wayland
+
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 export XDG_CURRENT_DESKTOP=sway
