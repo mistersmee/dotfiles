@@ -61,7 +61,7 @@ alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
 alias build="source build/envsetup.sh && lunch twrp_cebu-eng && mka clobber && mka -j8 recoveryimage"
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias sudo="doas "
-
+alias sudoedit="doasedit "
 # history plugin bindkeys and other keybindings
 
 bindkey '^[[A' history-substring-search-up
