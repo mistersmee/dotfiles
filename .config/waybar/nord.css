@@ -30,7 +30,7 @@
 /* COLORS */
 
 /* Nord */
-@define-color bg rgba(53, 60, 74, 0.5);
+@define-color bg rgba(53, 60, 74, 0.8);
 @define-color light #eceff4;
 @define-color dark #2e3440;
 @define-color warning #ebcb8b;
