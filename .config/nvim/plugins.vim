@@ -21,4 +21,5 @@ Plugin 'ap/vim-css-color'
 Plugin 'Yggdroot/indentLine'
 Plugin 'ron89/thesaurus_query.vim'
 Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'vivien/vim-linux-coding-style'
 call vundle#end()

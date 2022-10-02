@@ -7,7 +7,7 @@ set cindent
 set list lcs=tab:\|\ 
 set autoread
 set backspace=indent,eol,start
-set expandtab
+"set expandtab
 set smarttab
 set hidden
 set termguicolors
