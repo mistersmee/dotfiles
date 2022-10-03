@@ -14,3 +14,4 @@ picom --vsync --experimental-backends &
 numlockx on &
 dwmbar &
 lxpolkit &
+xidlehook --not-when-audio --not-when-fullscreen --detect-sleep --socket /tmp/xidlehook.socket --timer 150 '/usr/local/bin/slock' '' --timer 150 'xset dpms force off' '' --timer 150 'sudo systemctl suspend' '' &
