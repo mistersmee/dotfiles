@@ -273,7 +273,7 @@ exec_always autotiling
 exec_always mpd &
 exec_always mpDris2 &
 exec_always dunst --startup_notification "true"&
-exec_always blueman-applet &
+#exec_always blueman-applet &
 exec_always python .local/bin/brightness_notify.py -b amdgpu_bl0 &
 exec_always python .local/bin/battery_notify.py &
 exec_always lxpolkit &
