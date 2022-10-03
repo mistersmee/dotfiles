@@ -277,7 +277,7 @@ exec_always blueman-applet &
 exec_always python .local/bin/brightness_notify.py -b amdgpu_bl0 &
 exec_always python .local/bin/battery_notify.py &
 exec_always lxpolkit &
-exec_always kitty --class scratch &
+exec_always systemctl --user start scratch.service &
 exec_always pkill pasystray || pasystray &
 exec_always nm-applet --indicator &
 exec wl-paste -t text --watch clipman store

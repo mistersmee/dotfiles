@@ -1,0 +1,11 @@
+[Unit]
+Description=Kitty Scratchpad Wayland
+
+[Service]
+Restart=always
+RestartSec=1s
+
+ExecStart=/usr/bin/kitty --class scratch
+
+[Install]
+WantedBy=multi-user.target
