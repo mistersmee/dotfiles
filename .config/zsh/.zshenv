@@ -63,8 +63,8 @@ export LESS_TERMCAP_us=$'\e[01;32m'
 export NNN_FIFO="/tmp/nnn.fifo"
 export NNN_HELP="fortune"
 export NNN_PLUG='p:preview-tui;x:!chmod +x $nnn'
-#export NNN_OPENER="swallow xdg-open"
-export NNN_OPENER="xdg-open"
+export NNN_OPENER="swallow xdg-open"
+#export NNN_OPENER="xdg-open"
 export NNN_BMS="g:~/dl/git/;d:~/dl/;m:~/mus/;s:~/.local/share/stuff;r:~/.local/share/rtorrent"
 export NNN_ARCHIVE="\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|rar|rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)$"
 export NNN_COLORS='1234'
@@ -80,15 +80,15 @@ export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 
 # Wayland
 
-#export SDL_VIDEODRIVER=wayland
-#export _JAVA_AWT_WM_NONREPARENTING=1
-#export XDG_CURRENT_DESKTOP=sway
-#export XDG_SESSION_DESKTOP=sway
-#export QT_QPA_PLATFORM=wayland
-#export GDK_BACKEND="wayland,x11"
-#export MOZ_ENABLE_WAYLAND=1
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_DESKTOP=sway
+export QT_QPA_PLATFORM=wayland
+export GDK_BACKEND="wayland,x11"
+export MOZ_ENABLE_WAYLAND=1
 
 #autostart WM on tty1
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2> /tmp/X.log; fi
-#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sway > /tmp/X.log 2>&1; fi
+#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2> /tmp/X.log; fi
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sway > /tmp/X.log 2>&1; fi
