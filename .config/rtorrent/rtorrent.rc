@@ -27,7 +27,7 @@ execute.throw = sh, -c, (cat,\
 
 ## Listening port for incoming peer traffic (fixed; you can also randomize it)
 network.port_range.set = 31600-31610
-network.port_random.set = no
+network.port_random.set = yes
 
 
 ## Tracker-less torrent and UDP tracker support
