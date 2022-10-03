@@ -8,6 +8,7 @@ text/xml=text.desktop
 application/xml=text.desktop
 application/postscript=pdf.desktop;
 application/pdf=pdf.desktop;
+application/epub+zip=pdf.desktop;
 image/png=img.desktop;
 image/jpeg=img.desktop;
 image/gif=img.desktop;
