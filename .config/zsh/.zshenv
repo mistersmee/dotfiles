@@ -39,6 +39,7 @@ export WEECHAT_HOME=""$XDG_CONFIG_HOME"/weechat"
 export ANDROID_HOME=""$XDG_DATA_HOME"/android"
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 #export GNUPGHOME=""$XDG_DATA_HOME"/gnupg"
+export WINEPREFIX=""$XDG_DATA_HOME"/wine"
 
 #other miscellaneous programs
 #export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
