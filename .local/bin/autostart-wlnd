@@ -9,10 +9,10 @@ lxpolkit &
 systemctl --user start scratch.service &
 pkill pasystray || pasystray &
 nm-applet --indicator &
-wl-paste -t text --watch clipman store
-wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman.json"
+wl-paste -t text --watch clipman store &
+wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman.json" &
 xrdb -merge ~/.config/X11/Xresources &
-systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK
-dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK
-clipman clear --all
-swayidle -w timeout 150 'swaylock-blur -- -Ffe' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock-blur -- -Ffe'
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK &
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK &
+clipman clear --all &
+swayidle -w timeout 150 'swaylock-blur -- -Ffe' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock-blur -- -Ffe' &
