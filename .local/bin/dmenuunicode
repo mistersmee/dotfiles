@@ -16,8 +16,14 @@
 
 # The famous "get a menu of emojis to copy" script.
 
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+  DMENU='tofi'
+else
+  DMENU='dmenu -i -l 10'
+fi
+
 # Get user selection via dmenu from emoji file.
-chosen=$(cut -d ';' -f1 ~/.local/share/larbs/emoji | dmenu -i -l 10 | sed "s/ .*//")
+chosen=$(cut -d ';' -f1 ~/.local/share/larbs/emoji | $DMENU | sed "s/ .*//")
 
 # Exit if none chosen.
 [ -z "$chosen" ] && exit

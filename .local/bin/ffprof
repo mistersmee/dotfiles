@@ -4,7 +4,14 @@
 #
 ###
 
-choice=$(echo -e "haxxor\nnormie\nclg" | dmenu)
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+  DMENU='tofi'
+else
+  DMENU='dmenu'
+fi
+
+
+choice=$(echo -e "haxxor\nnormie\nclg" | $DMENU)
 
 case "$choice" in
   haxxor) firefox -profile ~/.mozilla/firefox/haxxor &;;
