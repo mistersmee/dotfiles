@@ -270,23 +270,7 @@ focus_follows_mouse no
 # Autostart:
 #
 exec_always autotiling
-exec_always mpd &
-exec_always mpDris2 &
-exec_always dunst --startup_notification "true"&
-#exec_always blueman-applet &
-exec_always python .local/bin/brightness_notify.py -b amdgpu_bl0 &
-exec_always python .local/bin/battery_notify.py &
-exec_always lxpolkit &
-exec_always systemctl --user start scratch.service &
-exec_always pkill pasystray || pasystray &
-exec_always nm-applet --indicator &
-exec wl-paste -t text --watch clipman store
-exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman.json"
-exec_always xrdb -merge ~/.config/X11/Xresources &
-exec_always systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK
-exec_always dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK
-exec_always clipman clear --all
-exec_always swayidle -w timeout 150 'swaylock-blur -- -Ffe' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock-blur -- -Ffe'
+exec_always autostart-wlnd
 # Window rules:
 #
 assign [app_id="firefox"] workspace number 9
