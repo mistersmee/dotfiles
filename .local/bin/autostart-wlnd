@@ -15,4 +15,3 @@ xrdb -merge ~/.config/X11/Xresources &
 systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK &
 clipman clear --all &
-swayidle -w timeout 150 'swaylock -Ffe --screenshots --indicator --effect-blur=7x5' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -Ffe --screenshots --indicator --effect-blur=7x5' &
