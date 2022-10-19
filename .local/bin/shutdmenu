@@ -13,7 +13,7 @@ case "$choice" in
   hibernate) sudo systemctl hibernate &;;
   susthib) sudo systemctl suspend-then-hibernate &;;
   hybslp) sudo systemctl hybrid-sleep &;;
-  lockwlnd) swaylock-blur &;;
+  lockwlnd) swaylock -Ffe --screenshots --indicator --effect-blur=7x5 &;;
   reloadsway) swaymsg reload &;;
   lockX) slock &;;
   reloadsxhkd) killall sxhkd && sxhkd &;;
