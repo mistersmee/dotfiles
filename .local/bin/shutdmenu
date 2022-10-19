@@ -1,20 +1,20 @@
 #!/bin/bash
 #
-# a simple dmenu session script
+# a simple bemenu session script
 #
 ###
 
-choice=$(echo -e "lock_X\nlockwlnd\nshutdown\nreboot\nsuspend\nhibernate\nreloadsxhkd\nreloadsway\nsusthib\nhybslp" | dmenu)
+choice=$(echo -e "shutdown\nreboot\nsuspend\nhibernate\nsusthib\nhybslp\nlockwlnd\nreloadsway\nlockX\nreloadsxhkd" | bemenu)
 
 case "$choice" in
-  lock_X) slock &;;
   shutdown) sudo shutdown 0 &;;
   reboot) sudo reboot &;;
   suspend) sudo systemctl suspend &;;
-  reloadsxhkd) killall sxhkd && sxhkd &;;
-  lockwlnd) swaylock-blur &;;
-  reloadsway) swaymsg reload &;;
   hibernate) sudo systemctl hibernate &;;
   susthib) sudo systemctl suspend-then-hibernate &;;
   hybslp) sudo systemctl hybrid-sleep &;;
+  lockwlnd) swaylock-blur &;;
+  reloadsway) swaymsg reload &;;
+  lockX) slock &;;
+  reloadsxhkd) killall sxhkd && sxhkd &;;
 esac
