@@ -1,14 +1,14 @@
 #!/bin/bash
 #
-# a simple dmenu session script
+# a simple bemenu session script
 #
 ###
 
-#choice=$(echo -e "duplicate\nsecond_screen_only\nfirst_screen_only" | dmenu)
-choice=$(echo -e "second_screen_only\nfirst_screen_only" | dmenu)
+choice=$(echo -e "duplicate\nsecond_screen_only\nfirst_screen_only" | bemenu)
+#choice=$(echo -e "second_screen_only\nfirst_screen_only" | bemenu)
 
 case "$choice" in
-#  duplicate) xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off &;;
-  second_screen_only) swaymsg output eDP-1 disable && swaymsg output HDMI-A-1 enable &;;
-  first_screen_only) swaymsg output HDMI-A-1 disable && swaymsg output eDP-1 enable &;;
+  duplicate) hyprctl keyword monitor HDMI-A-1,preferred,auto,1,mirror,eDP-1 && hyprctl monitor eDP-1,preferred,auto,1 &;;
+  second_screen_only) hyprctl keyword monitor eDP-1,disable && hyprctl monitor HDMI-A-1,enable &;;
+  first_screen_only) hyprctl keyword monitor HDMI-A-1,disable && hyprctl monitor eDP-1,enable &;;
 esac

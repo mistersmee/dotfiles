@@ -14,7 +14,7 @@ case "$choice" in
   susthib) sudo systemctl suspend-then-hibernate &;;
   hybslp) sudo systemctl hybrid-sleep &;;
   lockwlnd) swaylock -Ffe --screenshots --indicator --effect-blur=7x5 &;;
-  reloadsway) swaymsg reload &;;
+  reloadhypr) hyprctl reload &;;
   lockX) slock &;;
   reloadsxhkd) killall sxhkd && sxhkd &;;
 esac

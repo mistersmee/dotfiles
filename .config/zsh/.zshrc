@@ -62,8 +62,8 @@ alias build="source build/envsetup.sh && lunch twrp_cebu-eng && mka clobber && m
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias sudo="doas "
 alias sudoedit="doasedit "
-alias obs="swallow flatpak run com.obsproject.Studio"
-#alias obs="flatpak run com.obsproject.Studio"
+#alias obs="swallow flatpak run com.obsproject.Studio"
+alias obs="flatpak run com.obsproject.Studio"
 
 # history plugin bindkeys and other keybindings
 

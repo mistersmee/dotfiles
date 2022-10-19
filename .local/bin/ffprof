@@ -1,10 +1,10 @@
 #!/bin/bash
 #
-# a simple dmenu session script
+# a simple bemenu session script
 #
 ###
 
-choice=$(echo -e "haxxor\nnormie\nclg" | dmenu)
+choice=$(echo -e "haxxor\nnormie\nclg" | bemenu)
 
 case "$choice" in
   haxxor) firefox -profile ~/.mozilla/firefox/haxxor &;;
