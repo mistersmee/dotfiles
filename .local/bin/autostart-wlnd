@@ -4,7 +4,7 @@ mpDris2 &
 dunst --startup_notification "true" &
 #blueman-applet &
 python .local/bin/brightness_notify.py -b amdgpu_bl0 &
-python .local/battery_notify.py &
+python .local/bin/battery_notify.py &
 lxpolkit &
 systemctl --user start scratch.service &
 pkill pasystray || pasystray &
