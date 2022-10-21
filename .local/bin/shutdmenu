@@ -4,7 +4,7 @@
 #
 ###
 
-choice=$(echo -e "shutdown\nreboot\nsuspend\nhibernate\nsusthib\nhybslp\nlockwlnd\nreloadsway\nlockX\nreloadsxhkd" | bemenu)
+choice=$(echo -e "shutdown\nreboot\nsuspend\nhibernate\nsusthib\nhybslp\nlockwlnd\nreloadhypr\nlockX\nreloadsxhkd" | bemenu)
 
 case "$choice" in
   shutdown) sudo shutdown 0 &;;
