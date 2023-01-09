@@ -40,6 +40,7 @@ export ANDROID_HOME=""$XDG_DATA_HOME"/android"
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 #export GNUPGHOME=""$XDG_DATA_HOME"/gnupg"
 export WINEPREFIX=""$XDG_DATA_HOME"/wine"
+export JUPYTER_PLATFORM_DIRS=""$XDG_CONFIG_HOME"/jupyter"
 
 #other miscellaneous programs
 #export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
@@ -91,6 +92,6 @@ export GDK_BACKEND="wayland,x11"
 export MOZ_ENABLE_WAYLAND=1
 
 #autostart WM on tty1
-
+export ASAN_OPTIONS="log_path=asan.log"
 #if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2> /tmp/X.log; fi
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec Hyprland > /tmp/X.log 2>&1; fi
