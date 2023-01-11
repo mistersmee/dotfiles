@@ -45,8 +45,8 @@ export JUPYTER_PLATFORM_DIRS=""$XDG_CONFIG_HOME"/jupyter"
 #other miscellaneous programs
 #export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 
-export QT_STYLE_OVERRIDE="kvantum"
-
+#export QT_STYLE_OVERRIDE="qt5ct"
+export QT_QPA_PLATFORMTHEME="qt5ct"
 #less config
 
 export LESSHISTFILE="-"
