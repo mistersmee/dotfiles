@@ -75,4 +75,4 @@ empty_tag_marker = ""
 allow_for_physical_item_deletion = "yes"
 lyrics_directory=~/.config/ncmpcpp/lyrics
 mpd_music_dir="~/mus/"
-lyrics_fetchers = musixmatch, genius, sing365, jahlyrics, plyrics, tekstowo, zeneszoveg, azlyrics, internet
+lyrics_fetchers = musixmatch, sing365, jahlyrics, plyrics, tekstowo, zeneszoveg, azlyrics, genius,internet
