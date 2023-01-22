@@ -10,7 +10,7 @@
     // "width": 1280, // Waybar width
     "spacing": 8, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["wlr/workspaces", "hyprland/submap", "hyprland/window"],
     // "modules-center": ["sway/window"],
     "modules-right": ["mpd", "idle_inhibitor", "backlight", "battery", "clock", "tray"],
     // Modules configuration
@@ -46,6 +46,15 @@
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true
+    },
+    "hyprland/submap": {
+        "format": "| {} |",
+        "max-length": 8,
+        "tooltip": false
     },
     "mpd": {
         "format": "{stateIcon} {artist} - {album} - {title} ",
