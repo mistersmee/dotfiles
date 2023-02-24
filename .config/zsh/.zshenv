@@ -37,10 +37,13 @@ export TERMINFO_DIRS=""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
 export GRADLE_USER_HOME=""$XDG_DATA_HOME"/gradle"
 export WEECHAT_HOME=""$XDG_CONFIG_HOME"/weechat"
 export ANDROID_HOME=""$XDG_DATA_HOME"/android"
+export ADB_VENDOR_KEYS=""$XDG_DATA_HOME"/android/adbkey"
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 #export GNUPGHOME=""$XDG_DATA_HOME"/gnupg"
 export WINEPREFIX=""$XDG_DATA_HOME"/wine"
 export JUPYTER_PLATFORM_DIRS=""$XDG_CONFIG_HOME"/jupyter"
+export W3M_DIR="$XDG_STATE_HOME/w3m"
+export PARALLEL_HOME=""$XDG_CONFIG_HOME"/parallel"
 
 #other miscellaneous programs
 #export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
