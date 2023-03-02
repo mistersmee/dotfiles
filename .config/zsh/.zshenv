@@ -44,6 +44,7 @@ export WINEPREFIX=""$XDG_DATA_HOME"/wine"
 export JUPYTER_PLATFORM_DIRS=""$XDG_CONFIG_HOME"/jupyter"
 export W3M_DIR="$XDG_STATE_HOME/w3m"
 export PARALLEL_HOME=""$XDG_CONFIG_HOME"/parallel"
+export KERAS_HOME=""$XDG_CONFIG_HOME"/keras"
 
 #other miscellaneous programs
 #export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
