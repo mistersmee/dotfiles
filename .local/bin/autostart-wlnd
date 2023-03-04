@@ -2,7 +2,7 @@
 mpd &
 mpDris2 &
 dunst --startup_notification "true" &
-#blueman-applet &
+blueman-applet &
 python .local/bin/brightness_notify.py -b amdgpu_bl0 &
 python .local/bin/battery_notify.py &
 lxpolkit &
