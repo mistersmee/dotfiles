@@ -18,7 +18,7 @@ notify-screen yes
 
 browser "firefox"
 #macro y set browser "swallow mpv --ytdl-raw-options=format-sort=res:1080 %u" ; open-in-browser ; set browser "firefox"
-macro y set browser "mpv --ytdl-raw-options=format-sort=res:1080 %u" ; open-in-browser ; set browser "firefox"
+macro y set browser "mpv --ytdl-format=best --ytdl %u" ; open-in-browser ; set browser "firefox"
 
 # keybindings
 
