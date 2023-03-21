@@ -8,7 +8,7 @@ choice=$(echo -e "duplicate\nsecond_screen_only\nfirst_screen_only" | bemenu)
 #choice=$(echo -e "second_screen_only\nfirst_screen_only" | bemenu)
 
 case "$choice" in
-  duplicate) hyprctl keyword monitor HDMI-A-1,preferred,auto,1,mirror,eDP-1 && hyprctl monitor eDP-1,preferred,auto,1 &;;
-  second_screen_only) hyprctl keyword monitor HDMI-A-1,enable && hyprctl keyword monitor eDP-1,disable &;;
-  first_screen_only) hyprctl keyword monitor eDP-1,enable && hyprctl keyword monitor HDMI-A-1,disable &;;
+  duplicate) hyprctl keyword monitor eDP-1,1920x1080@60,0x0,1 && hyprctl keyword monitor ,1920x1080@60,auto,1,mirror,eDP-1 &;;
+  second_screen_only) hyprctl dispatch dpms on HDMI-A-1 && hyprctl dispatch dpms off eDP-1 &;;
+  first_screen_only) hyprctl dispatch dpms on eDP-1 && hyprctl dispatch dpms off HDMI-A-1 &;;
 esac
