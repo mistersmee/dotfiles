@@ -54,7 +54,7 @@
     "hyprland/submap": {
         "format": "| {} |",
         "max-length": 8,
-        "tooltip": false
+        "tooltip": true
     },
     "mpd": {
         "format": "{stateIcon} {artist} - {album} - {title} ",
