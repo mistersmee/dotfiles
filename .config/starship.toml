@@ -15,15 +15,19 @@ disabled = true
 # [│](bold green)$directory$rust$package
 # [└─>](bold green) """
 
-# Disable the package module, hiding it from the prompt completely
-
 [aws]
 symbol = " "
 
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
 [battery]
-full_symbol = ""
-charging_symbol = ""
-discharging_symbol = ""
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
 disabled = true
 
 [conda]
@@ -33,7 +37,10 @@ symbol = " "
 symbol = " "
 
 [directory]
-read_only = " "
+read_only = " 󰌾 "
+
+[docker_context]
+symbol = " "
 
 [elixir]
 symbol = " "
@@ -41,14 +48,29 @@ symbol = " "
 [elm]
 symbol = " "
 
-#[git_branch]
-#symbol = "  "
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
 
 [golang]
 symbol = " "
 
-#[hg_branch]
-#symbol = " "
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = "⌘ "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
 
 [java]
 symbol = " "
@@ -56,21 +78,67 @@ symbol = " "
 [julia]
 symbol = " "
 
+[lua]
+symbol = " "
+
 [memory_usage]
-symbol = " "
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
 
 [nim]
-symbol = " "
+symbol = "󰆥 "
 
 [nix_shell]
 symbol = " "
 
 [nodejs]
-symbol = " "
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
 
 [package]
-symbol = " "
-disabled = false
+symbol = "󰏗 "
 
 [perl]
 symbol = " "
@@ -78,8 +146,14 @@ symbol = " "
 [php]
 symbol = " "
 
+[pijul_channel]
+symbol = "🪺 "
+
 [python]
 symbol = " "
+
+[rlang]
+symbol = "󰟔 "
 
 [ruby]
 symbol = " "
@@ -87,6 +161,11 @@ symbol = " "
 [rust]
 symbol = " "
 
-[swift]
-symbol = "ﯣ "
+[scala]
+symbol = " "
 
+[spack]
+symbol = "🅢 "
+
+[swift]
+symbol = ""
