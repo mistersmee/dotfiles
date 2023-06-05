@@ -45,6 +45,7 @@ export JUPYTER_PLATFORM_DIRS=""$XDG_CONFIG_HOME"/jupyter"
 export W3M_DIR="$XDG_STATE_HOME/w3m"
 export PARALLEL_HOME=""$XDG_CONFIG_HOME"/parallel"
 export KERAS_HOME=""$XDG_CONFIG_HOME"/keras"
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
 #other miscellaneous programs
 #export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"

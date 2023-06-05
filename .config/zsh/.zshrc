@@ -64,6 +64,7 @@ alias sudo="doas "
 alias sudoedit="doasedit "
 #alias obs="swallow flatpak run com.obsproject.Studio"
 alias obs="flatpak run com.obsproject.Studio"
+alias netbeans="netbeans --userdir "${XDG_CONFIG_HOME}"/netbeans"
 
 # history plugin bindkeys and other keybindings
 
