@@ -52,19 +52,19 @@ alias nv="nvim"
 ## program aliases due to xdg, etc
 
 alias vim="vim -i NONE"
-alias wget="wget --hsts-file="$XDG_CACHE_HOME/wget-hsts""
+alias wget='wget --hsts-file="$XDG_CACHE_HOME"/wget-hsts'
 alias grep="grep --color=always"
 alias cp="advcp -gv"
 alias mv="advmv -gv"
-alias weechat="weechat -d "$XDG_CONFIG_HOME"/weechat"
-alias mbsync="mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc"
+alias weechat='weechat -d "$XDG_CONFIG_HOME"/weechat'
+alias mbsync='mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc'
 alias build="source build/envsetup.sh && lunch twrp_cebu-eng && mka clobber && mka -j8 recoveryimage"
-alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME"/yarn/config'
 alias sudo="doas "
 alias sudoedit="doasedit "
 #alias obs="swallow flatpak run com.obsproject.Studio"
 alias obs="flatpak run com.obsproject.Studio"
-alias netbeans="netbeans --userdir "${XDG_CONFIG_HOME}"/netbeans"
+alias netbeans='netbeans --userdir "${XDG_CONFIG_HOME}"/netbeans'
 
 # history plugin bindkeys and other keybindings
 
