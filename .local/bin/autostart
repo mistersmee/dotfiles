@@ -10,7 +10,7 @@ cbatticon &
 #blueman-applet &
 sxhkd &
 python .local/bin/brightness_notify.py -b amdgpu_bl0 &
-picom --vsync --experimental-backends &
+picom &
 numlockx on &
 dwmbar &
 lxpolkit &
