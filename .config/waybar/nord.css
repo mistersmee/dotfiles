@@ -221,7 +221,7 @@
 #mpd {
     padding: 0 10px;
     background-color: #3B4252;
-    color: #FFFFFF;
+    color: #eceff4;
 }
 
 #mpd.disconnected {
@@ -233,5 +233,10 @@
 }
 
 #mpd.paused {
+    background-color: #A3BE8C;
+}
+
+#battery.charging {
+    color: #eceff4;
     background-color: #A3BE8C;
 }
