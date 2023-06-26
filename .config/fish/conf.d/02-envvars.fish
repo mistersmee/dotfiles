@@ -6,8 +6,8 @@ set -gx VIDEO "mpv"
 set -gx IMAGE "feh"
 set -gx COLORTERM "truecolor"
 set -gx PAGER "less"
-set -gx WM "Hyprland"
-set -gx OPENER "mimeo"
+set -gx WM "sway"
+set -gx OPENER "swallow mimeo"
 set -gx VISUAL "nvim"
 set -gx READER "zathura"
 set -gx TERMINAL "kitty"
@@ -86,8 +86,8 @@ set -gx LESS_TERMCAP_us \e'[01;32m'
 set -gx NNN_FIFO "/tmp/nnn.fifo"
 set -gx NNN_HELP "fortune"
 set -gx NNN_PLUG 'p:preview-tui;x:!chmod +x $nnn'
-#set -gx NNN_OPENER "swallow xdg-open"
-set -gx NNN_OPENER "xdg-open"
+set -gx NNN_OPENER "swallow xdg-open"
+#set -gx NNN_OPENER "xdg-open"
 set -gx NNN_BMS "g:~/dl/git/;d:~/dl/;m:~/mus/;s:~/.local/share/stuff;r:~/.local/share/rtorrent;h:~/.local/share/mount;o:~/docs/"
 set -gx NNN_ARCHIVE "\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|rar|rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)"
 set -gx NNN_COLORS '1234'
@@ -109,9 +109,9 @@ set -gx BEMENU_OPTS "--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566
 
 set -gx SDL_VIDEODRIVER "wayland,x11"
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
-set -gx XDG_CURRENT_DESKTOP Hyprland
+set -gx XDG_CURRENT_DESKTOP sway
 set -gx XDG_SESSION_TYPE wayland
-set -gx XDG_SESSION_DESKTOP Hyprland
+set -gx XDG_SESSION_DESKTOP sway
 set -gx QT_QPA_PLATFORM "wayland;xcb"
 set -gx GDK_BACKEND "wayland,x11"
 set -gx MOZ_ENABLE_WAYLAND 1
@@ -138,6 +138,6 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 if status is-login
     if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
-        exec Hyprland > /tmp/X.log 2>&1
+        exec sway > /tmp/X.log 2>&1
     end
 end
