@@ -6,7 +6,7 @@ Plugin 'junegunn/goyo.vim'
 "Plugin 'vim-scripts/AutoComplPop'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'sheerun/vim-polyglot'
-Plugin 'arcticicestudio/nord-vim'
+Plugin 'nordtheme/vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'bling/vim-airline'
