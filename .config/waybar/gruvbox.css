@@ -37,8 +37,8 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "SF Mono", "Material Icons", monospace;
-  font-size: 12px;
+  font-family: Hack, Helvetica, Arial, sans-serif;
+  font-size: 13px;
   min-height: 0;
 }
 
@@ -84,7 +84,6 @@ window#waybar {
 }
 
 #window {
-  border-left: 2px solid #b16286;
 }
 
 #clock {
@@ -184,4 +183,34 @@ window#waybar {
 
 #custom-dismiss_notifications {
   border-bottom: 2px solid #cc241d;
+}
+
+#tray {
+	background: #282828;
+}
+
+#idle_inhibitor.activated {
+    background-color: #282828;
+}
+
+#mpd {
+    padding: 0 10px;
+    background-color: #282828;
+    color: #FFFFFF;
+}
+
+#mpd.disconnected {
+    background-color: #fb4934;
+}
+
+#mpd.stopped {
+    background-color: #282828;
+}
+
+#mpd.paused {
+    background-color: #689d6a;
+}
+
+#backlight {
+    background-color: #282828;
 }

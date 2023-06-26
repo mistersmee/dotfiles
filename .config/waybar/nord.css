@@ -63,9 +63,8 @@
 #waybar {
     background: @bg;
     color: @light;
-    font-family: Noto Sans;
-    font-size: 11px;
-    font-weight: bold;
+    font-family: Hack, Helvetica, Arial, sans-serif;
+    font-size: 13px;
 }
 
 /* Each module */
@@ -137,7 +136,6 @@
 /* Workspaces stuff */
 
 #workspaces {
-    margin-right: 10px;
 }
 
 
@@ -151,6 +149,7 @@
 
 #workspaces button.focused {
     background: @workspacesfocused;
+  border-bottom: 1px solid #e5e9f0;
 }
 
 #workspaces button.urgent {
@@ -159,8 +158,8 @@
 }
 
 #window {
-	margin-right: 40px;
-	margin-left: 40px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 #custom-alsa {
@@ -195,12 +194,8 @@
 	background: @backlight;
 }
 
-#clock.date {
-    background: @date;
-}
-
-#clock.time {
-    background: @time;
+#clock {
+    background-color: @backlight;
 }
 
 #pulseaudio { /* Unsused but kept for those who needs it */
@@ -213,4 +208,30 @@
 
 #tray {
 	background: @tray;
+}
+
+#idle_inhibitor {
+    padding: 0 10px;
+}
+
+#idle_inhibitor.activated {
+    background-color: @backlight;
+}
+
+#mpd {
+    padding: 0 10px;
+    background-color: #3B4252;
+    color: #FFFFFF;
+}
+
+#mpd.disconnected {
+    background-color: #BF616A;
+}
+
+#mpd.stopped {
+    background-color: @backlight;
+}
+
+#mpd.paused {
+    background-color: #A3BE8C;
 }
