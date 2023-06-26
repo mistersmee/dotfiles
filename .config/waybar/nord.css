@@ -144,12 +144,11 @@
 	padding-left: 5px;
 	padding-right: 5px;
 	color: @light;
-	background: @workspaces;
 }
 
 #workspaces button.focused {
-    background: @workspacesfocused;
-  border-bottom: 1px solid #e5e9f0;
+    background: @workspaces;
+    border-bottom: 1px solid #e5e9f0;
 }
 
 #workspaces button.urgent {

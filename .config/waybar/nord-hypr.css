@@ -144,12 +144,11 @@
 	padding-left: 5px;
 	padding-right: 5px;
 	color: @light;
-	background: @workspaces;
 }
 
 #workspaces button.active {
-    background: @workspacesfocused;
-  border-bottom: 1px solid #e5e9f0;
+    background: @workspaces;
+    border-bottom: 1px solid #e5e9f0;
 }
 
 #workspaces button.urgent {
@@ -221,7 +220,7 @@
 #mpd {
     padding: 0 10px;
     background-color: #3B4252;
-    color: #FFFFFF;
+    color: #eceff4;
 }
 
 #mpd.disconnected {
@@ -233,5 +232,10 @@
 }
 
 #mpd.paused {
+    background-color: #A3BE8C;
+}
+
+#battery.charging {
+    color: #eceff4;
     background-color: #A3BE8C;
 }
