@@ -90,9 +90,9 @@
 
     # Defines color of the frame around the notification window.
     # Solarized
-    frame_color = "#859900"
+    #frame_color = "#859900"
     #Nord
-    #frame_color = "#A3BE8C"
+    frame_color = "#A3BE8C"
     #Gruvbox
     #frame_color = "#98971a"
     # Define a color for the separator.
@@ -297,11 +297,11 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     #Solarized
-    background = "#002b36"
-    foreground = "#93a1a1"
+    #background = "#002b36"
+    #foreground = "#93a1a1"
     #Nord
-    #background = "#2E3440"
-    #foreground = "#D8DEE9"
+    background = "#2E3440"
+    foreground = "#D8DEE9"
     #Gruvbox
     #background = "#282828"
     #foreground = "#ebdbb2"
@@ -312,11 +312,11 @@
 
 [urgency_normal]
     #Solarized
-    background = "#002b36"
-    foreground = "#93a1a1"
+    #background = "#002b36"
+    #foreground = "#93a1a1"
     #Nord
-    #background = "#2E3440"
-    #foreground = "#D8DEE9"
+    background = "#2E3440"
+    foreground = "#D8DEE9"
     #Gruvbox
     #background = "#282828"
     #foreground = "#ebdbb2"
