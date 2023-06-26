@@ -4,7 +4,7 @@
 #
 ###
 
-choice=$(echo -e "shutdown\nreboot\nsuspend\nhibernate\nsusthib\nhybslp\nlockwlnd\nreloadhypr\nlockX\nreloadsxhkd" | bemenu)
+choice=$(echo -e "shutdown\nreboot\nsuspend\nhibernate\nsusthib\nhybslp\nlockwlnd\nreloadsway\nlockX\nreloadsxhkd" | bemenu)
 
 case "$choice" in
   shutdown) shutdown 0 &;;
@@ -14,7 +14,7 @@ case "$choice" in
   susthib) systemctl suspend-then-hibernate &;;
   hybslp) systemctl hybrid-sleep &;;
   lockwlnd) swaylock -Ffe --screenshots --indicator --effect-blur=7x5 &;;
-  reloadhypr) hyprctl reload &;;
+  reloadsway) swaymsg reload &;;
   lockX) slock &;;
   reloadsxhkd) killall sxhkd && sxhkd &;;
 esac
