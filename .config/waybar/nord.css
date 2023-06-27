@@ -84,48 +84,6 @@
     padding-right: 10px;
 }
 
-/* Each module that should blink */
-#mode,
-#memory,
-#temperature,
-#battery {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-/* Each critical module */
-#memory.critical,
-#cpu.critical,
-#temperature.critical,
-#battery.critical {
-    color: @critical;
-}
-
-/* Each critical that should blink */
-#mode,
-#memory.critical,
-#temperature.critical,
-#battery.critical.discharging {
-    animation-name: blink-critical;
-    animation-duration: 2s;
-}
-
-/* Each warning */
-#network.disconnected,
-#memory.warning,
-#cpu.warning,
-#temperature.warning,
-#battery.warning {
-    color: @warning;
-}
-
-/* Each warning that should blink */
-#battery.warning.discharging {
-    animation-name: blink-warning;
-    animation-duration: 3s;
-}
-
 /* And now modules themselves in their respective order */
 
 #mode { /* Shown current Sway mode (resize etc.) */
@@ -186,7 +144,22 @@
 }
 
 #battery {
-    background: @battery;
+    background: @backlight;
+}
+
+#battery.charging {
+    color: #eceff4;
+    background-color: #A3BE8C;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #BF616A;
+    color: #D8DEE9;
+    animation-name: blink-critical;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #backlight {
@@ -235,7 +208,4 @@
     background-color: #A3BE8C;
 }
 
-#battery.charging {
-    color: #eceff4;
-    background-color: #A3BE8C;
-}
+

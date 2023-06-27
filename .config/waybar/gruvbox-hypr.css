@@ -152,18 +152,7 @@ window#waybar {
 }
 
 #battery {
-  background-color: #98971a;
-  color: #1d2021;
-}
-
-#battery.full {
-  background-color: transparent;
-  color: #b8bb26;
-}
-
-#battery.discharging {
-  color: #1d2021;
-  background-color: #d79921;
+  background-color: #282828;
 }
 
 #battery.charging {
