@@ -1,15 +1,17 @@
-----------------ArchLinuxNews---------------------------------------------------------------------------------
+----------------ArchLinuxNews------------------------------------------------------------------------------------
 https://www.archlinux.org/feeds/news/ News
 https://www.archlinux.org/feeds/planet/ News
--------------News---------------------------------------------------------------------------------------------
+----------------News---------------------------------------------------------------------------------------------
 https://www.gamingonlinux.com/article_rss.php News
 https://www.xda-developers.com/feed/ News
 https://www.bavarianfootballworks.com/rss/current.xml News
 https://www.phoronix.com/rss.php News
---------------------Podcasts---------------------------------------------------------------------------------
+----------------Podcasts-----------------------------------------------------------------------------------------
 https://spreaker.com/show/4468251/episodes/feed Podcasts
-https://feeds.acast.com/public/shows/ee6fd316-9ce1-4f8a-ba2c-a4a4bf5643e4
-------------------------------LeYouthuube---------------------------------------------------------------------
+https://feeds.acast.com/public/shows/ee6fd316-9ce1-4f8a-ba2c-a4a4bf5643e4 Podcasts
+https://feeds.megaphone.fm/VMP1568240061 Podcasts
+https://feeds.megaphone.fm/landofthegiants Podcasts
+----------------LeYouthuube--------------------------------------------------------------------------------------
 https://www.youtube.com/feeds/videos.xml?channel_id=UC0vBXGSyV14uvJ4hECDOl0Q Youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ Youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UC3sznuotAs2ohg_U__Jzj_Q Youtube
@@ -29,4 +31,17 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A You
 https://www.youtube.com/feeds/videos.xml?channel_id=UCcAy1o8VUCkdowxRYbc0XRw Youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHDxYLv8iovIbhrfl16CNyg Youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCtMVHI3AJD4Qk4hcbZnI9ZQ Youtube
--------------------------------------------------------------------------------------------------------------
+----------------Reddit-------------------------------------------------------------------------------------------
+https://www.reddit.com/r/archlinux.rss Reddit
+https://www.reddit.com/r/indiangaming.rss Reddit
+https://www.reddit.com/r/worldnews.rss Reddit
+https://www.reddit.com/r/television.rss Reddit
+https://www.reddit.com/r/starwars.rss Reddit
+https://www.reddit.com/r/movies.rss Reddit
+https://www.reddit.com/r/gamedealsmeta.rss Reddit
+https://www.reddit.com/r/gamedeals.rss Reddit
+https://www.reddit.com/r/entertainment.rss Reddit
+----------------SoftwareReleases---------------------------------------------------------------------------------
+https://github.com/programminghoch10/ViPER4AndroidRepackaged/releases.atom Releases
+https://github.com/kdrag0n/safetynet-fix/releases.atom Releases
+https://github.com/MotorolaMobilityLLC/kernel-msm/releases.atom Releases
