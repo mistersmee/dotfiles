@@ -1,11 +1,15 @@
 # Enable colors and change prompt:
+
 #autoload -U colors && colors
+
 # History in cache directory:
+
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.cache/zsh/history
 
 # Auto tab completion stuff:
+
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 zstyle ':completion:*' menu select
@@ -18,15 +22,18 @@ compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots)		# Include hidden files.
 
 # cd without cd
+
 setopt correct
 setopt  auto_cd
 
 # plugins
+
 source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source ~/.config/zsh/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-history-substring-search.zsh
 
 # autosuggest
+
 zmodload zsh/zpty
 ZSH_AUTOSUGGEST_STRATEGY=(completion history match_prev_cmd)
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
@@ -101,12 +108,15 @@ n ()
             rm -f "$NNN_TMPFILE" > /dev/null
     fi
 }
+
 # ssh agent
+
 export SSH_AGENT_PID=""
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
+
 # prompt
 
 eval "$(starship init zsh)"

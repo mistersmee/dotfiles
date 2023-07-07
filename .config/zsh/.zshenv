@@ -26,14 +26,14 @@ export NPM_CONFIG_USERCONFIG=""$XDG_CONFIG_HOME"/npm/npmrc"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
-#export XINITRC=""$XDG_CONFIG_HOME"/X11/xinitrc"
+export XINITRC=""$XDG_CONFIG_HOME"/X11/xinitrc"
 export GTK2_RC_FILES=""$XDG_CONFIG_HOME"/gtk-2.0/gtkrc"
 export GOPATH=""$XDG_DATA_HOME"/go"
 export CARGO_HOME=""$XDG_DATA_HOME"/cargo"
 export PASSWORD_STORE_DIR=""$XDG_DATA_HOME"/pass"
 export TERMINFO=""$XDG_DATA_HOME"/terminfo"
 export TERMINFO_DIRS=""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
-#export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
+export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
 export GRADLE_USER_HOME=""$XDG_DATA_HOME"/gradle"
 export WEECHAT_HOME=""$XDG_CONFIG_HOME"/weechat"
 export ANDROID_HOME=""$XDG_DATA_HOME"/android"
@@ -46,12 +46,19 @@ export W3M_DIR="$XDG_STATE_HOME/w3m"
 export PARALLEL_HOME=""$XDG_CONFIG_HOME"/parallel"
 export KERAS_HOME=""$XDG_CONFIG_HOME"/keras"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export REPO_CONFIG_DIR="$XDG_CONFIG_HOME"
 
 #other miscellaneous programs
-#export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+
+export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+export ASAN_OPTIONS="log_path=asan.log"
+
+# QT Config
 
 #export QT_STYLE_OVERRIDE="kvantum"
 export QT_QPA_PLATFORMTHEME="qt5ct"
+
 #less config
 
 export LESSHISTFILE="-"
@@ -98,6 +105,6 @@ export GDK_BACKEND="wayland,x11"
 export MOZ_ENABLE_WAYLAND=1
 
 #autostart WM on tty1
-export ASAN_OPTIONS="log_path=asan.log"
+
 #if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2> /tmp/X.log; fi
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec Hyprland > /tmp/X.log 2>&1; fi
