@@ -1,12 +1,12 @@
 # declaring defaults
 
 set -gx EDITOR "nvim"
-set -gx STATUSBAR "waybar"
+set -gx STATUSBAR "dwmbar"
 set -gx VIDEO "mpv"
 set -gx IMAGE "feh"
 set -gx COLORTERM "truecolor"
 set -gx PAGER "less"
-set -gx WM "Hyprland"
+set -gx WM "dwm"
 set -gx OPENER "mimeo"
 set -gx VISUAL "nvim"
 set -gx READER "zathura"
@@ -105,18 +105,17 @@ set -gx SDL_IM_MODULE ibus
 
 # Wayland
 
-set -gx BEMENU_OPTS "--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566Ae6 --nf #ECEFF4 --tb #4C566Ae6 --hb #4C566Ae6 --tf #BF616A --hf #EBCB8B --nf #ECEFF4 --af #ECEFF4 --ab #4C566Ae6"
-
-set -gx SDL_VIDEODRIVER "wayland,x11"
-set -gx _JAVA_AWT_WM_NONREPARENTING 1
-set -gx XDG_CURRENT_DESKTOP Hyprland
-set -gx XDG_SESSION_TYPE wayland
-set -gx XDG_SESSION_DESKTOP Hyprland
-set -gx QT_QPA_PLATFORM "wayland;xcb"
-set -gx GDK_BACKEND "wayland,x11"
-set -gx MOZ_ENABLE_WAYLAND 1
-set -gx QT_AUTO_SCREEN_SCALE_FACTOR 1
-set -gx QT_WAYLAND_DISABLE_WINDOW_DECORATION 1
+#set -gx BEMENU_OPTS "--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566Ae6 --nf #ECEFF4 --tb #4C566Ae6 --hb #4C566Ae6 --tf #BF616A --hf #EBCB8B --nf #ECEFF4 --af #ECEFF4 --ab #4C566Ae6"
+#set -gx SDL_VIDEODRIVER "wayland,x11"
+#set -gx _JAVA_AWT_WM_NONREPARENTING 1
+#set -gx XDG_CURRENT_DESKTOP Hyprland
+#set -gx XDG_SESSION_TYPE wayland
+#set -gx XDG_SESSION_DESKTOP Hyprland
+#set -gx QT_QPA_PLATFORM "wayland;xcb"
+#set -gx GDK_BACKEND "wayland,x11"
+#set -gx MOZ_ENABLE_WAYLAND 1
+#set -gx QT_AUTO_SCREEN_SCALE_FACTOR 1
+#set -gx QT_WAYLAND_DISABLE_WINDOW_DECORATION 1
 #set -gx GTK_THEME "Adw-dark"
 
 # ssh agent
@@ -130,14 +129,14 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 #autostart WM on tty1
 
-#if status is-login
-#    if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
-#        exec sx ~/.config/sx/sxrc 2> /tmp/X.log
-#    end
-#end
-
 if status is-login
     if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
-        exec Hyprland > /tmp/X.log 2>&1
+        exec sx ~/.config/sx/sxrc 2> /tmp/X.log
     end
 end
+
+#if status is-login
+#    if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
+#        exec Hyprland > /tmp/X.log 2>&1
+#    end
+#end
