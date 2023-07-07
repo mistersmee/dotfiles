@@ -4,7 +4,7 @@
 #
 ###
 
-choice=$(echo -e "mb\nhaxxor\nnormie\nclg\nbrave\ncrium" | bemenu)
+choice=$(echo -e "mb\nhaxxor\nnormie\nclg\nbrave\ncrium" | dmenu)
 
 case "$choice" in
   mb) mullvad-browser &;;

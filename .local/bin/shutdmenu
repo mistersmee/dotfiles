@@ -1,10 +1,10 @@
 #!/bin/bash
 #
-# a simple bemenu session script
+# a simple dmenu session script
 #
 ###
 
-choice=$(echo -e "shutdown\nreboot\nsuspend\nhibernate\nsusthib\nhybslp\nlockwlnd\nreloadhypr\nlockX\nreloadsxhkd" | bemenu)
+choice=$(echo -e "shutdown\nreboot\nsuspend\nhibernate\nsusthib\nhybslp\nlockwlnd\nreloadhypr\nlockX\nreloadsxhkd" | dmenu)
 
 case "$choice" in
   shutdown) shutdown 0 &;;
