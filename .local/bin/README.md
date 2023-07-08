@@ -1,13 +1,16 @@
 # Various useful scripts written by me or lifted from someone else ;).
 
+## achroot
+
+Script that puts all commands to build Arch packages in a chroot into a single script. Use by cd-ing into directory containing PKGBUILD and run achroot.
+
 ## autostart
 
 Script that starts all the programs I need while running X. It is called by dwm while starting up. It is a much more elegant solution than the autostart patches in dwm.
 
-## bemenu & bemenu-run
+## autostart-wlnd
 
-Scripts to launch bemenu with specific options, it doesn't have a config file or something to set those options, and it seems smart to have those in one place rather than changing them in every script that uses them.
-Since `$PATH` has ``~/.local/bin/`` first, they will always show up first in `which bemenu`.
+Same basic idea as the autostart script, just for wayland compositors and programs.
 
 ## bright
 
@@ -16,6 +19,10 @@ Christopher Peterson's backlight brightness script using /sys/class/backlight. M
 ## brightness_notify.py & battery_notify.py
 
 Benedikt Vollmerhaus's scripts to notify if backlight changes, and if battery goes beneath a certain level.
+
+## build
+
+Script to automatically build TWRP for my device, cebu. This came about mainly due to fish, and it's incompatibility with build/envsetup.sh which we source first before building.
 
 ## compiler
 
@@ -63,10 +70,6 @@ Luke Smith's script to open the output file, typically the pdf output from latex
 Script to create a shutdown menu using dmenu.
 
 Options are: logout, restart X, reload sxhkd, shutdown, reboot and lock X.
-
-## sway
-
-A wrapper script to start sway, so that the proper environment variables are being set and respected.
 
 ## texclear
 

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mkdir -p ~/.local/share/chroot/
+CHROOT=~/.local/share/chroot
+
+if [ ! -d $CHROOT/root ]; then
+	mkarchroot $CHROOT/root base-devel
+fi
+
+arch-nspawn $CHROOT/root pacman -Syu
+makechrootpkg -c -r $CHROOT
