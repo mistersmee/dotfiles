@@ -260,7 +260,6 @@ focus_follows_mouse no
 #
 # Autostart:
 #
-exec waybar -c ~/.config/waybar/config -s ~/.config/waybar/nord.css
 exec_always autotiling
 exec_always autostart-wlnd
 exec_always swayidle -w timeout 150 'swaylock -Ffe --screenshots --effect-blur=7x5' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -Ffe --screenshots --effect-blur=7x5'

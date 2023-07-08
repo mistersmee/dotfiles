@@ -15,3 +15,6 @@ xrdb ~/.config/X11/Xresources &
 systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY &
 clipman clear --all &
+waybar --config ~/.config/waybar/config --style ~/.config/waybar/nord.css &
+sway-audio-idle-inhibit &
+swaybg -i `find $HOME/pix/wallpapers -type f | shuf -n 1` -m fill &
