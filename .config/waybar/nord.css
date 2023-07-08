@@ -109,6 +109,11 @@
     border-bottom: 1px solid #e5e9f0;
 }
 
+#workspaces button.active {
+    background: @workspaces;
+    border-bottom: 1px solid #e5e9f0;
+}
+
 #workspaces button.urgent {
 	border-color: #c9545d;
 	color: #c9545d;

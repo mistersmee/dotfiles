@@ -59,6 +59,11 @@ window#waybar {
   border-bottom: 2px solid #d3869b;
 }
 
+#workspaces button.active {
+  background: #181818;
+  border-bottom: 2px solid #d3869b;
+}
+
 #window,
 #clock,
 #battery,
