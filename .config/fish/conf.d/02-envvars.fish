@@ -83,14 +83,14 @@ set -gx NNN_BMS "g:~/dl/git/;d:~/dl/;m:~/mus/;s:~/.local/share/stuff;r:~/.local/
 set -gx NNN_ARCHIVE "\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|rar|rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)"
 set -gx NNN_COLORS '1234'
 set -gx NNN_FCOLORS 'c1e2272e006033f7c6d6abc4'
-set -gx LANG en_US.UTF-8
+set -gx LANG en_IN.UTF-8
 
 # IBus support
 
-#set -gx GTK_IM_MODULE ibus
-#set -gx GLFW_IM_MODULE ibus
-#set -gx QT_IM_MODULE ibus
-#set -gx XMODIFIERS @im=ibus
+set -gx GTK_IM_MODULE ibus
+set -gx GLFW_IM_MODULE ibus
+set -gx QT_IM_MODULE ibus
+set -gx XMODIFIERS @im=ibus
 
 # Wayland
 
