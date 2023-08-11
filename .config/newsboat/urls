@@ -32,15 +32,15 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCcAy1o8VUCkdowxRYbc0XRw You
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHDxYLv8iovIbhrfl16CNyg Youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCtMVHI3AJD4Qk4hcbZnI9ZQ Youtube
 ----------------Reddit-------------------------------------------------------------------------------------------
-https://www.reddit.com/r/archlinux.rss Reddit
-https://www.reddit.com/r/indiangaming.rss Reddit
-https://www.reddit.com/r/worldnews.rss Reddit
-https://www.reddit.com/r/television.rss Reddit
-https://www.reddit.com/r/starwars.rss Reddit
-https://www.reddit.com/r/movies.rss Reddit
-https://www.reddit.com/r/gamedealsmeta.rss Reddit
-https://www.reddit.com/r/gamedeals.rss Reddit
-https://www.reddit.com/r/entertainment.rss Reddit
+https://www.reddit.com/r/archlinux/.rss Reddit
+https://www.reddit.com/r/indiangaming/.rss Reddit
+https://www.reddit.com/r/worldnews/.rss Reddit
+https://www.reddit.com/r/television/.rss Reddit
+https://www.reddit.com/r/starwars/.rss Reddit
+https://www.reddit.com/r/movies/.rss Reddit
+https://www.reddit.com/r/gamedealsmeta/.rss Reddit
+https://www.reddit.com/r/gamedeals/.rss Reddit
+https://www.reddit.com/r/entertainment/.rss Reddit
 ----------------SoftwareReleases---------------------------------------------------------------------------------
 https://github.com/kdrag0n/safetynet-fix/releases.atom Releases
 https://github.com/MotorolaMobilityLLC/kernel-msm/releases.atom Releases
