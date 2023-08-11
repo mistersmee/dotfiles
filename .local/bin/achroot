@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir -p ~/.local/share/chroot/
-CHROOT=~/.local/share/chroot
+mkdir -p ~/.local/share/pman/chroot/
+CHROOT=~/.local/share/pman/chroot
 
 if [ ! -d $CHROOT/root ]; then
 	mkarchroot $CHROOT/root base-devel
