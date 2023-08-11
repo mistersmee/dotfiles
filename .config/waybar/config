@@ -98,9 +98,19 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "format": "{:%I:%M %p}",
-        "format-alt": "{:%d-%m-%Y}"
+        "format-alt": "{:%d-%m-%Y}",
+        "calendar": {
+                    "mode"          : "month",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#D8DEE9'><b>{}</b></span>",
+                              "days":       "<span color='#EBCB8B'><b>{}</b></span>",
+                              "weekdays":   "<span color='#B48EAD'><b>{}</b></span>",
+                              "today":      "<span color='#BF616A'><b><u>{}</u></b></span>"
+                              }
+                    },
     },
     "cpu": {
         "format": "{usage}% ",
