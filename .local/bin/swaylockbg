@@ -1,0 +1,5 @@
+#!/bin/bash
+tmpbg="/tmp/screen.png"
+grim "$tmpbg"
+convert -filter Gaussian -blur 0x8 "$tmpbg" "$tmpbg"
+swaylock -Ffe -i "$tmpbg"
