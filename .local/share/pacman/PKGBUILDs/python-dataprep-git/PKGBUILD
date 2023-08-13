@@ -1,0 +1,30 @@
+# Maintainer: Aseem Athale <athaleaseem@gmail.com>
+
+_base=dataprep
+pkgname=python-${_base}-git
+pkgver=v0.4.4.r18.g17eda69
+pkgrel=1
+pkgdesc="A Python implementation of the Metaphone and Double Metaphone algorithms"
+arch=('any')
+url="https://github.com/sfu-db/${_base}"
+license=('MIT')
+depends=('python')
+makedepends=('python-setuptools' 'python-build' 'python-installer' 'python-wheel' 'python-poetry' 'python-nose')
+source=("git+${url}.git")
+sha512sums=('SKIP')
+
+pkgver() {
+  cd "${_base}"
+  git describe --long --tags --abbrev=7 | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+build() {
+  cd "${_base}"
+  python -m build --wheel --no-isolation
+}
+
+package() {
+  cd "${_base}"
+  python -m installer --destdir="$pkgdir" dist/*.whl
+  install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}

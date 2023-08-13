@@ -1,0 +1,28 @@
+# Maintainer: Aseem Athale <athaleaseem@gmail.com>
+
+pkgname=python-varname
+pkgver=0.11.2
+pkgrel=1
+pkgdesc="A Python library to retrieve variable names from functions or classes"
+arch=('any')
+url="https://github.com/pwwang/${pkgname}"
+license=('MIT')
+depends=('python')
+makedepends=('python-setuptools' 'python-build' 'python-installer' 'python-wheel' 'python-poetry' 'python-virtualenv' 'python-cachecontrol' 'python-poetry-plugin-export')
+source=(${url}/archive/refs/tags/${pkgver}.tar.gz)
+sha512sums=('dc9ed5fea0cde11a176533d3f7baee090d656aa85e10e507fac2e3e35ee039c54476331335841350fdd5b6c063ec189e7100a4ddcaa07af659a8f77a944a403b')
+
+prepare() {
+  cd "${pkgname}-${pkgver}"
+}
+
+build() {
+  cd "${pkgname}-${pkgver}"
+  python -m build --wheel --no-isolation
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  python -m installer --destdir="$pkgdir" dist/*.whl
+  install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
