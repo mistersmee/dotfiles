@@ -1,0 +1,16 @@
+Status: active
+
+To                         Action      From
+--                         ------      ----
+Anywhere                   ALLOW       192.168.0.0/24            
+22                         LIMIT       Anywhere                  
+syncthing                  ALLOW       Anywhere                  
+syncthing-gui              ALLOW       Anywhere                  
+Transmission               ALLOW       Anywhere                  
+5353                       ALLOW       Anywhere                  
+22 (v6)                    LIMIT       Anywhere (v6)             
+syncthing (v6)             ALLOW       Anywhere (v6)             
+syncthing-gui (v6)         ALLOW       Anywhere (v6)             
+Transmission (v6)          ALLOW       Anywhere (v6)             
+5353 (v6)                  ALLOW       Anywhere (v6)             
+
