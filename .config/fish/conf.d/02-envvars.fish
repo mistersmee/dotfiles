@@ -97,12 +97,15 @@ set -gx XMODIFIERS @im=ibus
 set -gx BEMENU_OPTS "--fn 'Fira Code 15'"
 set -gx SDL_VIDEODRIVER "wayland,x11"
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
-set -gx XDG_CURRENT_DESKTOP sway
+set -gx XDG_CURRENT_DESKTOP Hyprland
 set -gx XDG_SESSION_TYPE wayland
-set -gx XDG_SESSION_DESKTOP sway
+set -gx XDG_SESSION_DESKTOP Hyprland
 set -gx QT_QPA_PLATFORM "wayland;xcb"
 set -gx GDK_BACKEND "wayland,x11"
 set -gx MOZ_ENABLE_WAYLAND 1
+set -gx QT_AUTO_SCREEN_SCALE_FACTOR 1
+set -gx QT_WAYLAND_DISABLE_WINDOW_DECORATION 1
+set -gx GTK_THEME "Adw-dark"
 
 # ssh agent
 
