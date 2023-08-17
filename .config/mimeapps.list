@@ -32,6 +32,7 @@ text/html=www.desktop;
 text/plain=text.desktop;
 text/x-shellscript=text.desktop;
 text/xml=text.desktop;
+video/mp4=video.desktop;
 video/mpeg=audio.desktop;
 video/x-matroska=video.desktop;
 x-scheme-handler/chrome=www.desktop;
