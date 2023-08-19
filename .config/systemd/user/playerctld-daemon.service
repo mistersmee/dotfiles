@@ -1,11 +1,11 @@
 [Unit]
-Description=Kitty Scratchpad Wayland
+Description=Playerctl Daemon
 
 [Service]
 Restart=always
 RestartSec=1s
 
-ExecStart=/usr/bin/kitty --class scratch
+ExecStart=/usr/bin/playerctld daemon
 
 [Install]
 WantedBy=default.target
