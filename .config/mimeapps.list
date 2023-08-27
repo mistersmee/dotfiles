@@ -19,6 +19,7 @@ audio/basic=audio.desktop;
 audio/flac=audio.desktop;
 audio/mp4=audio.desktop;
 audio/mpeg=audio.desktop;
+audio/ogg=audio.desktop;
 audio/x-aiff=audio.desktop;
 audio/x-flac=audio.desktop;
 audio/x-ms-wma=audio.desktop;
