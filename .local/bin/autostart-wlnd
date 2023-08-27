@@ -4,10 +4,9 @@ mpDris2 &
 mpris-proxy &
 dunst --startup_notification "true" &
 blueman-applet &
-python .local/bin/brightness_notify.py -b amdgpu_bl0 &
+python .local/bin/brightness_notify.py -b amdgpu_bl1 &
 python .local/bin/battery_notify.py &
 lxpolkit &
-systemctl --user start scratch.service &
 nm-applet --indicator &
 wl-paste -t text --watch clipman store &
 wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman.json" &
