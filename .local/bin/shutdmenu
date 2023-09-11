@@ -7,12 +7,12 @@
 choice=$(echo -e "shutdown\nreboot\nsuspend\nhibernate\nsusthib\nhybslp\nlockwlnd\nreloadhypr\nlockX\nreloadsxhkd" | bemenu)
 
 case "$choice" in
-  shutdown) sudo shutdown 0 &;;
-  reboot) sudo reboot &;;
-  suspend) sudo systemctl suspend &;;
-  hibernate) sudo systemctl hibernate &;;
-  susthib) sudo systemctl suspend-then-hibernate &;;
-  hybslp) sudo systemctl hybrid-sleep &;;
+  shutdown) shutdown 0 &;;
+  reboot) reboot &;;
+  suspend) systemctl suspend &;;
+  hibernate) systemctl hibernate &;;
+  susthib) systemctl suspend-then-hibernate &;;
+  hybslp) systemctl hybrid-sleep &;;
   lockwlnd) swaylock -Ffe --screenshots --indicator --effect-blur=7x5 &;;
   reloadhypr) hyprctl reload &;;
   lockX) slock &;;
