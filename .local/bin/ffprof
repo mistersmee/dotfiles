@@ -7,7 +7,7 @@
 choice=$(echo -e "haxxor\nnormie\nclg" | bemenu)
 
 case "$choice" in
-  haxxor) firefox -profile ~/.mozilla/firefox/haxxor &;;
+  haxxor) mullvad-browser &;;
   normie) firefox -profile ~/.mozilla/firefox/normie &;;
   clg) firefox -profile ~/.mozilla/firefox/clg &;;
 esac
