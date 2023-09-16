@@ -4,10 +4,13 @@
 #
 ###
 
-choice=$(echo -e "haxxor\nnormie\nclg" | bemenu)
+choice=$(echo -e "mb\nhaxxor\nnormie\nclg\nbrave\ncrium" | bemenu)
 
 case "$choice" in
-  haxxor) mullvad-browser &;;
+  mb) mullvad-browser &;;
+  haxxor) firefox -profile ~/.mozilla/firefox/haxxor &;;
   normie) firefox -profile ~/.mozilla/firefox/normie &;;
   clg) firefox -profile ~/.mozilla/firefox/clg &;;
+  brave) brave &;;
+  crium) chromium &;;
 esac
