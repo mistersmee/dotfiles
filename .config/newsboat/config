@@ -16,10 +16,10 @@ notify-screen yes
 
 # macros config
 
-browser "firefox"
-#macro y set browser "swallow mpv --profile=1080p %u" ; open-in-browser ; set browser "firefox"
-macro y set browser "mpv --profile=1080p %u" ; open-in-browser ; set browser "firefox"
-
+browser "~/.config/newsboat/newsboat-browser.sh"
+#macro y set browser "swallow mpv --profile=1080p %u" ; open-in-browser ; set browser "~/.config/newsboat/newsboat-browser.sh"
+macro y set browser "mpv --profile=1080p %u" ; open-in-browser ; set browser "~/.config/newsboat/newsboat-browser.sh"
+user-agent "Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0"
 # keybindings
 
 bind-key j down
