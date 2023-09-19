@@ -1,0 +1,2 @@
+--format=bestvideo[height<=?1080]+bestaudio/best
+--extractor-args="youtube:player_client=android,web"
