@@ -17,4 +17,4 @@ clipman clear --all &
 waybar --config ~/.config/waybar/config --style ~/.config/waybar/nord.css &
 sway-audio-idle-inhibit &
 import-gsettings &
-swaybg -i $(find $HOME/pix/wallpapers -type f | shuf -n 1) -m fill &
+wpaperd &
