@@ -94,7 +94,8 @@ set -gx XMODIFIERS @im=ibus
 
 # Wayland
 
-set -gx BEMENU_OPTS "--fn 'Fira Code 15'"
+set -gx BEMENU_OPTS "--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566Ae6 --nf #ECEFF4 --tb #4C566Ae6 --hb #4C566Ae6 --tf #BF616A --hf #EBCB8B --nf #ECEFF4 --af #ECEFF4 --ab #4C566Ae6"
+
 set -gx SDL_VIDEODRIVER "wayland,x11"
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
 set -gx XDG_CURRENT_DESKTOP Hyprland
