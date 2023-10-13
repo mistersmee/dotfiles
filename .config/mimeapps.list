@@ -28,6 +28,7 @@ audio/x-wav=audio.desktop;
 image/gif=img.desktop;
 image/jpeg=img.desktop;
 image/png=img.desktop;
+image/apng=img.desktop;
 inode/directory=file.desktop;
 text/html=www.desktop;
 text/plain=text.desktop;
@@ -54,4 +55,3 @@ x-scheme-handler/chrome=firefox.desktop;www.desktop;
 x-scheme-handler/ftp=firefox.desktop;www.desktop;
 x-scheme-handler/http=firefox.desktop;www.desktop;
 x-scheme-handler/https=firefox.desktop;www.desktop;
-
