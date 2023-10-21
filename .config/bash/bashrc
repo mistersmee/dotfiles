@@ -7,12 +7,12 @@
 # declaring defaults
 
 export EDITOR="nvim"
-export STATUSBAR="waybar"
+#export STATUSBAR="waybar"
 export VIDEO="mpv"
 export IMAGE="sxiv"
 export COLORTERM="truecolor"
 export PAGER="less"
-export WM="Hyprland"
+export WM="mutter"
 export OPENER="mimeo"
 export VISUAL="nvim"
 export READER="zathura"
@@ -105,12 +105,12 @@ export LANG=en_IN.UTF-8
 
 # Wayland
 
-export BEMENU_OPTS="--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566Ae6 --nf #ECEFF4 --tb #4C566Ae6 --hb #4C566Ae6 --tf #BF616A --hf #EBCB8B --nf #ECEFF4 --af #ECEFF4 --ab #4C566Ae6"
+#export BEMENU_OPTS="--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566Ae6 --nf #ECEFF4 --tb #4C566Ae6 --hb #4C566Ae6 --tf #BF616A --hf #EBCB8B --nf #ECEFF4 --af #ECEFF4 --ab #4C566Ae6"
 export SDL_VIDEODRIVER="wayland,x11"
 export _JAVA_AWT_WM_NONREPARENTING=1
-export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_CURRENT_DESKTOP=GNOME
 export XDG_SESSION_TYPE=wayland
-export XDG_SESSION_DESKTOP=Hyprland
+export XDG_SESSION_DESKTOP=GNOME
 export QT_QPA_PLATFORM="wayland;xcb"
 export GDK_BACKEND="wayland,x11"
 export MOZ_ENABLE_WAYLAND=1
@@ -195,4 +195,4 @@ eval "$(starship init bash)"
 #autostart WM on tty1
 
 #if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec sx ~/.config/sx/sxrc 2> /tmp/X.log; fi
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec Hyprland > /tmp/X.log 2>&1; fi
+#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec Hyprland > /tmp/X.log 2>&1; fi
