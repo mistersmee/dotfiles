@@ -1,13 +1,13 @@
 # declaring defaults
 
 set -gx EDITOR "nvim"
-set -gx STATUSBAR "waybar"
+#set -gx STATUSBAR "waybar"
 set -gx VIDEO "mpv"
 set -gx IMAGE "feh"
 set -gx COLORTERM "truecolor"
 set -gx PAGER "less"
-set -gx WM "sway"
-set -gx OPENER "swallow mimeo"
+set -gx WM "kwin"
+set -gx OPENER "mimeo"
 set -gx VISUAL "nvim"
 set -gx READER "zathura"
 set -gx TERMINAL "kitty"
@@ -33,7 +33,7 @@ set -gx CARGO_HOME ""$XDG_DATA_HOME"/cargo"
 set -gx PASSWORD_STORE_DIR ""$XDG_DATA_HOME"/pass"
 set -gx TERMINFO ""$XDG_DATA_HOME"/terminfo"
 set -gx TERMINFO_DIRS ""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
-set -gx XAUTHORITY ""$XDG_RUNTIME_DIR"/Xauthority"
+#set -gx XAUTHORITY ""$XDG_RUNTIME_DIR"/Xauthority"
 set -gx GRADLE_USER_HOME ""$XDG_DATA_HOME"/gradle"
 set -gx WEECHAT_HOME ""$XDG_CONFIG_HOME"/weechat"
 set -gx ANDROID_USER_HOME "$XDG_DATA_HOME"/android
@@ -66,7 +66,7 @@ set -gx NODE_OPTIONS "--max_old_space_size=4096"
 # QT Config
 
 #set -gx QT_STYLE_OVERRIDE "kvantum"
-set -gx QT_QPA_PLATFORMTHEME "qt5ct"
+#set -gx QT_QPA_PLATFORMTHEME "qt5ct"
 
 #less config
 
@@ -86,8 +86,8 @@ set -gx LESS_TERMCAP_us \e'[01;32m'
 set -gx NNN_FIFO "/tmp/nnn.fifo"
 set -gx NNN_HELP "fortune"
 set -gx NNN_PLUG 'p:preview-tui;x:!chmod +x $nnn'
-set -gx NNN_OPENER "swallow xdg-open"
-#set -gx NNN_OPENER "xdg-open"
+#set -gx NNN_OPENER "swallow xdg-open"
+set -gx NNN_OPENER "xdg-open"
 set -gx NNN_BMS "g:~/dl/git/;d:~/dl/;m:~/mus/;s:~/.local/share/stuff;r:~/.local/share/rtorrent;h:~/.local/share/mount;o:~/docs/"
 set -gx NNN_ARCHIVE "\\.(7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|rar|rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)"
 set -gx NNN_COLORS '1234'
@@ -105,13 +105,13 @@ set -gx SDL_IM_MODULE ibus
 
 # Wayland
 
-set -gx BEMENU_OPTS "--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566Ae6 --nf #ECEFF4 --tb #4C566Ae6 --hb #4C566Ae6 --tf #BF616A --hf #EBCB8B --nf #ECEFF4 --af #ECEFF4 --ab #4C566Ae6"
+#set -gx BEMENU_OPTS "--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566Ae6 --nf #ECEFF4 --tb #4C566Ae6 --hb #4C566Ae6 --tf #BF616A --hf #EBCB8B --nf #ECEFF4 --af #ECEFF4 --ab #4C566Ae6"
 
 set -gx SDL_VIDEODRIVER "wayland,x11"
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
-set -gx XDG_CURRENT_DESKTOP sway
+set -gx XDG_CURRENT_DESKTOP KDE
 set -gx XDG_SESSION_TYPE wayland
-set -gx XDG_SESSION_DESKTOP sway
+set -gx XDG_SESSION_DESKTOP KDE
 set -gx QT_QPA_PLATFORM "wayland;xcb"
 set -gx GDK_BACKEND "wayland,x11"
 set -gx MOZ_ENABLE_WAYLAND 1
@@ -136,8 +136,8 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 #    end
 #end
 
-if status is-login
-    if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
-        exec sway > /tmp/X.log 2>&1
-    end
-end
+#if status is-login
+#    if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
+#        exec sway > /tmp/X.log 2>&1
+#    end
+#end
