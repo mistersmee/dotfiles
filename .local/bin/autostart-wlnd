@@ -2,19 +2,19 @@
 mpd &
 mpDris2 &
 mpris-proxy &
-dunst --startup_notification "true" &
-blueman-applet &
-python .local/bin/brightness_notify.py -b amdgpu_bl1 &
-python .local/bin/battery_notify.py &
-lxpolkit &
-nm-applet --indicator &
-wl-paste -t text --watch clipman store &
-wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman.json" &
+#dunst --startup_notification "true" &
+#blueman-applet &
+#python .local/bin/brightness_notify.py -b amdgpu_bl1 &
+#python .local/bin/battery_notify.py &
+#lxpolkit &
+#nm-applet --indicator &
+#wl-paste -t text --watch clipman store &
+#wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman.json" &
 xrdb ~/.config/X11/Xresources &
-systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK &
-dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK &
-clipman clear --all &
-waybar --config ~/.config/waybar/config --style ~/.config/waybar/nord.css &
-sway-audio-idle-inhibit &
-import-gsettings &
-wpaperd &
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY &
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY &
+#clipman clear --all &
+#waybar --config ~/.config/waybar/config --style ~/.config/waybar/nord.css &
+#sway-audio-idle-inhibit &
+#import-gsettings &
+#wpaperd &
