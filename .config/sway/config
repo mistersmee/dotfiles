@@ -64,7 +64,15 @@ input "type:keyboard" {
     repeat_delay 300
     repeat_rate 50
 }
-### Key bindings
+
+input "2:14:ETPS/2_Elantech_Touchpad" {
+       dwt enabled
+       tap enabled
+       natural_scroll enabled
+       middle_emulation enabled
+}
+
+#### Key bindings
 #
 # Basics:
 #
@@ -149,7 +157,7 @@ input "type:keyboard" {
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
+    bindsym $mod+shift+s layout stacking
 #   bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
@@ -212,6 +220,8 @@ input "type:keyboard" {
 
     bindsym $mod+shift+Escape exec swaymsg exit
 
+    bindsym $mod+s exec grim
+
 #
 # Scratchpad:
 #
@@ -247,9 +257,11 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
 
 bindsym $mod+b bar mode hide
+
 bindsym $mod+shift+b bar mode dock
 #
 # Miscellaneous:
@@ -262,13 +274,19 @@ focus_follows_mouse no
 #
 # Autostart:
 #
-exec_always autotiling
-exec_always autostart-wlnd
-exec_always swayidle -w timeout 150 'swaylockbg' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylockbg'
+exec_always autotiling &
+exec_always autostart-wlnd &
+exec_always swayidle -w timeout 150 'swaylockbg' timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylockbg' &
+exec always ~/.config/sway/xdph &
 # Window rules:
 #
 assign [app_id="firefox"] workspace number 9
 assign [class="firefox"] workspace number 9
+assign [class="mullvadbrowser"] workspace number 9
+assign [class="Tor Browser"] workspace number 9
+assign [class="Chromium"] workspace number 9
+assign [class="Brave-browser"] workspace number 9
+
 for_window [app_id="scratch"] move window to scratchpad
 workspace_auto_back_and_forth yes
 
