@@ -1,3 +1,3 @@
 function obs
-    swallow flatpak run com.obsproject.Studio
+    flatpak run com.obsproject.Studio
 end
