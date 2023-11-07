@@ -48,6 +48,7 @@ set -gx KERAS_HOME ""$XDG_CONFIG_HOME"/keras"
 set -gx _JAVA_OPTIONS -Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 set -gx  RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -gx REPO_CONFIG_DIR "$XDG_CONFIG_HOME"
+set -gx  SQLITE_HISTORY "$XDG_CACHE_HOME"/sqlite_history
 
 #other miscellaneous programs
 
