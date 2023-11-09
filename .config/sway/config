@@ -284,6 +284,7 @@ assign [app_id="firefox"] workspace number 9
 assign [class="firefox"] workspace number 9
 assign [class="mullvadbrowser"] workspace number 9
 assign [app_id="Mullvad Browser"] workspace number 9
+assign [class="Mullvad Browser"] workspace number 9
 assign [class="Tor Browser"] workspace number 9
 assign [class="Chromium"] workspace number 9
 assign [class="Brave-browser"] workspace number 9
