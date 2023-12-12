@@ -49,6 +49,7 @@ set -gx _JAVA_OPTIONS -Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 set -gx  RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -gx REPO_CONFIG_DIR "$XDG_CONFIG_HOME"
 set -gx  SQLITE_HISTORY "$XDG_CACHE_HOME"/sqlite_history
+set -gx DVDCSS_CACHE "$XDG_DATA_HOME"/dvdcss
 
 #other miscellaneous programs
 
@@ -115,6 +116,7 @@ set -gx SSH_AGENT_PID ""
 set -gx SSH_AUTH_SOCK $(gpgconf --list-dirs agent-ssh-socket)
 
 set -gx GPG_TTY $(tty)
+#gpg-connect-agent --homedir $GNUPGHOME updatestartuptty /bye >/dev/null
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
 #autostart WM on tty1
