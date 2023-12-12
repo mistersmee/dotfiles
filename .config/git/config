@@ -15,3 +15,5 @@
 	lowSpeedTime = 999999
 [color]
 	ui = auto
+[safe]
+	directory = /opt/auto-cpufreq/
