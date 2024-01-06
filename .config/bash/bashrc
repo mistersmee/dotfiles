@@ -1,3 +1,9 @@
+# bashrc is in XDG_CONFIG_HOME/bash/bashrc thanks to this snippet in /etc/bash.bashrc
+# if [ -s "${XDG_CONFIG_HOME:-$HOME/.config}/bash/bashrc" ]; then
+#  . "${XDG_CONFIG_HOME:-$HOME/.config}/bash/bashrc"
+# fi
+#
+
 # declaring defaults
 
 export EDITOR="nvim"
