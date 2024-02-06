@@ -1,12 +1,13 @@
 #!/bin/bash
 
-mkdir -p ~/.local/share/pman/chroot/
 CHROOT=~/.local/share/pman/chroot
+
+mkdir -p $CHROOT
 
 if [ ! -d $CHROOT/root ]; then
 	mkarchroot $CHROOT/root base-devel
 fi
 
-arch-nspawn $CHROOT/root pacman -Syu
-makechrootpkg -c -r $CHROOT
-rm -r $CHROOT
+makechrootpkg -c -r $CHROOT -Tu "$@"
+
+sudo rm -r $CHROOT
