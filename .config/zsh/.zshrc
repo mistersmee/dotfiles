@@ -28,7 +28,7 @@ setopt  auto_cd
 
 # plugins
 
-source ~/.config/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source ~/.config/zsh/fast-syntax-highlighting/F-Sy-H.plugin.zsh
 source ~/.config/zsh/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-history-substring-search.zsh
 
