@@ -150,4 +150,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "coc-pyright
 "coc-clangd
 "coc-texlab
+"coc-rust-analyzer
+"coc-r-lsp
 "coc-java
