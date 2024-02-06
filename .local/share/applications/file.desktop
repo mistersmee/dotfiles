@@ -1,4 +1,17 @@
 [Desktop Entry]
-Type=Application
-Name=File Manager
+Comment[en_IN]=
+Comment=
 Exec=/usr/bin/kitty -e nnn %u
+GenericName[en_IN]=
+GenericName=
+Icon=folder-blue
+MimeType=
+Name[en_IN]=File Manager
+Name=File Manager
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

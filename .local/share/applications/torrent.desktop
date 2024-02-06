@@ -1,4 +1,17 @@
 [Desktop Entry]
-Type=Application
-Name=Torrent
+Comment[en_IN]=
+Comment=
 Exec=/usr/bin/kitty -e rtorrent %U
+GenericName[en_IN]=
+GenericName=
+Icon=torrents
+MimeType=
+Name[en_IN]=Torrent
+Name=Torrent
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

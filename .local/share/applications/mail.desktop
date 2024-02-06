@@ -1,4 +1,17 @@
 [Desktop Entry]
-Type=Application
-Name=Mail
+Comment[en_IN]=
+Comment=
 Exec=/usr/bin/thunderbird %u
+GenericName[en_IN]=
+GenericName=
+Icon=gnumeric-link-email
+MimeType=
+Name[en_IN]=Mail
+Name=Mail
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

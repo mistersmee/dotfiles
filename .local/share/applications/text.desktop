@@ -1,4 +1,17 @@
 [Desktop Entry]
-Type=Application
-Name=Text editor
+Comment[en_IN]=
+Comment=
 Exec=/usr/bin/kitty -e nvim %f
+GenericName[en_IN]=
+GenericName=
+Icon=accessories-text-editor
+MimeType=
+Name[en_IN]=Text editor
+Name=Text editor
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

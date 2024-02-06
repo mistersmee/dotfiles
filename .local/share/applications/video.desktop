@@ -1,4 +1,17 @@
 [Desktop Entry]
-Type=Application
-Name=Media Player
+Comment[en_IN]=
+Comment=
 Exec=/usr/bin/mpv %U
+GenericName[en_IN]=
+GenericName=
+Icon=mpv
+MimeType=
+Name[en_IN]=Media Player
+Name=Media Player
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

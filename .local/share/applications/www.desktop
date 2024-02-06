@@ -1,4 +1,17 @@
 [Desktop Entry]
-Type=Application
-Name=Web browser
+Comment[en_IN]=
+Comment=
 Exec=/usr/bin/mullvad-browser %u
+GenericName[en_IN]=
+GenericName=
+Icon=internet-web-browser
+MimeType=
+Name[en_IN]=Web browser
+Name=Web browser
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

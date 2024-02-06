@@ -1,4 +1,17 @@
 [Desktop Entry]
-Type=Application
-Name=Image viewer
+Comment[en_IN]=
+Comment=
 Exec=/usr/bin/nsxiv %f
+GenericName[en_IN]=
+GenericName=
+Icon=image-png
+MimeType=
+Name[en_IN]=Image viewer
+Name=Image viewer
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

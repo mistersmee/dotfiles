@@ -1,4 +1,17 @@
 [Desktop Entry]
-Type=Application
-Name=PDF reader
+Comment[en_IN]=
+Comment=
 Exec=/usr/bin/zathura %u
+GenericName[en_IN]=
+GenericName=
+Icon=application-pdf
+MimeType=
+Name[en_IN]=PDF reader
+Name=PDF reader
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
