@@ -36,7 +36,8 @@ set -gx TERMINFO_DIRS ""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
 set -gx XAUTHORITY ""$XDG_RUNTIME_DIR"/Xauthority"
 set -gx GRADLE_USER_HOME ""$XDG_DATA_HOME"/gradle"
 set -gx WEECHAT_HOME ""$XDG_CONFIG_HOME"/weechat"
-set -gx ANDROID_HOME ""$XDG_DATA_HOME"/android"
+set -gx ANDROID_USER_HOME "$XDG_DATA_HOME"/android
+set -gx ANDROID_HOME "$XDG_DATA_HOME"/android/sdk
 set -gx ADB_VENDOR_KEYS ""$XDG_DATA_HOME"/android/adbkey"
 set -gx PYTHONSTARTUP ""$XDG_CONFIG_HOME"/python/pythonrc"
 #set -gx GNUPGHOME ""$XDG_DATA_HOME"/gnupg"
