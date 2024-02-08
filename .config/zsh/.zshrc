@@ -72,6 +72,8 @@ alias sudoedit="doasedit "
 #alias obs="swallow flatpak run com.obsproject.Studio"
 alias obs="flatpak run com.obsproject.Studio"
 alias netbeans='netbeans --userdir "${XDG_CONFIG_HOME}"/netbeans'
+alias svn='svn --config-dir $XDG_CONFIG_HOME/subversion'
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
 
 # history plugin bindkeys and other keybindings
 

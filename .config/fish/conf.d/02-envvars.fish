@@ -51,6 +51,7 @@ set -gx  RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -gx REPO_CONFIG_DIR "$XDG_CONFIG_HOME"
 set -gx  SQLITE_HISTORY "$XDG_CACHE_HOME"/sqlite_history
 set -gx DVDCSS_CACHE "$XDG_DATA_HOME"/dvdcss
+set -gx HISTFILE "$XDG_STATE_HOME"/bash/history
 
 #other miscellaneous programs
 

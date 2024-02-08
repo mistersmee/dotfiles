@@ -36,7 +36,8 @@ export TERMINFO_DIRS=""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
 export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
 export GRADLE_USER_HOME=""$XDG_DATA_HOME"/gradle"
 export WEECHAT_HOME=""$XDG_CONFIG_HOME"/weechat"
-export ANDROID_HOME=""$XDG_DATA_HOME"/android"
+export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
+export ANDROID_HOME="$XDG_DATA_HOME"/android/sdk
 export ADB_VENDOR_KEYS=""$XDG_DATA_HOME"/android/adbkey"
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 #export GNUPGHOME=""$XDG_DATA_HOME"/gnupg"
@@ -48,6 +49,9 @@ export KERAS_HOME=""$XDG_CONFIG_HOME"/keras"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export REPO_CONFIG_DIR="$XDG_CONFIG_HOME"
+export SQLITE_HISTORY="$XDG_CACHE_HOME"/sqlite_history
+export DVDCSS_CACHE="$XDG_DATA_HOME"/dvdcss
+export HISTFILE="$XDG_STATE_HOME"/bash/history
 
 #other miscellaneous programs
 

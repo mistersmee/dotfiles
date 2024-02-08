@@ -42,7 +42,8 @@ export TERMINFO_DIRS=""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
 export XAUTHORITY=""$XDG_RUNTIME_DIR"/Xauthority"
 export GRADLE_USER_HOME=""$XDG_DATA_HOME"/gradle"
 export WEECHAT_HOME=""$XDG_CONFIG_HOME"/weechat"
-export ANDROID_HOME=""$XDG_DATA_HOME"/android"
+export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
+export ANDROID_HOME="$XDG_DATA_HOME"/android/sdk
 export ADB_VENDOR_KEYS=""$XDG_DATA_HOME"/android/adbkey"
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 #export GNUPGHOME=""$XDG_DATA_HOME"/gnupg"
@@ -148,6 +149,7 @@ alias sudoedit="doasedit "
 alias obs="flatpak run com.obsproject.Studio"
 alias netbeans='netbeans --userdir "${XDG_CONFIG_HOME}"/netbeans'
 alias svn='svn --config-dir $XDG_CONFIG_HOME/subversion'
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
 
 # NNN
 
