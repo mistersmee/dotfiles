@@ -95,6 +95,8 @@ set -gx GTK_IM_MODULE ibus
 set -gx GLFW_IM_MODULE ibus
 set -gx QT_IM_MODULE ibus
 set -gx XMODIFIERS @im=ibus
+set -gx INPUT_METHOD ibus
+set -gx SDL_IM_MODULE ibus
 
 # Wayland
 
