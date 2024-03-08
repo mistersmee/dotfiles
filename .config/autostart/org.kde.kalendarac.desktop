@@ -79,5 +79,4 @@ GenericName[zh_TW]=提醒伺服程式用戶端
 X-KDE-autostart-phase=2
 X-KDE-autostart-condition=kalendaracrc:General:Autostart:true
 X-DBUS-StartupType=Unique
-
 OnlyShowIn=KDE;
