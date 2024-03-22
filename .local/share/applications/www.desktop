@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment[en_IN]=
 Comment=
-Exec=/usr/bin/mullvad-browser %u
+Exec=MOZ_ENABLE_WAYLAND=1 /usr/bin/mullvad-browser %u
 GenericName[en_IN]=
 GenericName=
 Icon=internet-web-browser
