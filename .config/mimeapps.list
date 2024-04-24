@@ -149,6 +149,8 @@ image/svg+xml-compressed=img.desktop
 image/avif=img.desktop
 image/heic=img.desktop
 image/jxl=img.desktop
+x-scheme-handler/ferdium=ferdium.desktop
+x-scheme-handler/msteams=teams.desktop
 
 [Added Associations]
 application/x-extension-htm=www.desktop
@@ -156,11 +158,12 @@ application/x-extension-html=www.desktop
 application/x-extension-shtml=www.desktop
 application/x-extension-xht=www.desktop
 application/x-extension-xhtml=www.desktop
-application/xhtml+xml=www.desktop
-text/html=www.desktop
+application/xhtml+xml=www.desktop;mullvad-browser.desktop;www.desktop;
+text/html=www.desktop;mullvad-browser.desktop;www.desktop;
 x-scheme-handler/chrome=www.desktop
 x-scheme-handler/ftp=www.desktop
-x-scheme-handler/https=www.desktop
+x-scheme-handler/https=www.desktop;mullvad-browser.desktop;www.desktop;
 x-scheme-handler/mailto=mail.desktop
 text/calendar=mail.desktop
 image/jpeg=img.desktop
+x-scheme-handler/http=www.desktop;mullvad-browser.desktop;www.desktop;
