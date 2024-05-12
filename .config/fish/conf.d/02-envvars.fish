@@ -112,7 +112,7 @@ set -gx GDK_BACKEND "wayland,x11"
 set -gx MOZ_ENABLE_WAYLAND 1
 set -gx QT_AUTO_SCREEN_SCALE_FACTOR 1
 set -gx QT_WAYLAND_DISABLE_WINDOW_DECORATION 1
-set -gx GTK_THEME "Adw-dark"
+#set -gx GTK_THEME "Adw-dark"
 
 # ssh agent
 
