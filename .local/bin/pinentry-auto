@@ -1,0 +1,17 @@
+#!/bin/bash
+set -eu
+PINENTRY_CURSES='/usr/bin/pinentry-curses'
+PINENTRY_TTY='/usr/bin/pinentry-tty'
+PINENTRY_GTK2='/usr/bin/pinentry-gtk-2'
+PINENTRY_GNOME='/usr/bin/pinentry-gnome3'
+PINENTRY_QT='/usr/bin/pinentry-qt'
+
+if [[ -n "${DISPLAY}" && "${XDG_CURRENT_DESKTOP}" == "GNOME" ]]; then
+    exec "$PINENTRY_GNOME" "$@"
+elif [[ -n "${DISPLAY}" && "${XDG_CURRENT_DESKTOP}" == "KDE" ]]; then
+    exec "$PINENTRY_QT" "$@"
+elif [[ -n "${DISPLAY}" ]]; then
+    exec "$PINENTRY_GTK2" "$@"
+else
+    exec "$PINENTRY_CURSES" "$@"
+fi

@@ -43,6 +43,7 @@ set -gx PYTHONSTARTUP ""$XDG_CONFIG_HOME"/python/pythonrc"
 #set -gx GNUPGHOME ""$XDG_DATA_HOME"/gnupg"
 set -gx WINEPREFIX ""$XDG_DATA_HOME"/wine"
 set -gx JUPYTER_PLATFORM_DIRS ""$XDG_CONFIG_HOME"/jupyter"
+set -gx JUPYTER_CONFIG_DIR "$XDG_CONFIG_HOME"/jupyter
 set -gx W3M_DIR "$XDG_STATE_HOME/w3m"
 set -gx PARALLEL_HOME ""$XDG_CONFIG_HOME"/parallel"
 set -gx KERAS_HOME ""$XDG_CONFIG_HOME"/keras"
@@ -52,6 +53,7 @@ set -gx REPO_CONFIG_DIR "$XDG_CONFIG_HOME"
 set -gx  SQLITE_HISTORY "$XDG_CACHE_HOME"/sqlite_history
 set -gx DVDCSS_CACHE "$XDG_DATA_HOME"/dvdcss
 set -gx HISTFILE "$XDG_STATE_HOME"/bash/history
+set -gx RENPY_PATH_TO_SAVES "$XDG_DATA_HOME"
 
 #other miscellaneous programs
 

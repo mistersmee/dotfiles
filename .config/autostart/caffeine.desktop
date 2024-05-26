@@ -1,13 +1,21 @@
 [Desktop Entry]
-Encoding=UTF-8
-Icon=caffeine
-Name=Caffeine-ng
-Comment=Temporarily deactivate the screensaver and sleep mode
-Exec=caffeine
-Terminal=false
-Type=Application
 Categories=Utility;TrayIcon;DesktopUtility
+Comment[en_IN]=Temporarily deactivate the screensaver and sleep mode
+Comment=Temporarily deactivate the screensaver and sleep mode
+Encoding=UTF-8
+Exec=caffeine
+GenericName[en_IN]=
+GenericName=
+Icon=caffeine
 Keywords=Screensaver,Power,DPMS,Blank,Idle
-StartupNotify=false
-
+MimeType=
+Name[en_IN]=Caffeine
+Name=Caffeine
 OnlyShowIn=KDE;
+Path=
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

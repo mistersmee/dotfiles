@@ -167,3 +167,4 @@ x-scheme-handler/mailto=mail.desktop
 text/calendar=mail.desktop
 image/jpeg=img.desktop
 x-scheme-handler/http=www.desktop;mullvad-browser.desktop;www.desktop;
+x-scheme-handler/msteams=teams.desktop;
