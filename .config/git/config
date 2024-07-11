@@ -13,6 +13,7 @@
 [http]
 	lowSpeedLimit = 0
 	lowSpeedTime = 999999
+	postBuffer = 524288000
 [color]
 	ui = auto
 [safe]
