@@ -1,12 +1,12 @@
 # declaring defaults
 
 set -gx EDITOR "nvim"
-set -gx STATUSBAR "waybar"
+#set -gx STATUSBAR "waybar"
 set -gx VIDEO "mpv"
 set -gx IMAGE "feh"
 set -gx COLORTERM "truecolor"
 set -gx PAGER "less"
-set -gx WM "Hyprland"
+set -gx WM "COSMIC"
 set -gx OPENER "mimeo"
 set -gx VISUAL "nvim"
 set -gx READER "zathura"
@@ -33,7 +33,7 @@ set -gx CARGO_HOME ""$XDG_DATA_HOME"/cargo"
 set -gx PASSWORD_STORE_DIR ""$XDG_DATA_HOME"/pass"
 set -gx TERMINFO ""$XDG_DATA_HOME"/terminfo"
 set -gx TERMINFO_DIRS ""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
-set -gx XAUTHORITY ""$XDG_RUNTIME_DIR"/Xauthority"
+#set -gx XAUTHORITY ""$XDG_RUNTIME_DIR"/Xauthority"
 set -gx GRADLE_USER_HOME ""$XDG_DATA_HOME"/gradle"
 set -gx WEECHAT_HOME ""$XDG_CONFIG_HOME"/weechat"
 set -gx ANDROID_USER_HOME "$XDG_DATA_HOME"/android
@@ -109,9 +109,9 @@ set -gx BEMENU_OPTS "--fn 'Fira Code 16' --fb #4C566Ae6 --ff #ECEFF4 --nb #4C566
 
 set -gx SDL_VIDEODRIVER "wayland,x11"
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
-set -gx XDG_CURRENT_DESKTOP Hyprland
+set -gx XDG_CURRENT_DESKTOP COSMIC
 set -gx XDG_SESSION_TYPE wayland
-set -gx XDG_SESSION_DESKTOP Hyprland
+set -gx XDG_SESSION_DESKTOP COSMIC
 set -gx QT_QPA_PLATFORM "wayland;xcb"
 set -gx GDK_BACKEND "wayland,x11"
 set -gx MOZ_ENABLE_WAYLAND 1
@@ -136,8 +136,8 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 #    end
 #end
 
-if status is-login
-    if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
-        exec Hyprland > /tmp/X.log 2>&1
-    end
-end
+#if status is-login
+#    if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
+#        exec Hyprland > /tmp/X.log 2>&1
+#    end
+#end
