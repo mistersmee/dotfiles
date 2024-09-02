@@ -23,4 +23,5 @@ Plugin 'ron89/thesaurus_query.vim'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vivien/vim-linux-coding-style'
 Plugin 'tpope/vim-commentary'
+"Plugin 'luk400/vim-jukit'
 call vundle#end()
