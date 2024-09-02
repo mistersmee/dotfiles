@@ -7,6 +7,7 @@ X-KDE-autostart-phase=0
 X-GNOME-Autostart-enabled=true
 X-systemd-skip=true
 OnlyShowIn=KDE;Unity;XFCE
+NotShowIn=COSMIC
 NoDisplay=true
 
 Name=Baloo File Daemon

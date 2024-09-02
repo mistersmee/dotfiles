@@ -1,9 +1,9 @@
 [Desktop Entry]
 Name=Autostart Entries
 Comment=Applications that need to be started on Wayland
-Exec=/home/smee/.local/bin/autostart-wlnd
+Exec=/home/smee/.local/bin/autostart-wlnd-des
 Icon=text-x-script
 Terminal=false
 Type=Application
 StartupNotify=false
-OnlyShowIn=GNOME;KDE
+OnlyShowIn=GNOME;KDE;COSMIC
