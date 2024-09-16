@@ -60,6 +60,9 @@ set -gx RENPY_PATH_TO_SAVES "$XDG_DATA_HOME"/renpy
 set -gx FZF_DEFAULT_OPTS "--layout=reverse --height 40%"
 set -gx ASAN_OPTIONS "log_path=asan.log"
 
+# Increase Node memory size limit (for Open-WebUI build)
+
+set -gx NODE_OPTIONS "--max_old_space_size=4096"
 # QT Config
 
 #set -gx QT_STYLE_OVERRIDE "kvantum"
