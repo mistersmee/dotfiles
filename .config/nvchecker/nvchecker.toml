@@ -186,3 +186,8 @@ use_latest_tag=true
 source="github"
 github="raspberrypi/rpi-imager"
 use_latest_tag=true
+
+[open-webui]
+source="github"
+github="open-webui/open-webui"
+use_latest_tag=true
