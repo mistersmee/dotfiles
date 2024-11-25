@@ -191,3 +191,7 @@ use_latest_tag=true
 source="github"
 github="open-webui/open-webui"
 use_latest_tag=true
+
+[opensubtitles-com]
+source="pypi"
+pypi="opensubtitlescom"
