@@ -1,3 +1,0 @@
-auth     optional  pam_gnupg.so store-only
-session  optional  pam_gnupg.so
-auth optional pam_faildelay.so delay=4000000
