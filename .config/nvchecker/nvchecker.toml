@@ -233,3 +233,7 @@ source = "github"
 github = "open-telemetry/opentelemetry-python"
 prefix = "v"
 use_latest_release = true
+
+[python-tf-keras]
+source = "pypi"
+pypi = "tf-keras"
