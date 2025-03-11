@@ -12,9 +12,9 @@ text/html=www.desktop;mullvad-browser.desktop;www.desktop;
 x-scheme-handler/chrome=www.desktop
 x-scheme-handler/freetube=freetube.desktop;
 x-scheme-handler/ftp=www.desktop
-x-scheme-handler/http=www.desktop;mullvad-browser.desktop;www.desktop;
-x-scheme-handler/https=www.desktop;mullvad-browser.desktop;www.desktop;
-x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;mail.desktop;
+x-scheme-handler/http=www.desktop;brave-browser.desktop;mullvad-browser.desktop;
+x-scheme-handler/https=www.desktop;brave-browser.desktop;mullvad-browser.desktop;
+x-scheme-handler/mailto=mail.desktop;org.mozilla.Thunderbird.desktop;
 x-scheme-handler/msteams=teams.desktop;
 
 [Default Applications]
@@ -166,10 +166,10 @@ x-scheme-handler/chrome=www.desktop
 x-scheme-handler/ferdium=ferdium.desktop
 x-scheme-handler/freetube=freetube.desktop
 x-scheme-handler/ftp=www.desktop
-x-scheme-handler/http=www.desktop
-x-scheme-handler/https=www.desktop
+x-scheme-handler/http=www.desktop;
+x-scheme-handler/https=www.desktop;
 x-scheme-handler/magnet=torrent.desktop
-x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
+x-scheme-handler/mailto=mail.desktop;
 x-scheme-handler/msteams=teams.desktop
 
 [Removed Associations]
