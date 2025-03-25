@@ -36,8 +36,10 @@ set -gx TERMINFO_DIRS ""$XDG_DATA_HOME"/terminfo:/usr/share/terminfo"
 #set -gx XAUTHORITY ""$XDG_RUNTIME_DIR"/Xauthority"
 set -gx GRADLE_USER_HOME ""$XDG_DATA_HOME"/gradle"
 set -gx WEECHAT_HOME ""$XDG_CONFIG_HOME"/weechat"
+set -gx ANDROID_AVD_HOME "$XDG_DATA_HOME"/android/avd
 set -gx ANDROID_USER_HOME "$XDG_DATA_HOME"/android
 set -gx ANDROID_HOME "$XDG_DATA_HOME"/android/sdk
+set -gx ANDROID_SDK_HOME "$XDG_DATA_HOME"/android/sdk
 set -gx ADB_VENDOR_KEYS ""$XDG_DATA_HOME"/android/adbkey"
 set -gx PYTHONSTARTUP ""$XDG_CONFIG_HOME"/python/pythonrc"
 #set -gx GNUPGHOME ""$XDG_DATA_HOME"/gnupg"
@@ -54,6 +56,7 @@ set -gx  SQLITE_HISTORY "$XDG_CACHE_HOME"/sqlite_history
 set -gx DVDCSS_CACHE "$XDG_DATA_HOME"/dvdcss
 set -gx HISTFILE "$XDG_STATE_HOME"/bash/history
 set -gx RENPY_PATH_TO_SAVES "$XDG_DATA_HOME"/renpy
+set -gx HSA_OVERRIDE_GFX_VERSION 9.0.0
 
 #other miscellaneous programs
 
