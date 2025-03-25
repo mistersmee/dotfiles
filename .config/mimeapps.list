@@ -16,6 +16,9 @@ x-scheme-handler/http=www.desktop;brave-browser.desktop;mullvad-browser.desktop;
 x-scheme-handler/https=www.desktop;brave-browser.desktop;mullvad-browser.desktop;
 x-scheme-handler/mailto=mail.desktop;org.mozilla.Thunderbird.desktop;
 x-scheme-handler/msteams=teams.desktop;
+x-scheme-handler/skype=skypeforlinux.desktop;
+x-scheme-handler/tel=Zoom.desktop;
+x-scheme-handler/callto=Zoom.desktop;
 
 [Default Applications]
 application/epub+zip=pdf.desktop
@@ -171,6 +174,9 @@ x-scheme-handler/https=www.desktop;
 x-scheme-handler/magnet=torrent.desktop
 x-scheme-handler/mailto=mail.desktop;
 x-scheme-handler/msteams=teams.desktop
+x-scheme-handler/skype=skypeforlinux.desktop
+x-scheme-handler/tel=Zoom.desktop
+x-scheme-handler/callto=Zoom.desktop
 
 [Removed Associations]
 image/gif=mpv.desktop;
