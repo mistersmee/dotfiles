@@ -1,4 +1,3 @@
-user_pref("media.ffmpeg.vaapi.enabled", true);
 user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
 
 /** Override Safe browsing binary check, I want this protection **/
