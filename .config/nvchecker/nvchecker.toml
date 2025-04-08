@@ -182,11 +182,6 @@ source="github"
 github="anoopkunchukuttan/indic_nlp_library"
 use_latest_tag=true
 
-[rpi-imager]
-source="github"
-github="raspberrypi/rpi-imager"
-use_latest_tag=true
-
 [open-webui]
 source="github"
 github="open-webui/open-webui"
