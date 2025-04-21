@@ -232,3 +232,87 @@ use_latest_release = true
 [python-tf-keras]
 source = "pypi"
 pypi = "tf-keras"
+
+[opentelemetry-python-contrib]
+source = "pypi"
+pypi = "opentelemetry-contrib-instrumentations"
+use_pre_release = true
+
+[python-langchain-chroma]
+source = "pypi"
+pypi = "langchain-chroma"
+
+[python-langchain-community]
+source = "pypi"
+pypi = "langchain-community"
+
+[python-langchain-core]
+source = "pypi"
+pypi = "langchain-core"
+
+[python-langchain]
+source = "pypi"
+pypi = "langchain"
+
+[python-langchain-text-splitters]
+source = "pypi"
+pypi = "langchain-text-splitters"
+
+[python-chromadb]
+source = "pypi"
+pypi = "chromadb"
+
+[python-langsmith]
+source = "pypi"
+pypi = "langsmith"
+
+[python-chroma-hnswlib]
+source = "pypi"
+pypi = "chroma_hnswlib"
+
+[python-ftfy]
+source = "pypi"
+pypi = "ftfy"
+
+[python-qdrant-client]
+source = "pypi"
+pypi = "qdrant-client"
+
+[python-pypika]
+source = "git"
+git = "https://github.com/kayak/pypika.git"
+prefix = "v"
+
+[python-pgvector]
+source = "pypi"
+pypi = "pgvector"
+
+[python-mmh3]
+source = "pypi"
+pypi = "mmh3"
+
+[python-milvus-lite-bin]
+source = "git"
+git = "https://github.com/milvus-io/milvus-lite.git"
+prefix = "v"
+
+[python-pymilvus]
+source = "pypi"
+pypi = "pymilvus"
+
+[python-colbert-ai]
+source = "pypi"
+pypi = "colbert_ai"
+
+[python-langchain-cli]
+source = "pypi"
+pypi = "langchain-cli"
+
+[python-gritql]
+source = "pypi"
+pypi = "gritql"
+
+[python-langserve]
+source = "git"
+git = "https://github.com/langchain-ai/langserve.git"
+prefix = "v"
