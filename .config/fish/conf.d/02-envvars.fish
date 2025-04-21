@@ -16,7 +16,7 @@ set -gx DIFFPROG "nvim -d"
 
 # Adds `~/.local/bin` to $PATH
 
-set -gx PATH "/usr/local/bin:$HOME/.local/bin:/usr/bin/vendor_perl:$PATH"
+set -gx PATH "/usr/lib/ccache/bin:/usr/local/bin:$HOME/.local/bin:/usr/bin/vendor_perl:$PATH"
 
 # ~/ Clean-up:
 
