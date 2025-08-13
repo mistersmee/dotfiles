@@ -316,3 +316,18 @@ pypi = "gritql"
 source = "git"
 git = "https://github.com/langchain-ai/langserve.git"
 prefix = "v"
+
+[python-pinecone]
+source = "git"
+git = "https://github.com/pinecone-io/pinecone-python-client.git"
+prefix = "v"
+
+[python-starlette-compress]
+source = "pypi"
+pypi = "starlette-compress"
+
+[lib32-libxml2-legacy]
+source = "git"
+git = "https://gitlab.gnome.org/GNOME/libxml2.git"
+include_regex = 'v2\.13\.\d+'
+prefix = "v"
