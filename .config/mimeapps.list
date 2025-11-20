@@ -19,6 +19,8 @@ x-scheme-handler/msteams=teams.desktop;
 x-scheme-handler/skype=skypeforlinux.desktop;
 x-scheme-handler/tel=Zoom.desktop;
 x-scheme-handler/callto=Zoom.desktop;
+x-scheme-handler/postman=Postman.desktop;
+x-scheme-handler/hackerearth=smart-browser-protocol-handler.desktop;SmartBrowser.desktop;
 
 [Default Applications]
 application/epub+zip=pdf.desktop
@@ -177,6 +179,8 @@ x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/skype=skypeforlinux.desktop
 x-scheme-handler/tel=Zoom.desktop
 x-scheme-handler/callto=Zoom.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/hackerearth=smart-browser-protocol-handler.desktop
 
 [Removed Associations]
 image/gif=mpv.desktop;
