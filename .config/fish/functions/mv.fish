@@ -1,3 +1,3 @@
 function mv --wraps advmv
-    advmv -gv $argv
+    uu-mv -g $argv
 end

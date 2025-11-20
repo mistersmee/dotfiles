@@ -1,3 +1,3 @@
 function cp --wraps advcp
-    advcp -gv $argv
+    uu-cp -g $argv
 end
