@@ -331,3 +331,7 @@ source = "git"
 git = "https://gitlab.gnome.org/GNOME/libxml2.git"
 include_regex = 'v2\.13\.\d+'
 prefix = "v"
+
+[python-firecrawl-py]
+source = "pypi"
+pypi = "firecrawl-py"
