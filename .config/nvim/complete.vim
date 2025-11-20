@@ -153,3 +153,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "coc-rust-analyzer
 "coc-r-lsp
 "coc-java
+"coc-flutter
