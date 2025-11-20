@@ -33,7 +33,7 @@ network.port_random.set = yes
 ## Tracker-less torrent and UDP tracker support
 ## (conservative settings for 'private' trackers, change for 'public')
 dht.mode.set = on
-dht_port = 6881
+#dht_port = 6881
 protocol.pex.set = yes
 
 trackers.use_udp.set = yes
