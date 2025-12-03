@@ -335,3 +335,23 @@ prefix = "v"
 [python-firecrawl-py]
 source = "pypi"
 pypi = "firecrawl-py"
+
+[python-azure-common]
+source = "pypi"
+pypi = "azure-common"
+
+[python-azure-search-documents]
+source = "pypi"
+pypi = "azure-search-documents"
+
+[python-weaviate-client]
+source = "pypi"
+pypi = "weaviate_client"
+
+[python-langchain-classic]
+source = "pypi"
+pypi = "langchain-classic"
+
+[python-uuid-utils]
+source = "git"
+git = "https://github.com/aminalaee/uuid-utils.git"
