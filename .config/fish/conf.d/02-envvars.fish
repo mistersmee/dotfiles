@@ -58,6 +58,7 @@ set -gx DVDCSS_CACHE "$XDG_DATA_HOME"/dvdcss
 set -gx HISTFILE "$XDG_STATE_HOME"/bash/history
 set -gx RENPY_PATH_TO_SAVES "$XDG_DATA_HOME"/renpy
 set -gx HSA_OVERRIDE_GFX_VERSION 9.0.0
+set -gx CHROME_EXECUTABLE "/usr/bin/chromium"
 
 #other miscellaneous programs
 
