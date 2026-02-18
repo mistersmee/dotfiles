@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment[en_IN]=
 Comment=
-Exec=/usr/bin/kitty -e nnn %u
+Exec=/usr/bin/kitty -e /usr/bin/fish -c n %u
 GenericName[en_IN]=
 GenericName=
 Icon=folder-blue
